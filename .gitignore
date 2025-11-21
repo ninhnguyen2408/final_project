@@ -1,16 +1,24 @@
+# Maven
 target/
 !.mvn/wrapper/maven-wrapper.jar
 !**/src/main/**/target/
 !**/src/test/**/target/
+pom.xml.tag
+pom.xml.releaseBackup
+pom.xml.versionsBackup
+pom.xml.next
+release.properties
+dependency-reduced-pom.xml
+buildNumber.properties
+.mvn/timing.properties
+.mvn/wrapper/maven-wrapper.jar
 
 ### IntelliJ IDEA ###
-.idea/modules.xml
-.idea/jarRepositories.xml
-.idea/compiler.xml
-.idea/libraries/
+.idea/
 *.iws
 *.iml
 *.ipr
+out/
 
 ### Eclipse ###
 .apt_generated
@@ -20,6 +28,7 @@ target/
 .settings
 .springBeans
 .sts4-cache
+bin/
 
 ### NetBeans ###
 /nbproject/private/
@@ -33,6 +42,52 @@ build/
 
 ### VS Code ###
 .vscode/
+*.code-workspace
 
 ### Mac OS ###
 .DS_Store
+.AppleDouble
+.LSOverride
+
+### Windows ###
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+### Test Reports ###
+test-output/
+allure-results/
+allure-report/
+report/
+ExtentReports/
+surefire-reports/
+failsafe-reports/
+
+### Logs ###
+*.log
+logs/
+exports/logs/
+
+### Screenshots ###
+screenshots/
+*.png
+*.jpg
+*.jpeg
+!src/test/resources/**/*.png
+!src/test/resources/**/*.jpg
+
+### Test Data ###
+# Uncomment nếu không muốn commit test data
+# src/test/resources/testdata/*.xlsx
+# src/test/resources/testdata/*.csv
+
+### Temp Files ###
+*.tmp
+*.temp
+*.swp
+*.bak
+*~
+
+### OS Generated ###
+.Spotlight-V100
+.Trashes
