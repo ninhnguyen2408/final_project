@@ -1,0 +1,32 @@
+{
+  "customers": [
+    {
+      "company": "Tech Solutions Inc",
+      "vatNumber": "111222333",
+      "phone": "0901234567",
+      "website": "https://techsolutions.com",
+      "group": "VIP",
+      "address": "100 Innovation Drive",
+      "city": "Da Nang",
+      "state": "Da Nang",
+      "zipCode": "550000",
+      "currency": "USD",
+      "language": "English",
+      "country": "Vietnam"
+    },
+    {
+      "company": "Global Trade Corp",
+      "vatNumber": "444555666",
+      "phone": "0912345678",
+      "website": "https://globaltrade.com",
+      "group": "Gold",
+      "address": "200 Commerce Street",
+      "city": "Ha Noi",
+      "state": "Ha Noi",
+      "zipCode": "100000",
+      "currency": "EUR",
+      "language": "Vietnamese",
+      "country": "Vietnam"
+    }
+  ]
+}
