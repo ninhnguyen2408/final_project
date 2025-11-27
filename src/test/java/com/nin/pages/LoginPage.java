@@ -5,7 +5,6 @@ import keyworks.ActionKeywords;
 
 import org.openqa.selenium.By;
 import org.testng.Assert;
-import drivers.DriverManager;
 import utils.LogUtils;
 
 public class LoginPage extends BasePage {

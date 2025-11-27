@@ -1,6 +1,8 @@
 package com.nin.pages;
 
+import io.qameta.allure.Step;
 import keyworks.ActionKeywords;
+import models.Customer;
 import org.openqa.selenium.By;
 import utils.LogUtils;
 
@@ -40,13 +42,10 @@ public class CustomerPage {
     private By btnSave = By.xpath("//button[contains(@class,'only-save')]");
 
     private By alertMessage = By.xpath("//div[@id='alert_float_1']");
+    private By alertSuccess = By.xpath("//div[contains(@class,'alert-success')]");
+    private By alertError = By.xpath("//div[contains(@class,'alert-danger')]");
+    private By errorDuplicateCompany = By.xpath("//div[contains(text(),'Customer already exists') or contains(text(),'already exist')]");
 
-    private void selectLangauge(String language) {
-        ActionKeywords.clickElement(dropdowDefaultLanguege);
-        String xpathLanguage = "//span[normalize-space()='" + language + "']";
-        System.out.println("Selecting language: " + language);
-        ActionKeywords.clickElement(By.xpath(xpathLanguage));
-    }
 
     private void enterCompanyName(String company) {
         ActionKeywords.sendKeys(inputCompany, company);
@@ -143,6 +142,83 @@ public class CustomerPage {
         clicksave();
         ActionKeywords.sleep(3);
         LogUtils.info("Filled all customer information successfully");
+    }
+
+    /**
+     * Fill customer data - New method using Customer object
+     * MẸO BẢO VỆ: Method này clean hơn, dễ maintain hơn
+     * 
+     * @param customer Customer object chứa toàn bộ thông tin
+     */
+    @Step("Fill customer data: {customer}")
+    public void fillDataAddNewCustomer(Customer customer) {
+        LogUtils.info("Filling customer data for: " + customer.getCompany());
+        
+        enterCompanyName(customer.getCompany());
+        enterVATNumber(customer.getVatNumber());
+        enterPhone(customer.getPhone());
+        enterWebsite(customer.getWebsite());
+        selectGroup(customer.getGroup());
+        selectCurrency(customer.getCurrency());
+        selectLanguage(customer.getLanguage());
+        enterAddress(customer.getAddress());
+        enterCity(customer.getCity());
+        enterState(customer.getState());
+        enterZipCode(customer.getZipCode());
+        selectCountry(customer.getCountry());
+        clicksave();
+        ActionKeywords.sleep(3);
+        
+        LogUtils.info("✓ Filled all customer information successfully: " + customer.toString());
+    }
+
+    /**
+     * Verify customer được tạo thành công
+     */
+    public boolean verifyCustomerAddedSuccess() {
+        ActionKeywords.waitForElementVisible(alertMessage, 5);
+        boolean isSuccess = ActionKeywords.checkElementDisplayed(alertSuccess);
+        if (isSuccess) {
+            String message = ActionKeywords.getTextElement(alertSuccess);
+            LogUtils.info("Customer added successfully: " + message);
+        }
+        return isSuccess;
+    }
+
+    /**
+     * Verify customer bị lỗi (duplicate hoặc validation error)
+     */
+    public boolean verifyCustomerAddedFailed() {
+        ActionKeywords.waitForElementVisible(alertMessage, 5);
+        boolean isFailed = ActionKeywords.checkElementDisplayed(alertError);
+        if (isFailed) {
+            String errorMessage = ActionKeywords.getTextElement(alertError);
+            LogUtils.error("Failed to add customer: " + errorMessage);
+        }
+        return isFailed;
+    }
+
+    /**
+     * Verify duplicate customer error
+     */
+    public boolean verifyDuplicateCustomerError() {
+        ActionKeywords.waitForElementVisible(alertMessage, 5);
+        boolean isDuplicate = ActionKeywords.checkElementDisplayed(errorDuplicateCompany);
+        if (isDuplicate) {
+            String errorMessage = ActionKeywords.getTextElement(errorDuplicateCompany);
+            LogUtils.warn("Duplicate customer detected: " + errorMessage);
+        }
+        return isDuplicate;
+    }
+
+    /**
+     * Get alert message text
+     */
+    public String getAlertMessage() {
+        if (ActionKeywords.checkElementDisplayed(alertMessage)) {
+            return ActionKeywords.getTextElement(alertMessage);
+        }
+        return "";
     }
 
 
