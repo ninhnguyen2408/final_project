@@ -603,3 +603,243 @@
 [INFO] 24-11-2025 05:05:18 [main] LogUtils - Filled all customer information successfully
 [INFO] 24-11-2025 05:05:18 [main] LogUtils - === TEST PASSED: testAddNewCustomer ===
 [INFO] 24-11-2025 05:05:18 [main] LogUtils - Browser driver closed successfully
+[INFO] 05-12-2025 09:57:35 [main] LogUtils - === INITIALIZING BROWSER: CHROME for test: testAddNewVIPCustomer ===
+[INFO] 05-12-2025 09:57:39 [main] LogUtils - Browser initialized successfully: chrome
+[INFO] 05-12-2025 09:57:39 [main] LogUtils - === STARTING TEST: testAddNewVIPCustomer ===
+[INFO] 05-12-2025 09:57:40 [main] LogUtils - Navigate to: https://crm.anhtester.com/admin/authentication
+[INFO] 05-12-2025 09:57:40 [main] LogUtils - Opening browser and navigating to URL: https://crm.anhtester.com/admin/authentication
+[INFO] 05-12-2025 09:57:40 [main] LogUtils - Set text admin@example.com on input By.xpath: //input[@name='email']
+[INFO] 05-12-2025 09:57:40 [main] LogUtils - Entered email: admin@example.com
+[INFO] 05-12-2025 09:57:40 [main] LogUtils - Set text 123456 on input By.xpath: //input[@name='password']
+[INFO] 05-12-2025 09:57:40 [main] LogUtils - Entered password: ****
+[INFO] 05-12-2025 09:57:40 [main] LogUtils - Click on element By.xpath: //button[normalize-space()='Login']
+[INFO] 05-12-2025 09:57:40 [main] LogUtils - Clicked on Login button
+[INFO] 05-12-2025 09:57:42 [main] LogUtils - Click on element By.xpath: //span[normalize-space(text())='Customers']
+[INFO] 05-12-2025 09:57:42 [main] LogUtils - Running test case testAddNewVIPCustomer
+[INFO] 05-12-2025 09:57:42 [main] LogUtils - Executing testAddNewVIPCustomer - Testing add VIP customer
+[INFO] 05-12-2025 09:57:42 [main] LogUtils - Click on element By.xpath: //a[normalize-space()='New Customer']
+[INFO] 05-12-2025 09:57:42 [main] LogUtils - Clicked on Add New Customer button
+[INFO] 05-12-2025 09:57:42 [main] LogUtils - Filling customer data for: ABC Technology Company
+[INFO] 05-12-2025 09:57:42 [main] LogUtils - Set text ABC Technology Company on input By.xpath: //input[@id='company']
+[INFO] 05-12-2025 09:57:42 [main] LogUtils - Entered email: ABC Technology Company
+[INFO] 05-12-2025 09:57:42 [main] LogUtils - Set text 123456789 on input By.xpath: //input[@id='vat']
+[INFO] 05-12-2025 09:57:42 [main] LogUtils - Entered VAT Number: 123456789
+[INFO] 05-12-2025 09:57:43 [main] LogUtils - Set text 0939200600 on input By.xpath: //input[@id='phonenumber']
+[INFO] 05-12-2025 09:57:43 [main] LogUtils - Entered phone: 0939200600
+[INFO] 05-12-2025 09:57:43 [main] LogUtils - Set text https://abctech.com on input By.xpath: //input[@id='website']
+[INFO] 05-12-2025 09:57:43 [main] LogUtils - Entered website: https://abctech.com
+[INFO] 05-12-2025 09:57:43 [main] LogUtils - Click on element By.xpath: //button[@data-id='groups_in[]']
+[INFO] 05-12-2025 09:57:43 [main] LogUtils - Set text VIP on input By.xpath: //button[@data-id='groups_in[]']/following-sibling::div//input[@type='search']
+[INFO] 05-12-2025 09:57:43 [main] LogUtils - Click on element By.xpath: //span[normalize-space()='VIP']
+[INFO] 05-12-2025 09:57:44 [main] LogUtils - Click on element By.xpath: //button[@data-id='groups_in[]']
+[INFO] 05-12-2025 09:57:44 [main] LogUtils - Selected group: VIP
+[INFO] 05-12-2025 09:57:44 [main] LogUtils - Click on element By.xpath: //button[@data-id='default_currency']
+[INFO] 05-12-2025 09:57:44 [main] LogUtils - Set text USD on input By.xpath: //button[@data-id='default_currency']/following-sibling::div//input[@type='search']
+[INFO] 05-12-2025 09:57:44 [main] LogUtils - Click on element By.xpath: //span[contains(text(),'USD')]
+[INFO] 05-12-2025 09:57:44 [main] LogUtils - Selected currency: USD
+[INFO] 05-12-2025 09:57:44 [main] LogUtils - Click on element By.xpath: //button[@data-id='default_language']
+[INFO] 05-12-2025 09:57:44 [main] LogUtils - Click on element By.xpath: //span[normalize-space()='Vietnamese']
+[INFO] 05-12-2025 09:57:44 [main] LogUtils - Selected language: Vietnamese
+[INFO] 05-12-2025 09:57:45 [main] LogUtils - Set text 123 Nguyen Hue Street on input By.xpath: //textarea[@id='address']
+[INFO] 05-12-2025 09:57:45 [main] LogUtils - Entered address: 123 Nguyen Hue Street
+[INFO] 05-12-2025 09:57:45 [main] LogUtils - Set text Ho Chi Minh on input By.xpath: //input[@id='city']
+[INFO] 05-12-2025 09:57:45 [main] LogUtils - Entered city: Ho Chi Minh
+[INFO] 05-12-2025 09:57:45 [main] LogUtils - Set text HCM Province on input By.xpath: //input[@id='state']
+[INFO] 05-12-2025 09:57:45 [main] LogUtils - Entered state: HCM Province
+[INFO] 05-12-2025 09:57:45 [main] LogUtils - Set text 700000 on input By.xpath: //input[@id='zip']
+[INFO] 05-12-2025 09:57:45 [main] LogUtils - Entered zip code: 700000
+[INFO] 05-12-2025 09:57:46 [main] LogUtils - Click on element By.xpath: //button[@data-id='country']
+[INFO] 05-12-2025 09:57:46 [main] LogUtils - Set text Vietnam on input By.xpath: //input[@id='search_input']
+[INFO] 05-12-2025 09:57:46 [main] LogUtils - Click on element By.xpath: //span[normalize-space()='Vietnam']
+[INFO] 05-12-2025 09:57:46 [main] LogUtils - Selected country: Vietnam
+[INFO] 05-12-2025 09:57:46 [main] LogUtils - Click on element By.xpath: //button[contains(@class,'only-save')]
+[INFO] 05-12-2025 09:57:46 [main] LogUtils - Clicked on Save button
+[INFO] 05-12-2025 09:57:49 [main] LogUtils - ✓ Filled all customer information successfully: Customer{company='ABC Technology Company', group='VIP', currency='USD'}
+[INFO] 05-12-2025 09:57:49 [main] LogUtils - testAddNewVIPCustomer completed
+[INFO] 05-12-2025 09:57:49 [main] LogUtils - Test case testAddNewVIPCustomer is passed.
+[INFO] 05-12-2025 09:57:49 [main] LogUtils - === TEST PASSED: testAddNewVIPCustomer ===
+[INFO] 05-12-2025 09:57:50 [main] LogUtils - Browser driver closed successfully
+[INFO] 05-12-2025 09:57:50 [main] LogUtils - End testing TestNGTest-420c0f85-f658-4f50-9f2e-1882cfde755f
+[INFO] 05-12-2025 09:58:43 [main] LogUtils - === INITIALIZING BROWSER: CHROME for test: testAddNewVIPCustomer ===
+[INFO] 05-12-2025 09:58:44 [main] LogUtils - Browser initialized successfully: chrome
+[INFO] 05-12-2025 09:58:44 [main] LogUtils - === STARTING TEST: testAddNewVIPCustomer ===
+[INFO] 05-12-2025 09:58:45 [main] LogUtils - Navigate to: https://crm.anhtester.com/admin/authentication
+[INFO] 05-12-2025 09:58:45 [main] LogUtils - Opening browser and navigating to URL: https://crm.anhtester.com/admin/authentication
+[INFO] 05-12-2025 09:58:45 [main] LogUtils - Set text admin@example.com on input By.xpath: //input[@name='email']
+[INFO] 05-12-2025 09:58:45 [main] LogUtils - Entered email: admin@example.com
+[INFO] 05-12-2025 09:58:45 [main] LogUtils - Set text 123456 on input By.xpath: //input[@name='password']
+[INFO] 05-12-2025 09:58:45 [main] LogUtils - Entered password: ****
+[INFO] 05-12-2025 09:58:46 [main] LogUtils - Click on element By.xpath: //button[normalize-space()='Login']
+[INFO] 05-12-2025 09:58:46 [main] LogUtils - Clicked on Login button
+[INFO] 05-12-2025 09:58:47 [main] LogUtils - Click on element By.xpath: //span[normalize-space(text())='Customers']
+[INFO] 05-12-2025 09:58:47 [main] LogUtils - Running test case testAddNewVIPCustomer
+[INFO] 05-12-2025 09:58:47 [main] LogUtils - Executing testAddNewVIPCustomer - Testing add VIP customer
+[INFO] 05-12-2025 09:58:48 [main] LogUtils - Click on element By.xpath: //a[normalize-space()='New Customer']
+[INFO] 05-12-2025 09:58:48 [main] LogUtils - Clicked on Add New Customer button
+[INFO] 05-12-2025 09:58:48 [main] LogUtils - Filling customer data for: ABC Technology Company
+[INFO] 05-12-2025 09:58:48 [main] LogUtils - Set text ABC Technology Company on input By.xpath: //input[@id='company']
+[INFO] 05-12-2025 09:58:48 [main] LogUtils - Entered email: ABC Technology Company
+[INFO] 05-12-2025 09:58:48 [main] LogUtils - Set text 123456789 on input By.xpath: //input[@id='vat']
+[INFO] 05-12-2025 09:58:48 [main] LogUtils - Entered VAT Number: 123456789
+[INFO] 05-12-2025 09:58:48 [main] LogUtils - Set text 0939200600 on input By.xpath: //input[@id='phonenumber']
+[INFO] 05-12-2025 09:58:48 [main] LogUtils - Entered phone: 0939200600
+[INFO] 05-12-2025 09:58:48 [main] LogUtils - Set text https://abctech.com on input By.xpath: //input[@id='website']
+[INFO] 05-12-2025 09:58:48 [main] LogUtils - Entered website: https://abctech.com
+[INFO] 05-12-2025 09:58:49 [main] LogUtils - Click on element By.xpath: //button[@data-id='groups_in[]']
+[INFO] 05-12-2025 09:58:49 [main] LogUtils - Set text VIP on input By.xpath: //button[@data-id='groups_in[]']/following-sibling::div//input[@type='search']
+[INFO] 05-12-2025 09:58:49 [main] LogUtils - Click on element By.xpath: //span[normalize-space()='VIP']
+[INFO] 05-12-2025 09:58:49 [main] LogUtils - Click on element By.xpath: //button[@data-id='groups_in[]']
+[INFO] 05-12-2025 09:58:49 [main] LogUtils - Selected group: VIP
+[INFO] 05-12-2025 09:58:49 [main] LogUtils - Click on element By.xpath: //button[@data-id='default_currency']
+[INFO] 05-12-2025 09:58:50 [main] LogUtils - Set text USD on input By.xpath: //button[@data-id='default_currency']/following-sibling::div//input[@type='search']
+[INFO] 05-12-2025 09:58:50 [main] LogUtils - Click on element By.xpath: //span[contains(text(),'USD')]
+[INFO] 05-12-2025 09:58:50 [main] LogUtils - Selected currency: USD
+[INFO] 05-12-2025 09:58:50 [main] LogUtils - Click on element By.xpath: //button[@data-id='default_language']
+[INFO] 05-12-2025 09:58:50 [main] LogUtils - Click on element By.xpath: //span[normalize-space()='Vietnamese']
+[INFO] 05-12-2025 09:58:50 [main] LogUtils - Selected language: Vietnamese
+[INFO] 05-12-2025 09:58:50 [main] LogUtils - Set text 123 Nguyen Hue Street on input By.xpath: //textarea[@id='address']
+[INFO] 05-12-2025 09:58:50 [main] LogUtils - Entered address: 123 Nguyen Hue Street
+[INFO] 05-12-2025 09:58:51 [main] LogUtils - Set text Ho Chi Minh on input By.xpath: //input[@id='city']
+[INFO] 05-12-2025 09:58:51 [main] LogUtils - Entered city: Ho Chi Minh
+[INFO] 05-12-2025 09:58:51 [main] LogUtils - Set text HCM Province on input By.xpath: //input[@id='state']
+[INFO] 05-12-2025 09:58:51 [main] LogUtils - Entered state: HCM Province
+[INFO] 05-12-2025 09:58:51 [main] LogUtils - Set text 700000 on input By.xpath: //input[@id='zip']
+[INFO] 05-12-2025 09:58:51 [main] LogUtils - Entered zip code: 700000
+[INFO] 05-12-2025 09:58:51 [main] LogUtils - Click on element By.xpath: //button[@data-id='country']
+[INFO] 05-12-2025 09:58:51 [main] LogUtils - Set text Vietnam on input By.xpath: //input[@id='search_input']
+[INFO] 05-12-2025 09:58:51 [main] LogUtils - Click on element By.xpath: //span[normalize-space()='Vietnam']
+[INFO] 05-12-2025 09:58:51 [main] LogUtils - Selected country: Vietnam
+[INFO] 05-12-2025 09:58:52 [main] LogUtils - Click on element By.xpath: //button[contains(@class,'only-save')]
+[INFO] 05-12-2025 09:58:52 [main] LogUtils - Clicked on Save button
+[INFO] 05-12-2025 09:58:55 [main] LogUtils - ✓ Filled all customer information successfully: Customer{company='ABC Technology Company', group='VIP', currency='USD'}
+[INFO] 05-12-2025 09:58:55 [main] LogUtils - Get text of element By.xpath: //div[contains(@class,'alert-success')] is ×
+Customer added successfully.
+[INFO] 05-12-2025 09:58:55 [main] LogUtils - Customer added successfully: ×
+Customer added successfully.
+[INFO] 05-12-2025 09:58:55 [main] LogUtils - testAddNewVIPCustomer completed
+[INFO] 05-12-2025 09:58:55 [main] LogUtils - Test case testAddNewVIPCustomer is passed.
+[INFO] 05-12-2025 09:58:55 [main] LogUtils - === TEST PASSED: testAddNewVIPCustomer ===
+[INFO] 05-12-2025 09:58:56 [main] LogUtils - Browser driver closed successfully
+[INFO] 05-12-2025 09:58:56 [main] LogUtils - End testing TestNGTest-b7cf02eb-e31d-45c0-8adf-f3f0b71b796f
+[INFO] 05-12-2025 10:19:03 [main] LogUtils - === INITIALIZING BROWSER: CHROME for test: testAddNewCustomer ===
+[INFO] 05-12-2025 10:19:05 [main] LogUtils - Browser initialized successfully: chrome
+[INFO] 05-12-2025 10:19:05 [main] LogUtils - === STARTING TEST: testAddNewCustomer ===
+[INFO] 05-12-2025 10:19:07 [main] LogUtils - Navigate to: https://crm.anhtester.com/admin/authentication
+[INFO] 05-12-2025 10:19:07 [main] LogUtils - Opening browser and navigating to URL: https://crm.anhtester.com/admin/authentication
+[INFO] 05-12-2025 10:19:08 [main] LogUtils - Set text admin@example.com on input By.xpath: //input[@name='email']
+[INFO] 05-12-2025 10:19:08 [main] LogUtils - Entered email: admin@example.com
+[INFO] 05-12-2025 10:19:08 [main] LogUtils - Set text 123456 on input By.xpath: //input[@name='password']
+[INFO] 05-12-2025 10:19:08 [main] LogUtils - Entered password: ****
+[INFO] 05-12-2025 10:19:08 [main] LogUtils - Click on element By.xpath: //button[normalize-space()='Login']
+[INFO] 05-12-2025 10:19:08 [main] LogUtils - Clicked on Login button
+[INFO] 05-12-2025 10:19:09 [main] LogUtils - Click on element By.xpath: //span[normalize-space(text())='Customers']
+[INFO] 05-12-2025 10:19:09 [main] LogUtils - Running test case testAddNewCustomer
+[INFO] 05-12-2025 10:19:09 [main] LogUtils - Executing testAddNewCustomer - Testing add new customer
+[INFO] 05-12-2025 10:19:10 [main] LogUtils - Click on element By.xpath: //a[normalize-space()='New Customer']
+[INFO] 05-12-2025 10:19:10 [main] LogUtils - Clicked on Add New Customer button
+[INFO] 05-12-2025 10:19:10 [main] LogUtils - Filling customer data for: ABC Technology Company
+[INFO] 05-12-2025 10:19:10 [main] LogUtils - Set text ABC Technology Company on input By.xpath: //input[@id='company']
+[INFO] 05-12-2025 10:19:10 [main] LogUtils - Entered email: ABC Technology Company
+[INFO] 05-12-2025 10:19:10 [main] LogUtils - Set text 123456789 on input By.xpath: //input[@id='vat']
+[INFO] 05-12-2025 10:19:10 [main] LogUtils - Entered VAT Number: 123456789
+[INFO] 05-12-2025 10:19:10 [main] LogUtils - Set text 0939200600 on input By.xpath: //input[@id='phonenumber']
+[INFO] 05-12-2025 10:19:10 [main] LogUtils - Entered phone: 0939200600
+[INFO] 05-12-2025 10:19:10 [main] LogUtils - Set text https://abctech.com on input By.xpath: //input[@id='website']
+[INFO] 05-12-2025 10:19:10 [main] LogUtils - Entered website: https://abctech.com
+[INFO] 05-12-2025 10:19:10 [main] LogUtils - Click on element By.xpath: //button[@data-id='groups_in[]']
+[INFO] 05-12-2025 10:19:11 [main] LogUtils - Set text VIP on input By.xpath: //button[@data-id='groups_in[]']/following-sibling::div//input[@type='search']
+[INFO] 05-12-2025 10:19:11 [main] LogUtils - Click on element By.xpath: //span[normalize-space()='VIP']
+[INFO] 05-12-2025 10:19:11 [main] LogUtils - Click on element By.xpath: //button[@data-id='groups_in[]']
+[INFO] 05-12-2025 10:19:11 [main] LogUtils - Selected group: VIP
+[INFO] 05-12-2025 10:19:11 [main] LogUtils - Click on element By.xpath: //button[@data-id='default_currency']
+[INFO] 05-12-2025 10:19:11 [main] LogUtils - Set text USD on input By.xpath: //button[@data-id='default_currency']/following-sibling::div//input[@type='search']
+[INFO] 05-12-2025 10:19:12 [main] LogUtils - Click on element By.xpath: //span[contains(text(),'USD')]
+[INFO] 05-12-2025 10:19:12 [main] LogUtils - Selected currency: USD
+[INFO] 05-12-2025 10:19:12 [main] LogUtils - Click on element By.xpath: //button[@data-id='default_language']
+[INFO] 05-12-2025 10:19:12 [main] LogUtils - Click on element By.xpath: //span[normalize-space()='Vietnamese']
+[INFO] 05-12-2025 10:19:12 [main] LogUtils - Selected language: Vietnamese
+[INFO] 05-12-2025 10:19:12 [main] LogUtils - Set text 123 Nguyen Hue Street on input By.xpath: //textarea[@id='address']
+[INFO] 05-12-2025 10:19:12 [main] LogUtils - Entered address: 123 Nguyen Hue Street
+[INFO] 05-12-2025 10:19:12 [main] LogUtils - Set text Ho Chi Minh on input By.xpath: //input[@id='city']
+[INFO] 05-12-2025 10:19:12 [main] LogUtils - Entered city: Ho Chi Minh
+[INFO] 05-12-2025 10:19:13 [main] LogUtils - Set text HCM Province on input By.xpath: //input[@id='state']
+[INFO] 05-12-2025 10:19:13 [main] LogUtils - Entered state: HCM Province
+[INFO] 05-12-2025 10:19:13 [main] LogUtils - Set text 700000 on input By.xpath: //input[@id='zip']
+[INFO] 05-12-2025 10:19:13 [main] LogUtils - Entered zip code: 700000
+[INFO] 05-12-2025 10:19:13 [main] LogUtils - Click on element By.xpath: //button[@data-id='country']
+[INFO] 05-12-2025 10:19:13 [main] LogUtils - Set text Vietnam on input By.xpath: //input[@id='search_input']
+[INFO] 05-12-2025 10:19:13 [main] LogUtils - Click on element By.xpath: //span[normalize-space()='Vietnam']
+[INFO] 05-12-2025 10:19:13 [main] LogUtils - Selected country: Vietnam
+[INFO] 05-12-2025 10:19:14 [main] LogUtils - Click on element By.xpath: //button[contains(@class,'only-save')]
+[INFO] 05-12-2025 10:19:14 [main] LogUtils - Clicked on Save button
+[INFO] 05-12-2025 10:19:17 [main] LogUtils - ✓ Filled all customer information successfully: Customer{company='ABC Technology Company', group='VIP', currency='USD'}
+[INFO] 05-12-2025 10:19:17 [main] LogUtils - Get text of element By.xpath: //div[contains(@class,'alert-success')] is ×
+Customer added successfully.
+[INFO] 05-12-2025 10:19:17 [main] LogUtils - Customer added successfully: ×
+Customer added successfully.
+[INFO] 05-12-2025 10:19:17 [main] LogUtils - testAddNewVIPCustomer completed
+[INFO] 05-12-2025 10:19:17 [main] LogUtils - Test case testAddNewCustomer is passed.
+[INFO] 05-12-2025 10:19:17 [main] LogUtils - === TEST PASSED: testAddNewCustomer ===
+[INFO] 05-12-2025 10:19:18 [main] LogUtils - Browser driver closed successfully
+[INFO] 05-12-2025 10:19:18 [main] LogUtils - End testing TestNGTest-92461179-b424-4d56-8769-a9bfe1a9f99f
+[INFO] 05-12-2025 14:02:57 [main] LogUtils - === INITIALIZING BROWSER: CHROME for test: testAddNewCustomer ===
+[INFO] 05-12-2025 14:03:01 [main] LogUtils - Browser initialized successfully: chrome
+[INFO] 05-12-2025 14:03:01 [main] LogUtils - === STARTING TEST: testAddNewCustomer ===
+[INFO] 05-12-2025 14:03:02 [main] LogUtils - Navigate to: https://crm.anhtester.com/admin/authentication
+[INFO] 05-12-2025 14:03:02 [main] LogUtils - Opening browser and navigating to URL: https://crm.anhtester.com/admin/authentication
+[INFO] 05-12-2025 14:03:02 [main] LogUtils - Set text admin@example.com on input By.xpath: //input[@name='email']
+[INFO] 05-12-2025 14:03:02 [main] LogUtils - Entered email: admin@example.com
+[INFO] 05-12-2025 14:03:02 [main] LogUtils - Set text 123456 on input By.xpath: //input[@name='password']
+[INFO] 05-12-2025 14:03:02 [main] LogUtils - Entered password: ****
+[INFO] 05-12-2025 14:03:03 [main] LogUtils - Click on element By.xpath: //button[normalize-space()='Login']
+[INFO] 05-12-2025 14:03:03 [main] LogUtils - Clicked on Login button
+[INFO] 05-12-2025 14:03:04 [main] LogUtils - Click on element By.xpath: //span[normalize-space(text())='Customers']
+[INFO] 05-12-2025 14:03:04 [main] LogUtils - Running test case testAddNewCustomer
+[INFO] 05-12-2025 14:03:04 [main] LogUtils - Executing testAddNewCustomer - Testing add new customer
+[INFO] 05-12-2025 14:03:04 [main] LogUtils - Click on element By.xpath: //a[normalize-space()='New Customer']
+[INFO] 05-12-2025 14:03:04 [main] LogUtils - Clicked on Add New Customer button
+[INFO] 05-12-2025 14:03:04 [main] LogUtils - Filling customer data for: ABC Technology Company
+[INFO] 05-12-2025 14:03:04 [main] LogUtils - Set text ABC Technology Company on input By.xpath: //input[@id='company']
+[INFO] 05-12-2025 14:03:04 [main] LogUtils - Entered email: ABC Technology Company
+[INFO] 05-12-2025 14:03:05 [main] LogUtils - Set text 123456789 on input By.xpath: //input[@id='vat']
+[INFO] 05-12-2025 14:03:05 [main] LogUtils - Entered VAT Number: 123456789
+[INFO] 05-12-2025 14:03:05 [main] LogUtils - Set text 0939200600 on input By.xpath: //input[@id='phonenumber']
+[INFO] 05-12-2025 14:03:05 [main] LogUtils - Entered phone: 0939200600
+[INFO] 05-12-2025 14:03:05 [main] LogUtils - Set text https://abctech.com on input By.xpath: //input[@id='website']
+[INFO] 05-12-2025 14:03:05 [main] LogUtils - Entered website: https://abctech.com
+[INFO] 05-12-2025 14:03:05 [main] LogUtils - Click on element By.xpath: //button[@data-id='groups_in[]']
+[INFO] 05-12-2025 14:03:05 [main] LogUtils - Set text VIP on input By.xpath: //button[@data-id='groups_in[]']/following-sibling::div//input[@type='search']
+[INFO] 05-12-2025 14:03:06 [main] LogUtils - Click on element By.xpath: //span[normalize-space()='VIP']
+[INFO] 05-12-2025 14:03:06 [main] LogUtils - Click on element By.xpath: //button[@data-id='groups_in[]']
+[INFO] 05-12-2025 14:03:06 [main] LogUtils - Selected group: VIP
+[INFO] 05-12-2025 14:03:06 [main] LogUtils - Click on element By.xpath: //button[@data-id='default_currency']
+[INFO] 05-12-2025 14:03:06 [main] LogUtils - Set text USD on input By.xpath: //button[@data-id='default_currency']/following-sibling::div//input[@type='search']
+[INFO] 05-12-2025 14:03:06 [main] LogUtils - Click on element By.xpath: //span[contains(text(),'USD')]
+[INFO] 05-12-2025 14:03:06 [main] LogUtils - Selected currency: USD
+[INFO] 05-12-2025 14:03:07 [main] LogUtils - Click on element By.xpath: //button[@data-id='default_language']
+[INFO] 05-12-2025 14:03:07 [main] LogUtils - Click on element By.xpath: //span[normalize-space()='Vietnamese']
+[INFO] 05-12-2025 14:03:07 [main] LogUtils - Selected language: Vietnamese
+[INFO] 05-12-2025 14:03:07 [main] LogUtils - Set text 123 Nguyen Hue Street on input By.xpath: //textarea[@id='address']
+[INFO] 05-12-2025 14:03:07 [main] LogUtils - Entered address: 123 Nguyen Hue Street
+[INFO] 05-12-2025 14:03:07 [main] LogUtils - Set text Ho Chi Minh on input By.xpath: //input[@id='city']
+[INFO] 05-12-2025 14:03:07 [main] LogUtils - Entered city: Ho Chi Minh
+[INFO] 05-12-2025 14:03:07 [main] LogUtils - Set text HCM Province on input By.xpath: //input[@id='state']
+[INFO] 05-12-2025 14:03:07 [main] LogUtils - Entered state: HCM Province
+[INFO] 05-12-2025 14:03:07 [main] LogUtils - Set text 700000 on input By.xpath: //input[@id='zip']
+[INFO] 05-12-2025 14:03:07 [main] LogUtils - Entered zip code: 700000
+[INFO] 05-12-2025 14:03:08 [main] LogUtils - Click on element By.xpath: //button[@data-id='country']
+[INFO] 05-12-2025 14:03:08 [main] LogUtils - Set text Vietnam on input By.xpath: //input[@id='search_input']
+[INFO] 05-12-2025 14:03:08 [main] LogUtils - Click on element By.xpath: //span[normalize-space()='Vietnam']
+[INFO] 05-12-2025 14:03:08 [main] LogUtils - Selected country: Vietnam
+[INFO] 05-12-2025 14:03:08 [main] LogUtils - Click on element By.xpath: //button[contains(@class,'only-save')]
+[INFO] 05-12-2025 14:03:08 [main] LogUtils - Clicked on Save button
+[INFO] 05-12-2025 14:03:11 [main] LogUtils - ✓ Filled all customer information successfully: Customer{company='ABC Technology Company', group='VIP', currency='USD'}
+[INFO] 05-12-2025 14:03:12 [main] LogUtils - Get text of element By.xpath: //div[contains(@class,'alert-success')] is ×
+Customer added successfully.
+[INFO] 05-12-2025 14:03:12 [main] LogUtils - Customer added successfully: ×
+Customer added successfully.
+[INFO] 05-12-2025 14:03:12 [main] LogUtils - testAddNewVIPCustomer completed
+[INFO] 05-12-2025 14:03:12 [main] LogUtils - Test case testAddNewCustomer is passed.
+[INFO] 05-12-2025 14:03:12 [main] LogUtils - === TEST PASSED: testAddNewCustomer ===
+[INFO] 05-12-2025 14:03:12 [main] LogUtils - Browser driver closed successfully
+[INFO] 05-12-2025 14:03:12 [main] LogUtils - End testing TestNGTest-a4c88e81-fa07-450c-957e-a10a1d435dee

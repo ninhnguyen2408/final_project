@@ -1,7 +1,7 @@
 package com.nin.tests;
 
 import com.nin.pages.BasePage;
-import com.nin.pages.CustomerPage;
+import com.nin.pages.TaskPage;
 import com.nin.pages.LoginPage;
 import common.BaseTest;
 import io.qameta.allure.*;
@@ -20,9 +20,9 @@ import java.lang.reflect.Method;
 @Listeners(TestListener.class)
 @Epic("CRM System")
 @Feature("Customer Management")
-public class CustomerTest extends BaseTest {
+public class TaskTes extends BaseTest {
 
-    private CustomerPage customerPage;
+    private TaskPage taskPage;
     private LoginPage loginPage;
     private BasePage basePage;
 
@@ -34,22 +34,22 @@ public class CustomerTest extends BaseTest {
         loginPage.loginCMS();
         
         basePage = new BasePage();
-        basePage.clickMenuCustomers();
+        basePage.clickMenuTask();
         
-        customerPage = new CustomerPage();
+        taskPage = new TaskPage();
     }
     
     @Test(priority = 1)
-    @Story("Add new customer successfully")
-    @Description("Verify that user can add a new VIP customer with valid data")
+    @Story("Add new task successfully")
+    @Description("Verify that user can add a new task with valid data")
     @Severity(SeverityLevel.CRITICAL)
     @Owner("QA Team")
-    public void testAddNewCustomer() {
-        LogUtils.info("Executing testAddNewCustomer - Testing add new customer");
+    public void testAddNewTask() {
+        LogUtils.info("Executing testAddNewTask - Testing add new task");
         Customer customer = CustomerTestData.getAddNewCustomer1();
-        customerPage.clickAddNewCustomer();
-        customerPage.fillDataAddNewCustomer(customer);
-        customerPage.verifyCustomerAddedSuccess();
+        taskPage.clickAddNewCustomer();
+        taskPage.fillDataAddNewTask(customer);;
+        taskPage.verifyCustomerAddedSuccess();
         LogUtils.info("testAddNewVIPCustomer completed");
     }
 }

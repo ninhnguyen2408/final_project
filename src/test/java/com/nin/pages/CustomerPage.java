@@ -126,30 +126,6 @@ public class CustomerPage {
         LogUtils.info("Clicked on Save button");
     }
 
-    public void fillDataAddNewCustomer(String company, String vatNumber, String phone, String website, String group, String address, String city, String state, String zipCode, String currency, String language, String country) {
-        enterCompanyName(company);
-        enterVATNumber(vatNumber);
-        enterPhone(phone);
-        enterWebsite(website);
-        selectGroup(group);
-        selectCurrency(currency);
-        selectLanguage(language);
-        enterAddress(address);
-        enterCity(city);
-        enterState(state);
-        enterZipCode(zipCode);
-        selectCountry(country);
-        clicksave();
-        ActionKeywords.sleep(3);
-        LogUtils.info("Filled all customer information successfully");
-    }
-
-    /**
-     * Fill customer data - New method using Customer object
-     * MẸO BẢO VỆ: Method này clean hơn, dễ maintain hơn
-     * 
-     * @param customer Customer object chứa toàn bộ thông tin
-     */
     @Step("Fill customer data: {customer}")
     public void fillDataAddNewCustomer(Customer customer) {
         LogUtils.info("Filling customer data for: " + customer.getCompany());
@@ -169,12 +145,9 @@ public class CustomerPage {
         clicksave();
         ActionKeywords.sleep(3);
         
-        LogUtils.info("✓ Filled all customer information successfully: " + customer.toString());
+        LogUtils.info("Filled all customer information successfully: " + customer.toString());
     }
 
-    /**
-     * Verify customer được tạo thành công
-     */
     public boolean verifyCustomerAddedSuccess() {
         ActionKeywords.waitForElementVisible(alertMessage, 5);
         boolean isSuccess = ActionKeywords.checkElementDisplayed(alertSuccess);
@@ -185,9 +158,6 @@ public class CustomerPage {
         return isSuccess;
     }
 
-    /**
-     * Verify customer bị lỗi (duplicate hoặc validation error)
-     */
     public boolean verifyCustomerAddedFailed() {
         ActionKeywords.waitForElementVisible(alertMessage, 5);
         boolean isFailed = ActionKeywords.checkElementDisplayed(alertError);
@@ -198,22 +168,8 @@ public class CustomerPage {
         return isFailed;
     }
 
-    /**
-     * Verify duplicate customer error
-     */
-    public boolean verifyDuplicateCustomerError() {
-        ActionKeywords.waitForElementVisible(alertMessage, 5);
-        boolean isDuplicate = ActionKeywords.checkElementDisplayed(errorDuplicateCompany);
-        if (isDuplicate) {
-            String errorMessage = ActionKeywords.getTextElement(errorDuplicateCompany);
-            LogUtils.warn("Duplicate customer detected: " + errorMessage);
-        }
-        return isDuplicate;
-    }
 
-    /**
-     * Get alert message text
-     */
+
     public String getAlertMessage() {
         if (ActionKeywords.checkElementDisplayed(alertMessage)) {
             return ActionKeywords.getTextElement(alertMessage);
