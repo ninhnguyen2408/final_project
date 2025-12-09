@@ -843,3 +843,795 @@ Customer added successfully.
 [INFO] 05-12-2025 14:03:12 [main] LogUtils - === TEST PASSED: testAddNewCustomer ===
 [INFO] 05-12-2025 14:03:12 [main] LogUtils - Browser driver closed successfully
 [INFO] 05-12-2025 14:03:12 [main] LogUtils - End testing TestNGTest-a4c88e81-fa07-450c-957e-a10a1d435dee
+[INFO] 09-12-2025 08:42:09 [main] LogUtils - === INITIALIZING BROWSER: CHROME for test: testAddNewTask ===
+[INFO] 09-12-2025 08:42:12 [main] LogUtils - Browser initialized successfully: chrome
+[INFO] 09-12-2025 08:42:12 [main] LogUtils - === STARTING TEST: testAddNewTask ===
+[INFO] 09-12-2025 08:42:13 [main] LogUtils - Navigate to: https://crm.anhtester.com/admin/authentication
+[INFO] 09-12-2025 08:42:13 [main] LogUtils - Opening browser and navigating to URL: https://crm.anhtester.com/admin/authentication
+[INFO] 09-12-2025 08:42:14 [main] LogUtils - Set text admin@example.com on input By.xpath: //input[@name='email']
+[INFO] 09-12-2025 08:42:14 [main] LogUtils - Entered email: admin@example.com
+[INFO] 09-12-2025 08:42:14 [main] LogUtils - Set text 123456 on input By.xpath: //input[@name='password']
+[INFO] 09-12-2025 08:42:14 [main] LogUtils - Entered password: ****
+[INFO] 09-12-2025 08:42:14 [main] LogUtils - Click on element By.xpath: //button[normalize-space()='Login']
+[INFO] 09-12-2025 08:42:14 [main] LogUtils - Clicked on Login button
+[INFO] 09-12-2025 08:42:15 [main] LogUtils - Click on element By.xpath: //span[normalize-space(text())='Tasks']
+[INFO] 09-12-2025 08:42:15 [main] LogUtils - Running test case testAddNewTask
+[ERROR] 09-12-2025 08:42:16 [main] LogUtils - Test case testAddNewTask is failed.
+[ERROR] 09-12-2025 08:42:16 [main] LogUtils - java.lang.Error: Unresolved compilation problem: 
+	The method verifyCustomerAddedSuccess() is undefined for the type TaskPage
+
+[ERROR] 09-12-2025 08:42:16 [main] LogUtils - === TEST FAILED: testAddNewTask ===
+[ERROR] 09-12-2025 08:42:16 [main] LogUtils - Failure reason: Unresolved compilation problem: 
+	The method verifyCustomerAddedSuccess() is undefined for the type TaskPage
+
+[INFO] 09-12-2025 08:42:16 [main] LogUtils - Browser driver closed successfully
+[INFO] 09-12-2025 08:42:16 [main] LogUtils - End testing TestNGTest-763b28f9-cebb-4932-bee5-d3173e7ef277
+[INFO] 09-12-2025 09:43:24 [main] LogUtils - === INITIALIZING BROWSER: CHROME for test: testAddNewTask ===
+[INFO] 09-12-2025 09:43:26 [main] LogUtils - Browser initialized successfully: chrome
+[INFO] 09-12-2025 09:43:26 [main] LogUtils - === STARTING TEST: testAddNewTask ===
+[INFO] 09-12-2025 09:43:27 [main] LogUtils - Navigate to: https://crm.anhtester.com/admin/authentication
+[INFO] 09-12-2025 09:43:27 [main] LogUtils - Opening browser and navigating to URL: https://crm.anhtester.com/admin/authentication
+[INFO] 09-12-2025 09:43:27 [main] LogUtils - Set text admin@example.com on input By.xpath: //input[@name='email']
+[INFO] 09-12-2025 09:43:27 [main] LogUtils - Entered email: admin@example.com
+[INFO] 09-12-2025 09:43:27 [main] LogUtils - Set text 123456 on input By.xpath: //input[@name='password']
+[INFO] 09-12-2025 09:43:27 [main] LogUtils - Entered password: ****
+[INFO] 09-12-2025 09:43:28 [main] LogUtils - Click on element By.xpath: //button[normalize-space()='Login']
+[INFO] 09-12-2025 09:43:28 [main] LogUtils - Clicked on Login button
+[INFO] 09-12-2025 09:43:29 [main] LogUtils - Click on element By.xpath: //span[normalize-space(text())='Tasks']
+[INFO] 09-12-2025 09:43:29 [main] LogUtils - Running test case testAddNewTask
+[INFO] 09-12-2025 09:43:29 [main] LogUtils - Executing testAddNewTask - Testing add new task
+[INFO] 09-12-2025 09:43:29 [main] LogUtils - Click on element By.xpath: //a[normalize-space()='New Task']
+[INFO] 09-12-2025 09:43:29 [main] LogUtils - Clicked on Add New Task button
+[ERROR] 09-12-2025 09:43:29 [main] LogUtils - Test case testAddNewTask is failed.
+[ERROR] 09-12-2025 09:43:29 [main] LogUtils - java.lang.UnsupportedOperationException: Unimplemented method 'fillDataAddNewTask'
+[ERROR] 09-12-2025 09:43:29 [main] LogUtils - === TEST FAILED: testAddNewTask ===
+[ERROR] 09-12-2025 09:43:29 [main] LogUtils - Failure reason: Unimplemented method 'fillDataAddNewTask'
+[INFO] 09-12-2025 09:43:30 [main] LogUtils - Browser driver closed successfully
+[INFO] 09-12-2025 09:43:30 [main] LogUtils - End testing TestNGTest-b46934cc-7859-4951-a43f-17df82847681
+[INFO] 09-12-2025 09:47:50 [main] LogUtils - === INITIALIZING BROWSER: CHROME for test: testAddNewTask ===
+[INFO] 09-12-2025 09:47:51 [main] LogUtils - Browser initialized successfully: chrome
+[INFO] 09-12-2025 09:47:51 [main] LogUtils - === STARTING TEST: testAddNewTask ===
+[INFO] 09-12-2025 09:47:52 [main] LogUtils - Navigate to: https://crm.anhtester.com/admin/authentication
+[INFO] 09-12-2025 09:47:52 [main] LogUtils - Opening browser and navigating to URL: https://crm.anhtester.com/admin/authentication
+[INFO] 09-12-2025 09:47:52 [main] LogUtils - Set text admin@example.com on input By.xpath: //input[@name='email']
+[INFO] 09-12-2025 09:47:52 [main] LogUtils - Entered email: admin@example.com
+[INFO] 09-12-2025 09:47:52 [main] LogUtils - Set text 123456 on input By.xpath: //input[@name='password']
+[INFO] 09-12-2025 09:47:52 [main] LogUtils - Entered password: ****
+[INFO] 09-12-2025 09:47:52 [main] LogUtils - Click on element By.xpath: //button[normalize-space()='Login']
+[INFO] 09-12-2025 09:47:52 [main] LogUtils - Clicked on Login button
+[INFO] 09-12-2025 09:47:54 [main] LogUtils - Click on element By.xpath: //span[normalize-space(text())='Tasks']
+[INFO] 09-12-2025 09:47:54 [main] LogUtils - Running test case testAddNewTask
+[INFO] 09-12-2025 09:47:54 [main] LogUtils - Executing testAddNewTask - Testing add new task
+[INFO] 09-12-2025 09:47:54 [main] LogUtils - Click on element By.xpath: //a[normalize-space()='New Task']
+[INFO] 09-12-2025 09:47:54 [main] LogUtils - Clicked on Add New Task button
+[ERROR] 09-12-2025 09:47:54 [main] LogUtils - Test case testAddNewTask is failed.
+[ERROR] 09-12-2025 09:47:54 [main] LogUtils - java.lang.UnsupportedOperationException: Unimplemented method 'fillDataAddNewTask'
+[ERROR] 09-12-2025 09:47:54 [main] LogUtils - === TEST FAILED: testAddNewTask ===
+[ERROR] 09-12-2025 09:47:54 [main] LogUtils - Failure reason: Unimplemented method 'fillDataAddNewTask'
+[INFO] 09-12-2025 09:47:54 [main] LogUtils - Browser driver closed successfully
+[INFO] 09-12-2025 09:47:54 [main] LogUtils - End testing TestNGTest-c251dd70-b6d7-43eb-9034-576a083ec354
+[INFO] 09-12-2025 09:48:36 [main] LogUtils - === INITIALIZING BROWSER: CHROME for test: testAddNewTask ===
+[INFO] 09-12-2025 09:48:37 [main] LogUtils - Browser initialized successfully: chrome
+[INFO] 09-12-2025 09:48:38 [main] LogUtils - === STARTING TEST: testAddNewTask ===
+[INFO] 09-12-2025 09:48:38 [main] LogUtils - Navigate to: https://crm.anhtester.com/admin/authentication
+[INFO] 09-12-2025 09:48:38 [main] LogUtils - Opening browser and navigating to URL: https://crm.anhtester.com/admin/authentication
+[INFO] 09-12-2025 09:48:38 [main] LogUtils - Set text admin@example.com on input By.xpath: //input[@name='email']
+[INFO] 09-12-2025 09:48:38 [main] LogUtils - Entered email: admin@example.com
+[INFO] 09-12-2025 09:48:39 [main] LogUtils - Set text 123456 on input By.xpath: //input[@name='password']
+[INFO] 09-12-2025 09:48:39 [main] LogUtils - Entered password: ****
+[INFO] 09-12-2025 09:48:39 [main] LogUtils - Click on element By.xpath: //button[normalize-space()='Login']
+[INFO] 09-12-2025 09:48:39 [main] LogUtils - Clicked on Login button
+[INFO] 09-12-2025 09:48:40 [main] LogUtils - Click on element By.xpath: //span[normalize-space(text())='Tasks']
+[INFO] 09-12-2025 09:48:42 [main] LogUtils - Running test case testAddNewTask
+[INFO] 09-12-2025 09:48:42 [main] LogUtils - Executing testAddNewTask - Testing add new task
+[INFO] 09-12-2025 09:48:42 [main] LogUtils - Click on element By.xpath: //a[normalize-space()='New Task']
+[INFO] 09-12-2025 09:48:42 [main] LogUtils - Clicked on Add New Task button
+[ERROR] 09-12-2025 09:48:42 [main] LogUtils - Test case testAddNewTask is failed.
+[ERROR] 09-12-2025 09:48:42 [main] LogUtils - java.lang.UnsupportedOperationException: Unimplemented method 'fillDataAddNewTask'
+[ERROR] 09-12-2025 09:48:42 [main] LogUtils - === TEST FAILED: testAddNewTask ===
+[ERROR] 09-12-2025 09:48:42 [main] LogUtils - Failure reason: Unimplemented method 'fillDataAddNewTask'
+[INFO] 09-12-2025 09:48:43 [main] LogUtils - Browser driver closed successfully
+[INFO] 09-12-2025 09:48:43 [main] LogUtils - End testing TestNGTest-d374b5e9-b747-46e9-8290-d6aedd3d7d58
+[INFO] 09-12-2025 09:50:54 [main] LogUtils - === INITIALIZING BROWSER: CHROME for test: testAddNewTask ===
+[INFO] 09-12-2025 09:50:55 [main] LogUtils - Browser initialized successfully: chrome
+[INFO] 09-12-2025 09:50:55 [main] LogUtils - === STARTING TEST: testAddNewTask ===
+[INFO] 09-12-2025 09:50:56 [main] LogUtils - Navigate to: https://crm.anhtester.com/admin/authentication
+[INFO] 09-12-2025 09:50:56 [main] LogUtils - Opening browser and navigating to URL: https://crm.anhtester.com/admin/authentication
+[INFO] 09-12-2025 09:50:56 [main] LogUtils - Set text admin@example.com on input By.xpath: //input[@name='email']
+[INFO] 09-12-2025 09:50:56 [main] LogUtils - Entered email: admin@example.com
+[INFO] 09-12-2025 09:50:56 [main] LogUtils - Set text 123456 on input By.xpath: //input[@name='password']
+[INFO] 09-12-2025 09:50:56 [main] LogUtils - Entered password: ****
+[INFO] 09-12-2025 09:50:57 [main] LogUtils - Click on element By.xpath: //button[normalize-space()='Login']
+[INFO] 09-12-2025 09:50:57 [main] LogUtils - Clicked on Login button
+[INFO] 09-12-2025 09:50:58 [main] LogUtils - Click on element By.xpath: //span[normalize-space(text())='Tasks']
+[INFO] 09-12-2025 09:51:00 [main] LogUtils - Running test case testAddNewTask
+[INFO] 09-12-2025 09:51:00 [main] LogUtils - Executing testAddNewTask - Testing add new task
+[INFO] 09-12-2025 09:51:01 [main] LogUtils - Click on element By.xpath: //a[normalize-space()='New Task']
+[INFO] 09-12-2025 09:51:01 [main] LogUtils - Clicked on Add New Task button
+[ERROR] 09-12-2025 09:51:01 [main] LogUtils - Test case testAddNewTask is failed.
+[ERROR] 09-12-2025 09:51:01 [main] LogUtils - java.lang.UnsupportedOperationException: Unimplemented method 'fillDataAddNewTask'
+[ERROR] 09-12-2025 09:51:01 [main] LogUtils - === TEST FAILED: testAddNewTask ===
+[ERROR] 09-12-2025 09:51:01 [main] LogUtils - Failure reason: Unimplemented method 'fillDataAddNewTask'
+[INFO] 09-12-2025 09:51:01 [main] LogUtils - Browser driver closed successfully
+[INFO] 09-12-2025 09:51:01 [main] LogUtils - End testing TestNGTest-4bbfb81a-4b95-407d-8dcc-2b6829fe2daa
+[INFO] 09-12-2025 09:52:34 [main] LogUtils - === INITIALIZING BROWSER: CHROME for test: testAddNewTask ===
+[INFO] 09-12-2025 09:52:36 [main] LogUtils - Browser initialized successfully: chrome
+[INFO] 09-12-2025 09:52:36 [main] LogUtils - === STARTING TEST: testAddNewTask ===
+[INFO] 09-12-2025 09:52:37 [main] LogUtils - Navigate to: https://crm.anhtester.com/admin/authentication
+[INFO] 09-12-2025 09:52:37 [main] LogUtils - Opening browser and navigating to URL: https://crm.anhtester.com/admin/authentication
+[INFO] 09-12-2025 09:52:37 [main] LogUtils - Set text admin@example.com on input By.xpath: //input[@name='email']
+[INFO] 09-12-2025 09:52:37 [main] LogUtils - Entered email: admin@example.com
+[INFO] 09-12-2025 09:52:37 [main] LogUtils - Set text 123456 on input By.xpath: //input[@name='password']
+[INFO] 09-12-2025 09:52:37 [main] LogUtils - Entered password: ****
+[INFO] 09-12-2025 09:52:37 [main] LogUtils - Click on element By.xpath: //button[normalize-space()='Login']
+[INFO] 09-12-2025 09:52:37 [main] LogUtils - Clicked on Login button
+[INFO] 09-12-2025 09:52:39 [main] LogUtils - Click on element By.xpath: //span[normalize-space(text())='Tasks']
+[INFO] 09-12-2025 09:52:41 [main] LogUtils - Running test case testAddNewTask
+[INFO] 09-12-2025 09:52:41 [main] LogUtils - Executing testAddNewTask - Testing add new task
+[INFO] 09-12-2025 09:52:41 [main] LogUtils - Click on element By.xpath: //a[normalize-space()='New Task']
+[INFO] 09-12-2025 09:52:41 [main] LogUtils - Clicked on Add New Task button
+[INFO] 09-12-2025 09:52:41 [main] LogUtils - Filling task data for: Complete Project Documentation
+[INFO] 09-12-2025 09:52:42 [main] LogUtils - Set text Complete Project Documentation on input By.xpath: //input[@id='name']
+[INFO] 09-12-2025 09:52:42 [main] LogUtils - Entered subject: Complete Project Documentation
+[INFO] 09-12-2025 09:52:42 [main] LogUtils - Set text 50.00 on input By.xpath: //input[@id='hourly_rate']
+[INFO] 09-12-2025 09:52:42 [main] LogUtils - Entered hourly rate: 50.00
+[INFO] 09-12-2025 09:52:42 [main] LogUtils - Click on element By.xpath: //button[@title='Medium']
+[INFO] 09-12-2025 09:52:42 [main] LogUtils - Click on element By.xpath: //span[normalize-space()='High']
+[INFO] 09-12-2025 09:52:42 [main] LogUtils - Selected priority: High
+[INFO] 09-12-2025 09:52:42 [main] LogUtils - Click on element By.xpath: //button[@data-id='repeat_every']
+[ERROR] 09-12-2025 09:53:02 [main] LogUtils - Timeout waiting for the element ClickableBy.xpath: //span[normalize-space()='Weekly']
+[ERROR] 09-12-2025 09:53:02 [main] LogUtils - Test case testAddNewTask is failed.
+[ERROR] 09-12-2025 09:53:02 [main] LogUtils - java.lang.AssertionError: Timeout waiting for the element ClickableBy.xpath: //span[normalize-space()='Weekly']
+[ERROR] 09-12-2025 09:53:03 [main] LogUtils - === TEST FAILED: testAddNewTask ===
+[ERROR] 09-12-2025 09:53:03 [main] LogUtils - Failure reason: Timeout waiting for the element ClickableBy.xpath: //span[normalize-space()='Weekly']
+[INFO] 09-12-2025 09:53:03 [main] LogUtils - Browser driver closed successfully
+[INFO] 09-12-2025 09:53:03 [main] LogUtils - End testing TestNGTest-f054f113-d60e-4730-9a91-8f843a8b9d9b
+[INFO] 09-12-2025 09:55:11 [main] LogUtils - === INITIALIZING BROWSER: CHROME for test: testAddNewTask ===
+[INFO] 09-12-2025 09:55:13 [main] LogUtils - Browser initialized successfully: chrome
+[INFO] 09-12-2025 09:55:13 [main] LogUtils - === STARTING TEST: testAddNewTask ===
+[INFO] 09-12-2025 09:55:20 [main] LogUtils - Navigate to: https://crm.anhtester.com/admin/authentication
+[INFO] 09-12-2025 09:55:20 [main] LogUtils - Opening browser and navigating to URL: https://crm.anhtester.com/admin/authentication
+[INFO] 09-12-2025 09:55:20 [main] LogUtils - Set text admin@example.com on input By.xpath: //input[@name='email']
+[INFO] 09-12-2025 09:55:20 [main] LogUtils - Entered email: admin@example.com
+[INFO] 09-12-2025 09:55:20 [main] LogUtils - Set text 123456 on input By.xpath: //input[@name='password']
+[INFO] 09-12-2025 09:55:20 [main] LogUtils - Entered password: ****
+[INFO] 09-12-2025 09:55:21 [main] LogUtils - Click on element By.xpath: //button[normalize-space()='Login']
+[INFO] 09-12-2025 09:55:21 [main] LogUtils - Clicked on Login button
+[INFO] 09-12-2025 09:55:24 [main] LogUtils - Click on element By.xpath: //span[normalize-space(text())='Tasks']
+[INFO] 09-12-2025 09:55:26 [main] LogUtils - Running test case testAddNewTask
+[INFO] 09-12-2025 09:55:26 [main] LogUtils - Executing testAddNewTask - Testing add new task
+[INFO] 09-12-2025 09:55:27 [main] LogUtils - Click on element By.xpath: //a[normalize-space()='New Task']
+[INFO] 09-12-2025 09:55:27 [main] LogUtils - Clicked on Add New Task button
+[INFO] 09-12-2025 09:55:27 [main] LogUtils - Filling task data for: Complete Project Documentation
+[INFO] 09-12-2025 09:55:27 [main] LogUtils - Set text Complete Project Documentation on input By.xpath: //input[@id='name']
+[INFO] 09-12-2025 09:55:27 [main] LogUtils - Entered subject: Complete Project Documentation
+[INFO] 09-12-2025 09:55:27 [main] LogUtils - Set text 50.00 on input By.xpath: //input[@id='hourly_rate']
+[INFO] 09-12-2025 09:55:27 [main] LogUtils - Entered hourly rate: 50.00
+[INFO] 09-12-2025 09:55:28 [main] LogUtils - Click on element By.xpath: //button[@title='Medium']
+[INFO] 09-12-2025 09:55:28 [main] LogUtils - Click on element By.xpath: //span[normalize-space()='High']
+[INFO] 09-12-2025 09:55:28 [main] LogUtils - Selected priority: High
+[INFO] 09-12-2025 09:55:28 [main] LogUtils - Click on element By.xpath: //button[@data-id='repeat_every']
+[INFO] 09-12-2025 09:55:28 [main] LogUtils - Click on element By.xpath: //span[normalize-space()='Week']
+[INFO] 09-12-2025 09:55:28 [main] LogUtils - Selected repeat every: Week
+[INFO] 09-12-2025 09:55:28 [main] LogUtils - Click on element By.xpath: //button[@data-id='rel_type']
+[ERROR] 09-12-2025 09:55:49 [main] LogUtils - Timeout waiting for the element ClickableBy.xpath: //span[normalize-space()='Project']
+[ERROR] 09-12-2025 09:55:49 [main] LogUtils - Test case testAddNewTask is failed.
+[ERROR] 09-12-2025 09:55:49 [main] LogUtils - java.lang.AssertionError: Timeout waiting for the element ClickableBy.xpath: //span[normalize-space()='Project']
+[ERROR] 09-12-2025 09:55:49 [main] LogUtils - === TEST FAILED: testAddNewTask ===
+[ERROR] 09-12-2025 09:55:49 [main] LogUtils - Failure reason: Timeout waiting for the element ClickableBy.xpath: //span[normalize-space()='Project']
+[INFO] 09-12-2025 09:55:49 [main] LogUtils - Browser driver closed successfully
+[INFO] 09-12-2025 09:55:49 [main] LogUtils - End testing TestNGTest-73218fc4-56af-4c78-8a8c-852a7923d4b8
+[INFO] 09-12-2025 09:56:34 [main] LogUtils - === INITIALIZING BROWSER: CHROME for test: testAddNewTask ===
+[INFO] 09-12-2025 09:56:36 [main] LogUtils - Browser initialized successfully: chrome
+[INFO] 09-12-2025 09:56:36 [main] LogUtils - === STARTING TEST: testAddNewTask ===
+[INFO] 09-12-2025 09:56:37 [main] LogUtils - Navigate to: https://crm.anhtester.com/admin/authentication
+[INFO] 09-12-2025 09:56:37 [main] LogUtils - Opening browser and navigating to URL: https://crm.anhtester.com/admin/authentication
+[INFO] 09-12-2025 09:56:37 [main] LogUtils - Set text admin@example.com on input By.xpath: //input[@name='email']
+[INFO] 09-12-2025 09:56:37 [main] LogUtils - Entered email: admin@example.com
+[INFO] 09-12-2025 09:56:37 [main] LogUtils - Set text 123456 on input By.xpath: //input[@name='password']
+[INFO] 09-12-2025 09:56:37 [main] LogUtils - Entered password: ****
+[INFO] 09-12-2025 09:56:37 [main] LogUtils - Click on element By.xpath: //button[normalize-space()='Login']
+[INFO] 09-12-2025 09:56:37 [main] LogUtils - Clicked on Login button
+[INFO] 09-12-2025 09:56:39 [main] LogUtils - Click on element By.xpath: //span[normalize-space(text())='Tasks']
+[INFO] 09-12-2025 09:56:41 [main] LogUtils - Running test case testAddNewTask
+[INFO] 09-12-2025 09:56:41 [main] LogUtils - Executing testAddNewTask - Testing add new task
+[INFO] 09-12-2025 09:56:41 [main] LogUtils - Click on element By.xpath: //a[normalize-space()='New Task']
+[INFO] 09-12-2025 09:56:41 [main] LogUtils - Clicked on Add New Task button
+[INFO] 09-12-2025 09:56:41 [main] LogUtils - Filling task data for: Complete Project Documentation
+[INFO] 09-12-2025 09:56:42 [main] LogUtils - Set text Complete Project Documentation on input By.xpath: //input[@id='name']
+[INFO] 09-12-2025 09:56:42 [main] LogUtils - Entered subject: Complete Project Documentation
+[INFO] 09-12-2025 09:56:42 [main] LogUtils - Set text 50.00 on input By.xpath: //input[@id='hourly_rate']
+[INFO] 09-12-2025 09:56:42 [main] LogUtils - Entered hourly rate: 50.00
+[INFO] 09-12-2025 09:56:42 [main] LogUtils - Click on element By.xpath: //button[@title='Medium']
+[INFO] 09-12-2025 09:56:42 [main] LogUtils - Click on element By.xpath: //span[normalize-space()='High']
+[INFO] 09-12-2025 09:56:42 [main] LogUtils - Selected priority: High
+[INFO] 09-12-2025 09:56:42 [main] LogUtils - Click on element By.xpath: //button[@data-id='repeat_every']
+[INFO] 09-12-2025 09:56:42 [main] LogUtils - Click on element By.xpath: //span[normalize-space()='Week']
+[INFO] 09-12-2025 09:56:42 [main] LogUtils - Selected repeat every: Week
+[INFO] 09-12-2025 09:56:43 [main] LogUtils - Click on element By.xpath: //button[@data-id='rel_type']
+[ERROR] 09-12-2025 09:57:03 [main] LogUtils - Timeout waiting for the element ClickableBy.xpath: //span[normalize-space()='Contract']
+[ERROR] 09-12-2025 09:57:03 [main] LogUtils - Test case testAddNewTask is failed.
+[ERROR] 09-12-2025 09:57:03 [main] LogUtils - java.lang.AssertionError: Timeout waiting for the element ClickableBy.xpath: //span[normalize-space()='Contract']
+[ERROR] 09-12-2025 09:57:03 [main] LogUtils - === TEST FAILED: testAddNewTask ===
+[ERROR] 09-12-2025 09:57:03 [main] LogUtils - Failure reason: Timeout waiting for the element ClickableBy.xpath: //span[normalize-space()='Contract']
+[INFO] 09-12-2025 09:57:03 [main] LogUtils - Browser driver closed successfully
+[INFO] 09-12-2025 09:57:03 [main] LogUtils - End testing TestNGTest-85851810-c37b-43dd-83d8-6f5c2c1ac2d5
+[INFO] 09-12-2025 09:57:20 [main] LogUtils - === INITIALIZING BROWSER: CHROME for test: testAddNewTask ===
+[INFO] 09-12-2025 09:57:23 [main] LogUtils - Browser initialized successfully: chrome
+[INFO] 09-12-2025 09:57:23 [main] LogUtils - === STARTING TEST: testAddNewTask ===
+[INFO] 09-12-2025 09:57:23 [main] LogUtils - Navigate to: https://crm.anhtester.com/admin/authentication
+[INFO] 09-12-2025 09:57:23 [main] LogUtils - Opening browser and navigating to URL: https://crm.anhtester.com/admin/authentication
+[INFO] 09-12-2025 09:57:23 [main] LogUtils - Set text admin@example.com on input By.xpath: //input[@name='email']
+[INFO] 09-12-2025 09:57:23 [main] LogUtils - Entered email: admin@example.com
+[INFO] 09-12-2025 09:57:24 [main] LogUtils - Set text 123456 on input By.xpath: //input[@name='password']
+[INFO] 09-12-2025 09:57:24 [main] LogUtils - Entered password: ****
+[INFO] 09-12-2025 09:57:24 [main] LogUtils - Click on element By.xpath: //button[normalize-space()='Login']
+[INFO] 09-12-2025 09:57:24 [main] LogUtils - Clicked on Login button
+[INFO] 09-12-2025 09:57:25 [main] LogUtils - Click on element By.xpath: //span[normalize-space(text())='Tasks']
+[INFO] 09-12-2025 09:57:27 [main] LogUtils - Running test case testAddNewTask
+[INFO] 09-12-2025 09:57:27 [main] LogUtils - Executing testAddNewTask - Testing add new task
+[INFO] 09-12-2025 09:57:27 [main] LogUtils - Click on element By.xpath: //a[normalize-space()='New Task']
+[INFO] 09-12-2025 09:57:27 [main] LogUtils - Clicked on Add New Task button
+[INFO] 09-12-2025 09:57:27 [main] LogUtils - Filling task data for: Complete Project Documentation
+[INFO] 09-12-2025 09:57:28 [main] LogUtils - Set text Complete Project Documentation on input By.xpath: //input[@id='name']
+[INFO] 09-12-2025 09:57:28 [main] LogUtils - Entered subject: Complete Project Documentation
+[INFO] 09-12-2025 09:57:28 [main] LogUtils - Set text 50.00 on input By.xpath: //input[@id='hourly_rate']
+[INFO] 09-12-2025 09:57:28 [main] LogUtils - Entered hourly rate: 50.00
+[INFO] 09-12-2025 09:57:28 [main] LogUtils - Click on element By.xpath: //button[@title='Medium']
+[INFO] 09-12-2025 09:57:29 [main] LogUtils - Click on element By.xpath: //span[normalize-space()='High']
+[INFO] 09-12-2025 09:57:29 [main] LogUtils - Selected priority: High
+[INFO] 09-12-2025 09:57:29 [main] LogUtils - Click on element By.xpath: //button[@data-id='repeat_every']
+[INFO] 09-12-2025 09:57:29 [main] LogUtils - Click on element By.xpath: //span[normalize-space()='Week']
+[INFO] 09-12-2025 09:57:29 [main] LogUtils - Selected repeat every: Week
+[INFO] 09-12-2025 09:57:29 [main] LogUtils - Click on element By.xpath: //button[@data-id='rel_type']
+[ERROR] 09-12-2025 09:57:49 [main] LogUtils - Timeout waiting for the element ClickableBy.xpath: //span[normalize-space()='']
+[ERROR] 09-12-2025 09:57:49 [main] LogUtils - Test case testAddNewTask is failed.
+[ERROR] 09-12-2025 09:57:49 [main] LogUtils - java.lang.AssertionError: Timeout waiting for the element ClickableBy.xpath: //span[normalize-space()='']
+[ERROR] 09-12-2025 09:57:50 [main] LogUtils - === TEST FAILED: testAddNewTask ===
+[ERROR] 09-12-2025 09:57:50 [main] LogUtils - Failure reason: Timeout waiting for the element ClickableBy.xpath: //span[normalize-space()='']
+[INFO] 09-12-2025 09:57:50 [main] LogUtils - Browser driver closed successfully
+[INFO] 09-12-2025 09:57:50 [main] LogUtils - End testing TestNGTest-39bbe406-ab9e-43a5-bd16-177f31fbc7b1
+[INFO] 09-12-2025 09:58:02 [main] LogUtils - === INITIALIZING BROWSER: CHROME for test: testAddNewTask ===
+[INFO] 09-12-2025 09:58:03 [main] LogUtils - Browser initialized successfully: chrome
+[INFO] 09-12-2025 09:58:03 [main] LogUtils - === STARTING TEST: testAddNewTask ===
+[INFO] 09-12-2025 09:58:04 [main] LogUtils - Navigate to: https://crm.anhtester.com/admin/authentication
+[INFO] 09-12-2025 09:58:04 [main] LogUtils - Opening browser and navigating to URL: https://crm.anhtester.com/admin/authentication
+[INFO] 09-12-2025 09:58:04 [main] LogUtils - Set text admin@example.com on input By.xpath: //input[@name='email']
+[INFO] 09-12-2025 09:58:04 [main] LogUtils - Entered email: admin@example.com
+[INFO] 09-12-2025 09:58:04 [main] LogUtils - Set text 123456 on input By.xpath: //input[@name='password']
+[INFO] 09-12-2025 09:58:04 [main] LogUtils - Entered password: ****
+[INFO] 09-12-2025 09:58:04 [main] LogUtils - Click on element By.xpath: //button[normalize-space()='Login']
+[INFO] 09-12-2025 09:58:04 [main] LogUtils - Clicked on Login button
+[INFO] 09-12-2025 09:58:06 [main] LogUtils - Click on element By.xpath: //span[normalize-space(text())='Tasks']
+[INFO] 09-12-2025 09:58:06 [main] LogUtils - Running test case testAddNewTask
+[INFO] 09-12-2025 09:58:06 [main] LogUtils - Executing testAddNewTask - Testing add new task
+[INFO] 09-12-2025 09:58:06 [main] LogUtils - Click on element By.xpath: //a[normalize-space()='New Task']
+[INFO] 09-12-2025 09:58:06 [main] LogUtils - Clicked on Add New Task button
+[INFO] 09-12-2025 09:58:06 [main] LogUtils - Filling task data for: Complete Project Documentation
+[INFO] 09-12-2025 09:58:07 [main] LogUtils - Set text Complete Project Documentation on input By.xpath: //input[@id='name']
+[INFO] 09-12-2025 09:58:07 [main] LogUtils - Entered subject: Complete Project Documentation
+[INFO] 09-12-2025 09:58:07 [main] LogUtils - Set text 50.00 on input By.xpath: //input[@id='hourly_rate']
+[INFO] 09-12-2025 09:58:07 [main] LogUtils - Entered hourly rate: 50.00
+[INFO] 09-12-2025 09:58:07 [main] LogUtils - Click on element By.xpath: //button[@title='Medium']
+[INFO] 09-12-2025 09:58:07 [main] LogUtils - Click on element By.xpath: //span[normalize-space()='High']
+[INFO] 09-12-2025 09:58:07 [main] LogUtils - Selected priority: High
+[INFO] 09-12-2025 09:58:07 [main] LogUtils - Click on element By.xpath: //button[@data-id='repeat_every']
+[INFO] 09-12-2025 09:58:08 [main] LogUtils - Click on element By.xpath: //span[normalize-space()='Week']
+[INFO] 09-12-2025 09:58:08 [main] LogUtils - Selected repeat every: Week
+[INFO] 09-12-2025 09:58:08 [main] LogUtils - Click on element By.xpath: //button[@data-id='rel_type']
+[ERROR] 09-12-2025 09:58:28 [main] LogUtils - Timeout waiting for the element ClickableBy.xpath: //span[normalize-space()='null']
+[ERROR] 09-12-2025 09:58:28 [main] LogUtils - Test case testAddNewTask is failed.
+[ERROR] 09-12-2025 09:58:28 [main] LogUtils - java.lang.AssertionError: Timeout waiting for the element ClickableBy.xpath: //span[normalize-space()='null']
+[ERROR] 09-12-2025 09:58:28 [main] LogUtils - === TEST FAILED: testAddNewTask ===
+[ERROR] 09-12-2025 09:58:28 [main] LogUtils - Failure reason: Timeout waiting for the element ClickableBy.xpath: //span[normalize-space()='null']
+[INFO] 09-12-2025 09:58:29 [main] LogUtils - Browser driver closed successfully
+[INFO] 09-12-2025 09:58:29 [main] LogUtils - End testing TestNGTest-e6926044-3981-4b76-b0be-5174abb61523
+[INFO] 09-12-2025 09:58:42 [main] LogUtils - === INITIALIZING BROWSER: CHROME for test: testAddNewTask ===
+[INFO] 09-12-2025 09:58:43 [main] LogUtils - Browser initialized successfully: chrome
+[INFO] 09-12-2025 09:58:43 [main] LogUtils - === STARTING TEST: testAddNewTask ===
+[INFO] 09-12-2025 09:58:43 [main] LogUtils - Navigate to: https://crm.anhtester.com/admin/authentication
+[INFO] 09-12-2025 09:58:43 [main] LogUtils - Opening browser and navigating to URL: https://crm.anhtester.com/admin/authentication
+[INFO] 09-12-2025 09:58:44 [main] LogUtils - Set text admin@example.com on input By.xpath: //input[@name='email']
+[INFO] 09-12-2025 09:58:44 [main] LogUtils - Entered email: admin@example.com
+[INFO] 09-12-2025 09:58:44 [main] LogUtils - Set text 123456 on input By.xpath: //input[@name='password']
+[INFO] 09-12-2025 09:58:44 [main] LogUtils - Entered password: ****
+[INFO] 09-12-2025 09:58:44 [main] LogUtils - Click on element By.xpath: //button[normalize-space()='Login']
+[INFO] 09-12-2025 09:58:44 [main] LogUtils - Clicked on Login button
+[INFO] 09-12-2025 09:58:46 [main] LogUtils - Click on element By.xpath: //span[normalize-space(text())='Tasks']
+[INFO] 09-12-2025 09:58:46 [main] LogUtils - Running test case testAddNewTask
+[INFO] 09-12-2025 09:58:46 [main] LogUtils - Executing testAddNewTask - Testing add new task
+[ERROR] 09-12-2025 09:58:46 [main] LogUtils - Test case testAddNewTask is failed.
+[ERROR] 09-12-2025 09:58:46 [main] LogUtils - java.lang.Error: Unresolved compilation problem: 
+	Cannot make a static reference to the non-static field relatedTo
+
+[ERROR] 09-12-2025 09:58:46 [main] LogUtils - === TEST FAILED: testAddNewTask ===
+[ERROR] 09-12-2025 09:58:46 [main] LogUtils - Failure reason: Unresolved compilation problem: 
+	Cannot make a static reference to the non-static field relatedTo
+
+[INFO] 09-12-2025 09:58:46 [main] LogUtils - Browser driver closed successfully
+[INFO] 09-12-2025 09:58:46 [main] LogUtils - End testing TestNGTest-605af211-3b74-47fa-93b9-4559bf08610f
+[INFO] 09-12-2025 10:04:40 [main] LogUtils - === INITIALIZING BROWSER: CHROME for test: testAddNewTask ===
+[INFO] 09-12-2025 10:04:42 [main] LogUtils - Browser initialized successfully: chrome
+[INFO] 09-12-2025 10:04:42 [main] LogUtils - === STARTING TEST: testAddNewTask ===
+[INFO] 09-12-2025 10:04:42 [main] LogUtils - Navigate to: https://crm.anhtester.com/admin/authentication
+[INFO] 09-12-2025 10:04:42 [main] LogUtils - Opening browser and navigating to URL: https://crm.anhtester.com/admin/authentication
+[INFO] 09-12-2025 10:04:43 [main] LogUtils - Set text admin@example.com on input By.xpath: //input[@name='email']
+[INFO] 09-12-2025 10:04:43 [main] LogUtils - Entered email: admin@example.com
+[INFO] 09-12-2025 10:04:43 [main] LogUtils - Set text 123456 on input By.xpath: //input[@name='password']
+[INFO] 09-12-2025 10:04:43 [main] LogUtils - Entered password: ****
+[INFO] 09-12-2025 10:04:43 [main] LogUtils - Click on element By.xpath: //button[normalize-space()='Login']
+[INFO] 09-12-2025 10:04:43 [main] LogUtils - Clicked on Login button
+[INFO] 09-12-2025 10:04:44 [main] LogUtils - Click on element By.xpath: //span[normalize-space(text())='Tasks']
+[INFO] 09-12-2025 10:04:44 [main] LogUtils - Running test case testAddNewTask
+[INFO] 09-12-2025 10:04:45 [main] LogUtils - Executing testAddNewTask - Testing add new task
+[INFO] 09-12-2025 10:04:45 [main] LogUtils - Click on element By.xpath: //a[normalize-space()='New Task']
+[INFO] 09-12-2025 10:04:45 [main] LogUtils - Clicked on Add New Task button
+[INFO] 09-12-2025 10:04:45 [main] LogUtils - Filling task data for: Complete Project Documentation
+[INFO] 09-12-2025 10:04:45 [main] LogUtils - Set text Complete Project Documentation on input By.xpath: //input[@id='name']
+[INFO] 09-12-2025 10:04:45 [main] LogUtils - Entered subject: Complete Project Documentation
+[INFO] 09-12-2025 10:04:46 [main] LogUtils - Set text 50.00 on input By.xpath: //input[@id='hourly_rate']
+[INFO] 09-12-2025 10:04:46 [main] LogUtils - Entered hourly rate: 50.00
+[INFO] 09-12-2025 10:04:46 [main] LogUtils - Click on element By.xpath: //button[@title='Medium']
+[INFO] 09-12-2025 10:04:46 [main] LogUtils - Click on element By.xpath: //span[normalize-space()='High']
+[INFO] 09-12-2025 10:04:46 [main] LogUtils - Selected priority: High
+[INFO] 09-12-2025 10:04:46 [main] LogUtils - Click on element By.xpath: //button[@data-id='repeat_every']
+[INFO] 09-12-2025 10:04:46 [main] LogUtils - Click on element By.xpath: //span[normalize-space()='Week']
+[INFO] 09-12-2025 10:04:46 [main] LogUtils - Selected repeat every: Week
+[INFO] 09-12-2025 10:04:46 [main] LogUtils - Click on element By.xpath: //button[@data-id='rel_type']
+[ERROR] 09-12-2025 10:05:07 [main] LogUtils - Timeout waiting for the element ClickableBy.xpath: //span[normalize-space()='']
+[ERROR] 09-12-2025 10:05:07 [main] LogUtils - Test case testAddNewTask is failed.
+[ERROR] 09-12-2025 10:05:07 [main] LogUtils - java.lang.AssertionError: Timeout waiting for the element ClickableBy.xpath: //span[normalize-space()='']
+[ERROR] 09-12-2025 10:05:07 [main] LogUtils - === TEST FAILED: testAddNewTask ===
+[ERROR] 09-12-2025 10:05:07 [main] LogUtils - Failure reason: Timeout waiting for the element ClickableBy.xpath: //span[normalize-space()='']
+[INFO] 09-12-2025 10:05:07 [main] LogUtils - Browser driver closed successfully
+[INFO] 09-12-2025 10:05:07 [main] LogUtils - End testing TestNGTest-1ca928fe-1cb8-496e-aade-3b7a3ade48ce
+[INFO] 09-12-2025 10:09:14 [main] LogUtils - === INITIALIZING BROWSER: CHROME for test: testAddNewTask ===
+[INFO] 09-12-2025 10:09:15 [main] LogUtils - Browser initialized successfully: chrome
+[INFO] 09-12-2025 10:09:15 [main] LogUtils - === STARTING TEST: testAddNewTask ===
+[INFO] 09-12-2025 10:09:16 [main] LogUtils - Navigate to: https://crm.anhtester.com/admin/authentication
+[INFO] 09-12-2025 10:09:16 [main] LogUtils - Opening browser and navigating to URL: https://crm.anhtester.com/admin/authentication
+[INFO] 09-12-2025 10:09:16 [main] LogUtils - Set text admin@example.com on input By.xpath: //input[@name='email']
+[INFO] 09-12-2025 10:09:16 [main] LogUtils - Entered email: admin@example.com
+[INFO] 09-12-2025 10:09:16 [main] LogUtils - Set text 123456 on input By.xpath: //input[@name='password']
+[INFO] 09-12-2025 10:09:16 [main] LogUtils - Entered password: ****
+[INFO] 09-12-2025 10:09:16 [main] LogUtils - Click on element By.xpath: //button[normalize-space()='Login']
+[INFO] 09-12-2025 10:09:16 [main] LogUtils - Clicked on Login button
+[INFO] 09-12-2025 10:09:18 [main] LogUtils - Click on element By.xpath: //span[normalize-space(text())='Tasks']
+[INFO] 09-12-2025 10:09:18 [main] LogUtils - Running test case testAddNewTask
+[INFO] 09-12-2025 10:09:18 [main] LogUtils - Executing testAddNewTask - Testing add new task
+[INFO] 09-12-2025 10:09:18 [main] LogUtils - Click on element By.xpath: //a[normalize-space()='New Task']
+[INFO] 09-12-2025 10:09:18 [main] LogUtils - Clicked on Add New Task button
+[INFO] 09-12-2025 10:09:18 [main] LogUtils - Filling task data for: Complete Project Documentation
+[INFO] 09-12-2025 10:09:19 [main] LogUtils - Set text Complete Project Documentation on input By.xpath: //input[@id='name']
+[INFO] 09-12-2025 10:09:19 [main] LogUtils - Entered subject: Complete Project Documentation
+[INFO] 09-12-2025 10:09:19 [main] LogUtils - Set text 50.00 on input By.xpath: //input[@id='hourly_rate']
+[INFO] 09-12-2025 10:09:19 [main] LogUtils - Entered hourly rate: 50.00
+[INFO] 09-12-2025 10:09:19 [main] LogUtils - Click on element By.xpath: //button[@title='Medium']
+[INFO] 09-12-2025 10:09:20 [main] LogUtils - Click on element By.xpath: //span[normalize-space()='High']
+[INFO] 09-12-2025 10:09:20 [main] LogUtils - Selected priority: High
+[INFO] 09-12-2025 10:09:20 [main] LogUtils - Click on element By.xpath: //button[@data-id='repeat_every']
+[INFO] 09-12-2025 10:09:20 [main] LogUtils - Click on element By.xpath: //span[normalize-space()='Week']
+[INFO] 09-12-2025 10:09:20 [main] LogUtils - Selected repeat every: Week
+[INFO] 09-12-2025 10:09:20 [main] LogUtils - Skipped related to selection - empty value
+[INFO] 09-12-2025 10:09:20 [main] LogUtils - Click on element By.xpath: //button[@data-id='assignees']
+[INFO] 09-12-2025 10:09:20 [main] LogUtils - Set text Admin Anh Tester on input By.xpath: //button[@data-id='assignees']
+[ERROR] 09-12-2025 10:09:40 [main] LogUtils - Timeout waiting for the element ClickableBy.xpath: //span[normalize-space()='Admin Anh Tester']
+[ERROR] 09-12-2025 10:09:40 [main] LogUtils - Test case testAddNewTask is failed.
+[ERROR] 09-12-2025 10:09:40 [main] LogUtils - java.lang.AssertionError: Timeout waiting for the element ClickableBy.xpath: //span[normalize-space()='Admin Anh Tester']
+[ERROR] 09-12-2025 10:09:41 [main] LogUtils - === TEST FAILED: testAddNewTask ===
+[ERROR] 09-12-2025 10:09:41 [main] LogUtils - Failure reason: Timeout waiting for the element ClickableBy.xpath: //span[normalize-space()='Admin Anh Tester']
+[INFO] 09-12-2025 10:09:41 [main] LogUtils - Browser driver closed successfully
+[INFO] 09-12-2025 10:09:41 [main] LogUtils - End testing TestNGTest-1fd058e8-b694-443e-910b-71c38b0da8e1
+[INFO] 09-12-2025 10:10:00 [main] LogUtils - === INITIALIZING BROWSER: CHROME for test: testAddNewTask ===
+[INFO] 09-12-2025 10:10:01 [main] LogUtils - Browser initialized successfully: chrome
+[INFO] 09-12-2025 10:10:01 [main] LogUtils - === STARTING TEST: testAddNewTask ===
+[INFO] 09-12-2025 10:10:02 [main] LogUtils - Navigate to: https://crm.anhtester.com/admin/authentication
+[INFO] 09-12-2025 10:10:02 [main] LogUtils - Opening browser and navigating to URL: https://crm.anhtester.com/admin/authentication
+[INFO] 09-12-2025 10:10:02 [main] LogUtils - Set text admin@example.com on input By.xpath: //input[@name='email']
+[INFO] 09-12-2025 10:10:02 [main] LogUtils - Entered email: admin@example.com
+[INFO] 09-12-2025 10:10:02 [main] LogUtils - Set text 123456 on input By.xpath: //input[@name='password']
+[INFO] 09-12-2025 10:10:02 [main] LogUtils - Entered password: ****
+[INFO] 09-12-2025 10:10:03 [main] LogUtils - Click on element By.xpath: //button[normalize-space()='Login']
+[INFO] 09-12-2025 10:10:03 [main] LogUtils - Clicked on Login button
+[INFO] 09-12-2025 10:10:04 [main] LogUtils - Click on element By.xpath: //span[normalize-space(text())='Tasks']
+[INFO] 09-12-2025 10:10:04 [main] LogUtils - Running test case testAddNewTask
+[INFO] 09-12-2025 10:10:04 [main] LogUtils - Executing testAddNewTask - Testing add new task
+[INFO] 09-12-2025 10:10:04 [main] LogUtils - Click on element By.xpath: //a[normalize-space()='New Task']
+[INFO] 09-12-2025 10:10:04 [main] LogUtils - Clicked on Add New Task button
+[INFO] 09-12-2025 10:10:04 [main] LogUtils - Filling task data for: Complete Project Documentation
+[INFO] 09-12-2025 10:10:05 [main] LogUtils - Set text Complete Project Documentation on input By.xpath: //input[@id='name']
+[INFO] 09-12-2025 10:10:05 [main] LogUtils - Entered subject: Complete Project Documentation
+[INFO] 09-12-2025 10:10:05 [main] LogUtils - Set text 50.00 on input By.xpath: //input[@id='hourly_rate']
+[INFO] 09-12-2025 10:10:05 [main] LogUtils - Entered hourly rate: 50.00
+[INFO] 09-12-2025 10:10:05 [main] LogUtils - Click on element By.xpath: //button[@title='Medium']
+[INFO] 09-12-2025 10:10:05 [main] LogUtils - Click on element By.xpath: //span[normalize-space()='High']
+[INFO] 09-12-2025 10:10:05 [main] LogUtils - Selected priority: High
+[INFO] 09-12-2025 10:10:06 [main] LogUtils - Click on element By.xpath: //button[@data-id='repeat_every']
+[INFO] 09-12-2025 10:10:06 [main] LogUtils - Click on element By.xpath: //span[normalize-space()='Week']
+[INFO] 09-12-2025 10:10:06 [main] LogUtils - Selected repeat every: Week
+[INFO] 09-12-2025 10:10:06 [main] LogUtils - Skipped related to selection - empty value
+[INFO] 09-12-2025 10:10:06 [main] LogUtils - Click on element By.xpath: //button[@data-id='assignees']
+[INFO] 09-12-2025 10:10:06 [main] LogUtils - Set text Admin Anh Tester on input By.xpath: //button[@data-id='assignees']
+[ERROR] 09-12-2025 10:10:26 [main] LogUtils - Timeout waiting for the element ClickableBy.xpath: //span[normalize-space()='Admin Anh Tester']
+[ERROR] 09-12-2025 10:10:26 [main] LogUtils - Test case testAddNewTask is failed.
+[ERROR] 09-12-2025 10:10:26 [main] LogUtils - java.lang.AssertionError: Timeout waiting for the element ClickableBy.xpath: //span[normalize-space()='Admin Anh Tester']
+[ERROR] 09-12-2025 10:10:26 [main] LogUtils - === TEST FAILED: testAddNewTask ===
+[ERROR] 09-12-2025 10:10:26 [main] LogUtils - Failure reason: Timeout waiting for the element ClickableBy.xpath: //span[normalize-space()='Admin Anh Tester']
+[INFO] 09-12-2025 10:10:27 [main] LogUtils - Browser driver closed successfully
+[INFO] 09-12-2025 10:10:27 [main] LogUtils - End testing TestNGTest-b5934970-463a-460e-ae00-0f3aec1f3f1b
+[INFO] 09-12-2025 11:10:42 [main] LogUtils - === INITIALIZING BROWSER: CHROME for test: testAddNewTask ===
+[INFO] 09-12-2025 11:10:49 [main] LogUtils - Browser initialized successfully: chrome
+[INFO] 09-12-2025 11:10:49 [main] LogUtils - === STARTING TEST: testAddNewTask ===
+[INFO] 09-12-2025 11:10:49 [main] LogUtils - Navigate to: https://crm.anhtester.com/admin/authentication
+[INFO] 09-12-2025 11:10:50 [main] LogUtils - Opening browser and navigating to URL: https://crm.anhtester.com/admin/authentication
+[INFO] 09-12-2025 11:10:50 [main] LogUtils - Set text admin@example.com on input By.xpath: //input[@name='email']
+[INFO] 09-12-2025 11:10:50 [main] LogUtils - Entered email: admin@example.com
+[INFO] 09-12-2025 11:10:50 [main] LogUtils - Set text 123456 on input By.xpath: //input[@name='password']
+[INFO] 09-12-2025 11:10:50 [main] LogUtils - Entered password: ****
+[INFO] 09-12-2025 11:10:50 [main] LogUtils - Click on element By.xpath: //button[normalize-space()='Login']
+[INFO] 09-12-2025 11:10:50 [main] LogUtils - Clicked on Login button
+[INFO] 09-12-2025 11:10:51 [main] LogUtils - Click on element By.xpath: //span[normalize-space(text())='Tasks']
+[INFO] 09-12-2025 11:10:51 [main] LogUtils - Running test case testAddNewTask
+[INFO] 09-12-2025 11:10:51 [main] LogUtils - Executing testAddNewTask - Testing add new task
+[INFO] 09-12-2025 11:10:52 [main] LogUtils - Click on element By.xpath: //a[normalize-space()='New Task']
+[INFO] 09-12-2025 11:10:52 [main] LogUtils - Clicked on Add New Task button
+[INFO] 09-12-2025 11:10:52 [main] LogUtils - Filling task data for: Complete Project Documentation
+[INFO] 09-12-2025 11:10:52 [main] LogUtils - Set text Complete Project Documentation on input By.xpath: //input[@id='name']
+[INFO] 09-12-2025 11:10:52 [main] LogUtils - Entered subject: Complete Project Documentation
+[INFO] 09-12-2025 11:10:52 [main] LogUtils - Set text 50.00 on input By.xpath: //input[@id='hourly_rate']
+[INFO] 09-12-2025 11:10:52 [main] LogUtils - Entered hourly rate: 50.00
+[INFO] 09-12-2025 11:10:53 [main] LogUtils - Click on element By.xpath: //button[@title='Medium']
+[INFO] 09-12-2025 11:10:53 [main] LogUtils - Click on element By.xpath: //span[normalize-space()='High']
+[INFO] 09-12-2025 11:10:53 [main] LogUtils - Selected priority: High
+[INFO] 09-12-2025 11:10:53 [main] LogUtils - Click on element By.xpath: //button[@data-id='repeat_every']
+[INFO] 09-12-2025 11:10:53 [main] LogUtils - Click on element By.xpath: //span[normalize-space()='Week']
+[INFO] 09-12-2025 11:10:53 [main] LogUtils - Selected repeat every: Week
+[INFO] 09-12-2025 11:10:53 [main] LogUtils - Skipped related to selection - empty value
+[INFO] 09-12-2025 11:10:53 [main] LogUtils - Click on element By.xpath: //button[@data-id='assignees']
+[INFO] 09-12-2025 11:10:54 [main] LogUtils - Set text Admin Anh Tester on input By.xpath: //button[@data-id='assignees']
+[ERROR] 09-12-2025 11:11:07 [main] LogUtils - Timeout waiting for the element ClickableBy.xpath: //span[normalize-space()='Admin Anh Tester']
+[ERROR] 09-12-2025 11:11:07 [main] LogUtils - Test case testAddNewTask is failed.
+[ERROR] 09-12-2025 11:11:07 [main] LogUtils - java.lang.AssertionError: Timeout waiting for the element ClickableBy.xpath: //span[normalize-space()='Admin Anh Tester']
+[ERROR] 09-12-2025 11:11:07 [main] LogUtils - Test case testAddNewTask is failed.
+[ERROR] 09-12-2025 11:11:07 [main] LogUtils - org.openqa.selenium.NoSuchSessionException: invalid session id
+Build info: version: '4.38.0', revision: '6b412e825c*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.14'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [cd7568757e0176e0673c8f663aeed0a2, screenshot {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 142.0.7444.176, chrome: {chromedriverVersion: 142.0.7444.175 (302067f14a4..., userDataDir: C:\Users\ITC-PM~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60237}, goog:processID: 11428, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60237/devtoo..., se:cdpVersion: 142.0.7444.176, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: cd7568757e0176e0673c8f663aeed0a2
+[INFO] 09-12-2025 11:11:07 [main] LogUtils - End testing TestNGTest-953eace4-ca35-4736-ba8b-5d57511d8887
+[INFO] 09-12-2025 11:11:27 [main] LogUtils - === INITIALIZING BROWSER: CHROME for test: testAddNewTask ===
+[INFO] 09-12-2025 11:11:28 [main] LogUtils - Browser initialized successfully: chrome
+[INFO] 09-12-2025 11:11:28 [main] LogUtils - === STARTING TEST: testAddNewTask ===
+[INFO] 09-12-2025 11:11:29 [main] LogUtils - Navigate to: https://crm.anhtester.com/admin/authentication
+[INFO] 09-12-2025 11:11:29 [main] LogUtils - Opening browser and navigating to URL: https://crm.anhtester.com/admin/authentication
+[INFO] 09-12-2025 11:11:29 [main] LogUtils - Set text admin@example.com on input By.xpath: //input[@name='email']
+[INFO] 09-12-2025 11:11:29 [main] LogUtils - Entered email: admin@example.com
+[INFO] 09-12-2025 11:11:29 [main] LogUtils - Set text 123456 on input By.xpath: //input[@name='password']
+[INFO] 09-12-2025 11:11:29 [main] LogUtils - Entered password: ****
+[INFO] 09-12-2025 11:11:29 [main] LogUtils - Click on element By.xpath: //button[normalize-space()='Login']
+[INFO] 09-12-2025 11:11:29 [main] LogUtils - Clicked on Login button
+[INFO] 09-12-2025 11:11:30 [main] LogUtils - Click on element By.xpath: //span[normalize-space(text())='Tasks']
+[INFO] 09-12-2025 11:11:30 [main] LogUtils - Running test case testAddNewTask
+[INFO] 09-12-2025 11:11:31 [main] LogUtils - Executing testAddNewTask - Testing add new task
+[INFO] 09-12-2025 11:11:31 [main] LogUtils - Click on element By.xpath: //a[normalize-space()='New Task']
+[INFO] 09-12-2025 11:11:31 [main] LogUtils - Clicked on Add New Task button
+[INFO] 09-12-2025 11:11:31 [main] LogUtils - Filling task data for: Complete Project Documentation
+[INFO] 09-12-2025 11:11:31 [main] LogUtils - Set text Complete Project Documentation on input By.xpath: //input[@id='name']
+[INFO] 09-12-2025 11:11:31 [main] LogUtils - Entered subject: Complete Project Documentation
+[INFO] 09-12-2025 11:11:32 [main] LogUtils - Set text 50.00 on input By.xpath: //input[@id='hourly_rate']
+[INFO] 09-12-2025 11:11:32 [main] LogUtils - Entered hourly rate: 50.00
+[INFO] 09-12-2025 11:11:32 [main] LogUtils - Click on element By.xpath: //button[@title='Medium']
+[INFO] 09-12-2025 11:11:32 [main] LogUtils - Click on element By.xpath: //span[normalize-space()='High']
+[INFO] 09-12-2025 11:11:32 [main] LogUtils - Selected priority: High
+[INFO] 09-12-2025 11:11:32 [main] LogUtils - Click on element By.xpath: //button[@data-id='repeat_every']
+[INFO] 09-12-2025 11:11:32 [main] LogUtils - Click on element By.xpath: //span[normalize-space()='Week']
+[INFO] 09-12-2025 11:11:32 [main] LogUtils - Selected repeat every: Week
+[INFO] 09-12-2025 11:11:32 [main] LogUtils - Skipped related to selection - empty value
+[INFO] 09-12-2025 11:11:32 [main] LogUtils - Click on element By.xpath: //button[@data-id='assignees']
+[INFO] 09-12-2025 11:11:33 [main] LogUtils - Set text Admin Anh Tester on input By.xpath: //button[@data-id='assignees']
+[ERROR] 09-12-2025 11:11:53 [main] LogUtils - Timeout waiting for the element ClickableBy.xpath: //span[normalize-space()='Admin Anh Tester']
+[ERROR] 09-12-2025 11:11:53 [main] LogUtils - Test case testAddNewTask is failed.
+[ERROR] 09-12-2025 11:11:53 [main] LogUtils - java.lang.AssertionError: Timeout waiting for the element ClickableBy.xpath: //span[normalize-space()='Admin Anh Tester']
+[ERROR] 09-12-2025 11:11:53 [main] LogUtils - === TEST FAILED: testAddNewTask ===
+[ERROR] 09-12-2025 11:11:53 [main] LogUtils - Failure reason: Timeout waiting for the element ClickableBy.xpath: //span[normalize-space()='Admin Anh Tester']
+[INFO] 09-12-2025 11:11:54 [main] LogUtils - Browser driver closed successfully
+[INFO] 09-12-2025 11:11:54 [main] LogUtils - End testing TestNGTest-564d9795-9758-4ab0-9977-251db8b0e0ca
+[INFO] 09-12-2025 14:16:27 [main] LogUtils - === INITIALIZING BROWSER: CHROME for test: testAddNewTask ===
+[INFO] 09-12-2025 14:16:31 [main] LogUtils - Browser initialized successfully: chrome
+[INFO] 09-12-2025 14:16:31 [main] LogUtils - === STARTING TEST: testAddNewTask ===
+[INFO] 09-12-2025 14:16:31 [main] LogUtils - Navigate to: https://crm.anhtester.com/admin/authentication
+[INFO] 09-12-2025 14:16:31 [main] LogUtils - Opening browser and navigating to URL: https://crm.anhtester.com/admin/authentication
+[INFO] 09-12-2025 14:16:32 [main] LogUtils - Set text admin@example.com on input By.xpath: //input[@name='email']
+[INFO] 09-12-2025 14:16:32 [main] LogUtils - Entered email: admin@example.com
+[INFO] 09-12-2025 14:16:32 [main] LogUtils - Set text 123456 on input By.xpath: //input[@name='password']
+[INFO] 09-12-2025 14:16:32 [main] LogUtils - Entered password: ****
+[INFO] 09-12-2025 14:16:32 [main] LogUtils - Click on element By.xpath: //button[normalize-space()='Login']
+[INFO] 09-12-2025 14:16:32 [main] LogUtils - Clicked on Login button
+[INFO] 09-12-2025 14:16:33 [main] LogUtils - Click on element By.xpath: //span[normalize-space(text())='Tasks']
+[INFO] 09-12-2025 14:16:33 [main] LogUtils - Running test case testAddNewTask
+[INFO] 09-12-2025 14:16:33 [main] LogUtils - Executing testAddNewTask - Testing add new task
+[INFO] 09-12-2025 14:16:33 [main] LogUtils - Click on element By.xpath: //a[normalize-space()='New Task']
+[INFO] 09-12-2025 14:16:33 [main] LogUtils - Clicked on Add New Task button
+[INFO] 09-12-2025 14:16:33 [main] LogUtils - Filling task data for: Complete Project Documentation
+[ERROR] 09-12-2025 14:16:48 [main] LogUtils - Timeout waiting for the element ClickableBy.xpath: //input[@id='task_is_public']
+[ERROR] 09-12-2025 14:16:48 [main] LogUtils - Test case testAddNewTask is failed.
+[ERROR] 09-12-2025 14:16:48 [main] LogUtils - java.lang.AssertionError: Timeout waiting for the element ClickableBy.xpath: //input[@id='task_is_public']
+[ERROR] 09-12-2025 14:16:48 [main] LogUtils - Test case testAddNewTask is failed.
+[ERROR] 09-12-2025 14:16:48 [main] LogUtils - org.openqa.selenium.NoSuchSessionException: invalid session id
+Build info: version: '4.38.0', revision: '6b412e825c*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.14'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [7572e5d2bc4f0d10f32f149691caf899, screenshot {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 142.0.7444.176, chrome: {chromedriverVersion: 142.0.7444.175 (302067f14a4..., userDataDir: C:\Users\ITC-PM~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59781}, goog:processID: 25916, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59781/devtoo..., se:cdpVersion: 142.0.7444.176, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 7572e5d2bc4f0d10f32f149691caf899
+[INFO] 09-12-2025 14:16:48 [main] LogUtils - End testing TestNGTest-4f79f316-dd67-4b75-ab8e-20421e8dbd3c
+[INFO] 09-12-2025 14:26:07 [main] LogUtils - === INITIALIZING BROWSER: CHROME for test: testAddNewTask ===
+[INFO] 09-12-2025 14:26:09 [main] LogUtils - Browser initialized successfully: chrome
+[INFO] 09-12-2025 14:26:09 [main] LogUtils - === STARTING TEST: testAddNewTask ===
+[INFO] 09-12-2025 14:26:10 [main] LogUtils - Navigate to: https://crm.anhtester.com/admin/authentication
+[INFO] 09-12-2025 14:26:10 [main] LogUtils - Opening browser and navigating to URL: https://crm.anhtester.com/admin/authentication
+[INFO] 09-12-2025 14:26:10 [main] LogUtils - Set text admin@example.com on input By.xpath: //input[@name='email']
+[INFO] 09-12-2025 14:26:10 [main] LogUtils - Entered email: admin@example.com
+[INFO] 09-12-2025 14:26:10 [main] LogUtils - Set text 123456 on input By.xpath: //input[@name='password']
+[INFO] 09-12-2025 14:26:10 [main] LogUtils - Entered password: ****
+[INFO] 09-12-2025 14:26:10 [main] LogUtils - Click on element By.xpath: //button[normalize-space()='Login']
+[INFO] 09-12-2025 14:26:10 [main] LogUtils - Clicked on Login button
+[INFO] 09-12-2025 14:26:11 [main] LogUtils - Click on element By.xpath: //span[normalize-space(text())='Tasks']
+[INFO] 09-12-2025 14:26:11 [main] LogUtils - Running test case testAddNewTask
+[INFO] 09-12-2025 14:26:12 [main] LogUtils - Executing testAddNewTask - Testing add new task
+[INFO] 09-12-2025 14:26:12 [main] LogUtils - Click on element By.xpath: //a[normalize-space()='New Task']
+[INFO] 09-12-2025 14:26:12 [main] LogUtils - Clicked on Add New Task button
+[INFO] 09-12-2025 14:26:12 [main] LogUtils - Filling task data for: Complete Project Documentation
+[INFO] 09-12-2025 14:26:12 [main] LogUtils - Set text Complete Project Documentation on input By.xpath: //input[@id='name']
+[INFO] 09-12-2025 14:26:12 [main] LogUtils - Entered subject: Complete Project Documentation
+[INFO] 09-12-2025 14:26:13 [main] LogUtils - Set text 50.00 on input By.xpath: //input[@id='hourly_rate']
+[INFO] 09-12-2025 14:26:13 [main] LogUtils - Entered hourly rate: 50.00
+[INFO] 09-12-2025 14:26:13 [main] LogUtils - Click on element By.xpath: //input[@id='startdate']
+[INFO] 09-12-2025 14:26:13 [main] LogUtils - Set text 09-12-2025 on input By.xpath: //input[@id='startdate']
+[INFO] 09-12-2025 14:26:13 [main] LogUtils - Selected start date: 09-12-2025
+[INFO] 09-12-2025 14:26:13 [main] LogUtils - Click on element By.xpath: //input[@id='duedate']
+[INFO] 09-12-2025 14:26:13 [main] LogUtils - Set text 24-12-2025 on input By.xpath: //input[@id='duedate']
+[INFO] 09-12-2025 14:26:13 [main] LogUtils - Selected due date: 24-12-2025
+[INFO] 09-12-2025 14:26:13 [main] LogUtils - Click on element By.xpath: //button[@title='Medium']
+[INFO] 09-12-2025 14:26:14 [main] LogUtils - Click on element By.xpath: //span[normalize-space()='High']
+[INFO] 09-12-2025 14:26:14 [main] LogUtils - Selected priority: High
+[INFO] 09-12-2025 14:26:14 [main] LogUtils - Click on element By.xpath: //button[@data-id='repeat_every']
+[INFO] 09-12-2025 14:26:14 [main] LogUtils - Click on element By.xpath: //span[normalize-space()='Week']
+[INFO] 09-12-2025 14:26:14 [main] LogUtils - Selected repeat every: Week
+[INFO] 09-12-2025 14:26:14 [main] LogUtils - Skipped related to selection - empty value
+[INFO] 09-12-2025 14:26:14 [main] LogUtils - Click on element By.xpath: //button[@data-id='assignees']
+[INFO] 09-12-2025 14:26:14 [main] LogUtils - Set text Admin Anh Tester on input By.xpath: //button[@data-id='assignees']
+[ERROR] 09-12-2025 14:26:32 [main] LogUtils - Timeout waiting for the element ClickableBy.xpath: //span[normalize-space()='Admin Anh Tester']
+[ERROR] 09-12-2025 14:26:32 [main] LogUtils - Test case testAddNewTask is failed.
+[ERROR] 09-12-2025 14:26:32 [main] LogUtils - java.lang.AssertionError: Timeout waiting for the element ClickableBy.xpath: //span[normalize-space()='Admin Anh Tester']
+[ERROR] 09-12-2025 14:26:32 [main] LogUtils - Test case testAddNewTask is failed.
+[ERROR] 09-12-2025 14:26:32 [main] LogUtils - org.openqa.selenium.NoSuchSessionException: invalid session id
+Build info: version: '4.38.0', revision: '6b412e825c*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.14'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [9267afc6f7b832c510cc0047716f955b, screenshot {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 142.0.7444.176, chrome: {chromedriverVersion: 142.0.7444.175 (302067f14a4..., userDataDir: C:\Users\ITC-PM~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:56740}, goog:processID: 29796, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:56740/devtoo..., se:cdpVersion: 142.0.7444.176, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 9267afc6f7b832c510cc0047716f955b
+[INFO] 09-12-2025 14:26:32 [main] LogUtils - End testing TestNGTest-788d817c-50ae-4a9e-ac31-faaa2395cff1
+[INFO] 09-12-2025 14:30:17 [main] LogUtils - === INITIALIZING BROWSER: CHROME for test: testAddNewTask ===
+[INFO] 09-12-2025 14:30:18 [main] LogUtils - Browser initialized successfully: chrome
+[INFO] 09-12-2025 14:30:18 [main] LogUtils - === STARTING TEST: testAddNewTask ===
+[INFO] 09-12-2025 14:30:18 [main] LogUtils - Navigate to: https://crm.anhtester.com/admin/authentication
+[INFO] 09-12-2025 14:30:19 [main] LogUtils - Opening browser and navigating to URL: https://crm.anhtester.com/admin/authentication
+[INFO] 09-12-2025 14:30:19 [main] LogUtils - Set text admin@example.com on input By.xpath: //input[@name='email']
+[INFO] 09-12-2025 14:30:19 [main] LogUtils - Entered email: admin@example.com
+[INFO] 09-12-2025 14:30:19 [main] LogUtils - Set text 123456 on input By.xpath: //input[@name='password']
+[INFO] 09-12-2025 14:30:19 [main] LogUtils - Entered password: ****
+[INFO] 09-12-2025 14:30:20 [main] LogUtils - Click on element By.xpath: //button[normalize-space()='Login']
+[INFO] 09-12-2025 14:30:20 [main] LogUtils - Clicked on Login button
+[INFO] 09-12-2025 14:30:20 [main] LogUtils - Click on element By.xpath: //span[normalize-space(text())='Tasks']
+[INFO] 09-12-2025 14:30:20 [main] LogUtils - Running test case testAddNewTask
+[INFO] 09-12-2025 14:30:20 [main] LogUtils - Executing testAddNewTask - Testing add new task
+[INFO] 09-12-2025 14:30:21 [main] LogUtils - Click on element By.xpath: //a[normalize-space()='New Task']
+[INFO] 09-12-2025 14:30:21 [main] LogUtils - Clicked on Add New Task button
+[INFO] 09-12-2025 14:30:21 [main] LogUtils - Filling task data for: Complete Project Documentation
+[INFO] 09-12-2025 14:30:21 [main] LogUtils - Set text Complete Project Documentation on input By.xpath: //input[@id='name']
+[INFO] 09-12-2025 14:30:21 [main] LogUtils - Entered subject: Complete Project Documentation
+[INFO] 09-12-2025 14:30:21 [main] LogUtils - Set text 50.00 on input By.xpath: //input[@id='hourly_rate']
+[INFO] 09-12-2025 14:30:21 [main] LogUtils - Entered hourly rate: 50.00
+[INFO] 09-12-2025 14:30:22 [main] LogUtils - Click on element By.xpath: //input[@id='startdate']
+[INFO] 09-12-2025 14:30:22 [main] LogUtils - Set text 09-12-2025 on input By.xpath: //input[@id='startdate']
+[INFO] 09-12-2025 14:30:22 [main] LogUtils - Selected start date: 09-12-2025
+[INFO] 09-12-2025 14:30:22 [main] LogUtils - Click on element By.xpath: //input[@id='duedate']
+[INFO] 09-12-2025 14:30:22 [main] LogUtils - Set text 24-12-2025 on input By.xpath: //input[@id='duedate']
+[INFO] 09-12-2025 14:30:22 [main] LogUtils - Selected due date: 24-12-2025
+[INFO] 09-12-2025 14:30:22 [main] LogUtils - Click on element By.xpath: //button[@title='Medium']
+[INFO] 09-12-2025 14:30:22 [main] LogUtils - Click on element By.xpath: //span[normalize-space()='High']
+[INFO] 09-12-2025 14:30:22 [main] LogUtils - Selected priority: High
+[INFO] 09-12-2025 14:30:22 [main] LogUtils - Click on element By.xpath: //button[@data-id='repeat_every']
+[INFO] 09-12-2025 14:30:23 [main] LogUtils - Click on element By.xpath: //span[normalize-space()='Week']
+[INFO] 09-12-2025 14:30:23 [main] LogUtils - Selected repeat every: Week
+[INFO] 09-12-2025 14:30:23 [main] LogUtils - Skipped related to selection - empty value
+[INFO] 09-12-2025 14:30:23 [main] LogUtils - Click on element By.xpath: //button[@data-id='assignees']
+[INFO] 09-12-2025 14:30:23 [main] LogUtils - Set text Admin Anh Tester on input By.xpath: //button[@data-id='assignees']
+[ERROR] 09-12-2025 14:30:43 [main] LogUtils - Timeout waiting for the element ClickableBy.xpath: //span[normalize-space()='Admin Anh Tester']
+[ERROR] 09-12-2025 14:30:43 [main] LogUtils - Test case testAddNewTask is failed.
+[ERROR] 09-12-2025 14:30:43 [main] LogUtils - java.lang.AssertionError: Timeout waiting for the element ClickableBy.xpath: //span[normalize-space()='Admin Anh Tester']
+[ERROR] 09-12-2025 14:30:43 [main] LogUtils - === TEST FAILED: testAddNewTask ===
+[ERROR] 09-12-2025 14:30:43 [main] LogUtils - Failure reason: Timeout waiting for the element ClickableBy.xpath: //span[normalize-space()='Admin Anh Tester']
+[INFO] 09-12-2025 14:30:44 [main] LogUtils - Browser driver closed successfully
+[INFO] 09-12-2025 14:30:44 [main] LogUtils - End testing TestNGTest-45ca8098-aa4c-4124-8942-c1b7e14bfedb
+[INFO] 09-12-2025 14:33:29 [main] LogUtils - === INITIALIZING BROWSER: CHROME for test: testAddNewTask ===
+[INFO] 09-12-2025 14:33:32 [main] LogUtils - Browser initialized successfully: chrome
+[INFO] 09-12-2025 14:33:32 [main] LogUtils - === STARTING TEST: testAddNewTask ===
+[INFO] 09-12-2025 14:33:33 [main] LogUtils - Navigate to: https://crm.anhtester.com/admin/authentication
+[INFO] 09-12-2025 14:33:33 [main] LogUtils - Opening browser and navigating to URL: https://crm.anhtester.com/admin/authentication
+[INFO] 09-12-2025 14:33:33 [main] LogUtils - Set text admin@example.com on input By.xpath: //input[@name='email']
+[INFO] 09-12-2025 14:33:33 [main] LogUtils - Entered email: admin@example.com
+[INFO] 09-12-2025 14:33:33 [main] LogUtils - Set text 123456 on input By.xpath: //input[@name='password']
+[INFO] 09-12-2025 14:33:33 [main] LogUtils - Entered password: ****
+[INFO] 09-12-2025 14:33:33 [main] LogUtils - Click on element By.xpath: //button[normalize-space()='Login']
+[INFO] 09-12-2025 14:33:33 [main] LogUtils - Clicked on Login button
+[INFO] 09-12-2025 14:33:34 [main] LogUtils - Click on element By.xpath: //span[normalize-space(text())='Tasks']
+[INFO] 09-12-2025 14:33:34 [main] LogUtils - Running test case testAddNewTask
+[INFO] 09-12-2025 14:33:35 [main] LogUtils - Executing testAddNewTask - Testing add new task
+[INFO] 09-12-2025 14:33:35 [main] LogUtils - Click on element By.xpath: //a[normalize-space()='New Task']
+[INFO] 09-12-2025 14:33:35 [main] LogUtils - Clicked on Add New Task button
+[INFO] 09-12-2025 14:33:35 [main] LogUtils - Filling task data for: Complete Project Documentation
+[INFO] 09-12-2025 14:33:35 [main] LogUtils - Set text Complete Project Documentation on input By.xpath: //input[@id='name']
+[INFO] 09-12-2025 14:33:35 [main] LogUtils - Entered subject: Complete Project Documentation
+[INFO] 09-12-2025 14:33:36 [main] LogUtils - Set text 50.00 on input By.xpath: //input[@id='hourly_rate']
+[INFO] 09-12-2025 14:33:36 [main] LogUtils - Entered hourly rate: 50.00
+[INFO] 09-12-2025 14:33:36 [main] LogUtils - Click on element By.xpath: //input[@id='startdate']
+[INFO] 09-12-2025 14:33:36 [main] LogUtils - Set text 09-12-2025 on input By.xpath: //input[@id='startdate']
+[INFO] 09-12-2025 14:33:36 [main] LogUtils - Selected start date: 09-12-2025
+[INFO] 09-12-2025 14:33:36 [main] LogUtils - Click on element By.xpath: //input[@id='duedate']
+[INFO] 09-12-2025 14:33:36 [main] LogUtils - Set text 24-12-2025 on input By.xpath: //input[@id='duedate']
+[INFO] 09-12-2025 14:33:36 [main] LogUtils - Selected due date: 24-12-2025
+[INFO] 09-12-2025 14:33:36 [main] LogUtils - Click on element By.xpath: //button[@title='Medium']
+[INFO] 09-12-2025 14:33:36 [main] LogUtils - Click on element By.xpath: //span[normalize-space()='High']
+[INFO] 09-12-2025 14:33:36 [main] LogUtils - Selected priority: High
+[INFO] 09-12-2025 14:33:37 [main] LogUtils - Click on element By.xpath: //button[@data-id='repeat_every']
+[INFO] 09-12-2025 14:33:37 [main] LogUtils - Click on element By.xpath: //span[normalize-space()='Week']
+[INFO] 09-12-2025 14:33:37 [main] LogUtils - Selected repeat every: Week
+[INFO] 09-12-2025 14:33:37 [main] LogUtils - Skipped related to selection - empty value
+[INFO] 09-12-2025 14:33:37 [main] LogUtils - Click on element By.xpath: //button[@data-id='assignees']
+[INFO] 09-12-2025 14:33:37 [main] LogUtils - Set text Admin Anh Tester on input By.xpath: //button[@data-id='assignees']
+[ERROR] 09-12-2025 14:33:57 [main] LogUtils - Timeout waiting for the element ClickableBy.xpath: //span[normalize-space()='Admin Anh Tester']
+[ERROR] 09-12-2025 14:33:57 [main] LogUtils - Test case testAddNewTask is failed.
+[ERROR] 09-12-2025 14:33:57 [main] LogUtils - java.lang.AssertionError: Timeout waiting for the element ClickableBy.xpath: //span[normalize-space()='Admin Anh Tester']
+[ERROR] 09-12-2025 14:33:58 [main] LogUtils - === TEST FAILED: testAddNewTask ===
+[ERROR] 09-12-2025 14:33:58 [main] LogUtils - Failure reason: Timeout waiting for the element ClickableBy.xpath: //span[normalize-space()='Admin Anh Tester']
+[INFO] 09-12-2025 14:33:58 [main] LogUtils - Browser driver closed successfully
+[INFO] 09-12-2025 14:33:58 [main] LogUtils - End testing TestNGTest-dfd824ef-a39b-49ea-a859-63bf04c49bc2
+[INFO] 09-12-2025 14:34:07 [main] LogUtils - === INITIALIZING BROWSER: CHROME for test: testAddNewTask ===
+[INFO] 09-12-2025 14:34:08 [main] LogUtils - Browser initialized successfully: chrome
+[INFO] 09-12-2025 14:34:08 [main] LogUtils - === STARTING TEST: testAddNewTask ===
+[INFO] 09-12-2025 14:34:09 [main] LogUtils - Navigate to: https://crm.anhtester.com/admin/authentication
+[INFO] 09-12-2025 14:34:09 [main] LogUtils - Opening browser and navigating to URL: https://crm.anhtester.com/admin/authentication
+[INFO] 09-12-2025 14:34:09 [main] LogUtils - Set text admin@example.com on input By.xpath: //input[@name='email']
+[INFO] 09-12-2025 14:34:09 [main] LogUtils - Entered email: admin@example.com
+[INFO] 09-12-2025 14:34:09 [main] LogUtils - Set text 123456 on input By.xpath: //input[@name='password']
+[INFO] 09-12-2025 14:34:09 [main] LogUtils - Entered password: ****
+[INFO] 09-12-2025 14:34:09 [main] LogUtils - Click on element By.xpath: //button[normalize-space()='Login']
+[INFO] 09-12-2025 14:34:09 [main] LogUtils - Clicked on Login button
+[INFO] 09-12-2025 14:34:11 [main] LogUtils - Click on element By.xpath: //span[normalize-space(text())='Tasks']
+[INFO] 09-12-2025 14:34:11 [main] LogUtils - Running test case testAddNewTask
+[INFO] 09-12-2025 14:34:11 [main] LogUtils - Executing testAddNewTask - Testing add new task
+[INFO] 09-12-2025 14:34:11 [main] LogUtils - Click on element By.xpath: //a[normalize-space()='New Task']
+[INFO] 09-12-2025 14:34:11 [main] LogUtils - Clicked on Add New Task button
+[INFO] 09-12-2025 14:34:11 [main] LogUtils - Filling task data for: Complete Project Documentation
+[INFO] 09-12-2025 14:34:11 [main] LogUtils - Set text Complete Project Documentation on input By.xpath: //input[@id='name']
+[INFO] 09-12-2025 14:34:11 [main] LogUtils - Entered subject: Complete Project Documentation
+[INFO] 09-12-2025 14:34:12 [main] LogUtils - Set text 50.00 on input By.xpath: //input[@id='hourly_rate']
+[INFO] 09-12-2025 14:34:12 [main] LogUtils - Entered hourly rate: 50.00
+[INFO] 09-12-2025 14:34:12 [main] LogUtils - Click on element By.xpath: //input[@id='startdate']
+[INFO] 09-12-2025 14:34:12 [main] LogUtils - Set text 09-12-2025 on input By.xpath: //input[@id='startdate']
+[INFO] 09-12-2025 14:34:12 [main] LogUtils - Selected start date: 09-12-2025
+[INFO] 09-12-2025 14:34:12 [main] LogUtils - Click on element By.xpath: //input[@id='duedate']
+[INFO] 09-12-2025 14:34:12 [main] LogUtils - Set text 24-12-2025 on input By.xpath: //input[@id='duedate']
+[INFO] 09-12-2025 14:34:12 [main] LogUtils - Selected due date: 24-12-2025
+[INFO] 09-12-2025 14:34:12 [main] LogUtils - Click on element By.xpath: //button[@title='Medium']
+[INFO] 09-12-2025 14:34:12 [main] LogUtils - Click on element By.xpath: //span[normalize-space()='High']
+[INFO] 09-12-2025 14:34:12 [main] LogUtils - Selected priority: High
+[INFO] 09-12-2025 14:34:13 [main] LogUtils - Click on element By.xpath: //button[@data-id='repeat_every']
+[INFO] 09-12-2025 14:34:13 [main] LogUtils - Click on element By.xpath: //span[normalize-space()='Week']
+[INFO] 09-12-2025 14:34:13 [main] LogUtils - Selected repeat every: Week
+[INFO] 09-12-2025 14:34:13 [main] LogUtils - Skipped related to selection - empty value
+[INFO] 09-12-2025 14:34:15 [main] LogUtils - Click on element By.xpath: //button[@data-id='assignees']
+[INFO] 09-12-2025 14:34:15 [main] LogUtils - Set text Admin Anh Tester on input By.xpath: //button[@data-id='assignees']
+[ERROR] 09-12-2025 14:34:36 [main] LogUtils - Timeout waiting for the element ClickableBy.xpath: //span[normalize-space()='Admin Anh Tester']
+[ERROR] 09-12-2025 14:34:36 [main] LogUtils - Test case testAddNewTask is failed.
+[ERROR] 09-12-2025 14:34:36 [main] LogUtils - java.lang.AssertionError: Timeout waiting for the element ClickableBy.xpath: //span[normalize-space()='Admin Anh Tester']
+[ERROR] 09-12-2025 14:34:36 [main] LogUtils - Test case testAddNewTask is failed.
+[ERROR] 09-12-2025 14:34:36 [main] LogUtils - org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=142.0.7444.176)
+Build info: version: '4.38.0', revision: '6b412e825c*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.14'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [5a904c36d75c6559634a9fab4a0b8593, screenshot {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 142.0.7444.176, chrome: {chromedriverVersion: 142.0.7444.175 (302067f14a4..., userDataDir: C:\Users\ITC-PM~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:57559}, goog:processID: 18192, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:57559/devtoo..., se:cdpVersion: 142.0.7444.176, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 5a904c36d75c6559634a9fab4a0b8593
+[INFO] 09-12-2025 14:34:36 [main] LogUtils - End testing TestNGTest-81d8e39b-95ff-48e9-8616-8397dfac40c3
+[INFO] 09-12-2025 14:36:04 [main] LogUtils - === INITIALIZING BROWSER: CHROME for test: testAddNewTask ===
+[INFO] 09-12-2025 14:36:07 [main] LogUtils - Browser initialized successfully: chrome
+[INFO] 09-12-2025 14:36:07 [main] LogUtils - === STARTING TEST: testAddNewTask ===
+[INFO] 09-12-2025 14:36:07 [main] LogUtils - Navigate to: https://crm.anhtester.com/admin/authentication
+[INFO] 09-12-2025 14:36:07 [main] LogUtils - Opening browser and navigating to URL: https://crm.anhtester.com/admin/authentication
+[INFO] 09-12-2025 14:36:07 [main] LogUtils - Set text admin@example.com on input By.xpath: //input[@name='email']
+[INFO] 09-12-2025 14:36:07 [main] LogUtils - Entered email: admin@example.com
+[INFO] 09-12-2025 14:36:08 [main] LogUtils - Set text 123456 on input By.xpath: //input[@name='password']
+[INFO] 09-12-2025 14:36:08 [main] LogUtils - Entered password: ****
+[INFO] 09-12-2025 14:36:08 [main] LogUtils - Click on element By.xpath: //button[normalize-space()='Login']
+[INFO] 09-12-2025 14:36:08 [main] LogUtils - Clicked on Login button
+[INFO] 09-12-2025 14:36:09 [main] LogUtils - Click on element By.xpath: //span[normalize-space(text())='Tasks']
+[INFO] 09-12-2025 14:36:09 [main] LogUtils - Running test case testAddNewTask
+[INFO] 09-12-2025 14:36:09 [main] LogUtils - Executing testAddNewTask - Testing add new task
+[INFO] 09-12-2025 14:36:09 [main] LogUtils - Click on element By.xpath: //a[normalize-space()='New Task']
+[INFO] 09-12-2025 14:36:09 [main] LogUtils - Clicked on Add New Task button
+[INFO] 09-12-2025 14:36:09 [main] LogUtils - Filling task data for: Complete Project Documentation
+[INFO] 09-12-2025 14:36:10 [main] LogUtils - Set text Complete Project Documentation on input By.xpath: //input[@id='name']
+[INFO] 09-12-2025 14:36:10 [main] LogUtils - Entered subject: Complete Project Documentation
+[INFO] 09-12-2025 14:36:10 [main] LogUtils - Set text 50.00 on input By.xpath: //input[@id='hourly_rate']
+[INFO] 09-12-2025 14:36:10 [main] LogUtils - Entered hourly rate: 50.00
+[INFO] 09-12-2025 14:36:10 [main] LogUtils - Click on element By.xpath: //input[@id='startdate']
+[INFO] 09-12-2025 14:36:10 [main] LogUtils - Set text 09-12-2025 on input By.xpath: //input[@id='startdate']
+[INFO] 09-12-2025 14:36:10 [main] LogUtils - Selected start date: 09-12-2025
+[INFO] 09-12-2025 14:36:11 [main] LogUtils - Click on element By.xpath: //input[@id='duedate']
+[INFO] 09-12-2025 14:36:11 [main] LogUtils - Set text 24-12-2025 on input By.xpath: //input[@id='duedate']
+[INFO] 09-12-2025 14:36:11 [main] LogUtils - Selected due date: 24-12-2025
+[INFO] 09-12-2025 14:36:11 [main] LogUtils - Click on element By.xpath: //button[@title='Medium']
+[INFO] 09-12-2025 14:36:11 [main] LogUtils - Click on element By.xpath: //span[normalize-space()='High']
+[INFO] 09-12-2025 14:36:11 [main] LogUtils - Selected priority: High
+[INFO] 09-12-2025 14:36:11 [main] LogUtils - Click on element By.xpath: //button[@data-id='repeat_every']
+[INFO] 09-12-2025 14:36:11 [main] LogUtils - Click on element By.xpath: //span[normalize-space()='Week']
+[INFO] 09-12-2025 14:36:11 [main] LogUtils - Selected repeat every: Week
+[INFO] 09-12-2025 14:36:11 [main] LogUtils - Skipped related to selection - empty value
+[INFO] 09-12-2025 14:36:14 [main] LogUtils - Click on element By.xpath: //button[@data-id='assignees']
+[INFO] 09-12-2025 14:36:14 [main] LogUtils - Set text Admin Anh Tester on input By.xpath: //button[@data-id='assignees']
+[ERROR] 09-12-2025 14:36:34 [main] LogUtils - Timeout waiting for the element ClickableBy.xpath: //span[normalize-space()='Admin Anh Tester']
+[ERROR] 09-12-2025 14:36:34 [main] LogUtils - Test case testAddNewTask is failed.
+[ERROR] 09-12-2025 14:36:34 [main] LogUtils - java.lang.AssertionError: Timeout waiting for the element ClickableBy.xpath: //span[normalize-space()='Admin Anh Tester']
+[ERROR] 09-12-2025 14:36:34 [main] LogUtils - === TEST FAILED: testAddNewTask ===
+[ERROR] 09-12-2025 14:36:34 [main] LogUtils - Failure reason: Timeout waiting for the element ClickableBy.xpath: //span[normalize-space()='Admin Anh Tester']
+[INFO] 09-12-2025 14:36:35 [main] LogUtils - Browser driver closed successfully
+[INFO] 09-12-2025 14:36:35 [main] LogUtils - End testing TestNGTest-00282994-9431-403b-b2fe-67908bfad9f1
+[INFO] 09-12-2025 14:38:58 [main] LogUtils - === INITIALIZING BROWSER: CHROME for test: testAddNewTask ===
+[INFO] 09-12-2025 14:39:00 [main] LogUtils - Browser initialized successfully: chrome
+[INFO] 09-12-2025 14:39:01 [main] LogUtils - === STARTING TEST: testAddNewTask ===
+[INFO] 09-12-2025 14:39:01 [main] LogUtils - Navigate to: https://crm.anhtester.com/admin/authentication
+[INFO] 09-12-2025 14:39:01 [main] LogUtils - Opening browser and navigating to URL: https://crm.anhtester.com/admin/authentication
+[INFO] 09-12-2025 14:39:01 [main] LogUtils - Set text admin@example.com on input By.xpath: //input[@name='email']
+[INFO] 09-12-2025 14:39:01 [main] LogUtils - Entered email: admin@example.com
+[INFO] 09-12-2025 14:39:02 [main] LogUtils - Set text 123456 on input By.xpath: //input[@name='password']
+[INFO] 09-12-2025 14:39:02 [main] LogUtils - Entered password: ****
+[INFO] 09-12-2025 14:39:02 [main] LogUtils - Click on element By.xpath: //button[normalize-space()='Login']
+[INFO] 09-12-2025 14:39:02 [main] LogUtils - Clicked on Login button
+[INFO] 09-12-2025 14:39:03 [main] LogUtils - Click on element By.xpath: //span[normalize-space(text())='Tasks']
+[INFO] 09-12-2025 14:39:03 [main] LogUtils - Running test case testAddNewTask
+[INFO] 09-12-2025 14:39:03 [main] LogUtils - Executing testAddNewTask - Testing add new task
+[INFO] 09-12-2025 14:39:03 [main] LogUtils - Click on element By.xpath: //a[normalize-space()='New Task']
+[INFO] 09-12-2025 14:39:03 [main] LogUtils - Clicked on Add New Task button
+[INFO] 09-12-2025 14:39:03 [main] LogUtils - Filling task data for: Complete Project Documentation
+[INFO] 09-12-2025 14:39:04 [main] LogUtils - Set text Complete Project Documentation on input By.xpath: //input[@id='name']
+[INFO] 09-12-2025 14:39:04 [main] LogUtils - Entered subject: Complete Project Documentation
+[INFO] 09-12-2025 14:39:04 [main] LogUtils - Set text 50.00 on input By.xpath: //input[@id='hourly_rate']
+[INFO] 09-12-2025 14:39:04 [main] LogUtils - Entered hourly rate: 50.00
+[INFO] 09-12-2025 14:39:04 [main] LogUtils - Click on element By.xpath: //input[@id='startdate']
+[INFO] 09-12-2025 14:39:04 [main] LogUtils - Set text 09-12-2025 on input By.xpath: //input[@id='startdate']
+[INFO] 09-12-2025 14:39:04 [main] LogUtils - Selected start date: 09-12-2025
+[INFO] 09-12-2025 14:39:05 [main] LogUtils - Click on element By.xpath: //input[@id='duedate']
+[INFO] 09-12-2025 14:39:05 [main] LogUtils - Set text 24-12-2025 on input By.xpath: //input[@id='duedate']
+[INFO] 09-12-2025 14:39:05 [main] LogUtils - Selected due date: 24-12-2025
+[INFO] 09-12-2025 14:39:05 [main] LogUtils - Click on element By.xpath: //button[@title='Medium']
+[INFO] 09-12-2025 14:39:05 [main] LogUtils - Click on element By.xpath: //span[normalize-space()='High']
+[INFO] 09-12-2025 14:39:05 [main] LogUtils - Selected priority: High
+[INFO] 09-12-2025 14:39:05 [main] LogUtils - Click on element By.xpath: //button[@data-id='repeat_every']
+[INFO] 09-12-2025 14:39:06 [main] LogUtils - Click on element By.xpath: //span[normalize-space()='Week']
+[INFO] 09-12-2025 14:39:06 [main] LogUtils - Selected repeat every: Week
+[INFO] 09-12-2025 14:39:06 [main] LogUtils - Click on element By.xpath: //button[@data-id='rel_type']
+[ERROR] 09-12-2025 14:39:26 [main] LogUtils - Timeout waiting for the element ClickableBy.xpath: //span[normalize-space()='Ticket']
+[ERROR] 09-12-2025 14:39:26 [main] LogUtils - Test case testAddNewTask is failed.
+[ERROR] 09-12-2025 14:39:26 [main] LogUtils - java.lang.AssertionError: Timeout waiting for the element ClickableBy.xpath: //span[normalize-space()='Ticket']
+[ERROR] 09-12-2025 14:39:26 [main] LogUtils - === TEST FAILED: testAddNewTask ===
+[ERROR] 09-12-2025 14:39:26 [main] LogUtils - Failure reason: Timeout waiting for the element ClickableBy.xpath: //span[normalize-space()='Ticket']
+[INFO] 09-12-2025 14:39:26 [main] LogUtils - Browser driver closed successfully
+[INFO] 09-12-2025 14:39:26 [main] LogUtils - End testing TestNGTest-3474903f-2e9f-418e-90d0-af8953c8547e

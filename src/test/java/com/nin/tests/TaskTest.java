@@ -6,21 +6,21 @@ import com.nin.pages.LoginPage;
 import common.BaseTest;
 import io.qameta.allure.*;
 import listeners.TestListener;
-import models.Customer;
+import models.Task;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 import reports.AllureManager;
 import reports.ExtentTestManager;
-import testdata.CustomerTestData;
+import testdata.TaskTestData;
 import utils.LogUtils;
 
 import java.lang.reflect.Method;
 
 @Listeners(TestListener.class)
 @Epic("CRM System")
-@Feature("Customer Management")
-public class TaskTes extends BaseTest {
+@Feature("Task Management")
+public class TaskTest extends BaseTest {
 
     private TaskPage taskPage;
     private LoginPage loginPage;
@@ -32,10 +32,10 @@ public class TaskTes extends BaseTest {
         ExtentTestManager.saveToReport(method.getName(), "Mô tả test " + method.getName());
         loginPage = new LoginPage();
         loginPage.loginCMS();
-        
+
         basePage = new BasePage();
         basePage.clickMenuTask();
-        
+
         taskPage = new TaskPage();
     }
     
@@ -46,10 +46,8 @@ public class TaskTes extends BaseTest {
     @Owner("QA Team")
     public void testAddNewTask() {
         LogUtils.info("Executing testAddNewTask - Testing add new task");
-        Customer customer = CustomerTestData.getAddNewCustomer1();
-        taskPage.clickAddNewCustomer();
-        taskPage.fillDataAddNewTask(customer);;
-        taskPage.verifyCustomerAddedSuccess();
-        LogUtils.info("testAddNewVIPCustomer completed");
+        Task task = TaskTestData.getAddNewTask1();
+        taskPage.clickAddNewTask();
+        taskPage.fillDataAddNewTask(task);
     }
 }

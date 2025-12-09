@@ -445,7 +445,6 @@ public class ActionKeywords {
     @Step("Clicking element with JavaScript: {by}")
     public static void clickElementWithJs(By by) {
         waitForElementPresent(by);
-        //Scroll to element với Javascript Executor
         JavascriptExecutor js = (JavascriptExecutor) DriverManager.getDriver();
         js.executeScript("arguments[0].scrollIntoView(false);", getWebElement(by));
         //Click with JS

@@ -1,135 +1,148 @@
 package models;
 
-public class Task {
-    private String company;
-    private String vatNumber;
-    private String phone;
-    private String website;
-    private String group;
-    private String address;
-    private String city;
-    private String state;
-    private String zipCode;
-    private String currency;
-    private String language;
-    private String country;
+import org.apache.poi.hssf.record.SubRecord;
 
-    public Task(String company, String vatNumber, String phone, String website,
-                   String group, String address, String city, String state,
-                   String zipCode, String currency, String language, String country) {
-        this.company = company;
-        this.vatNumber = vatNumber;
-        this.phone = phone;
-        this.website = website;
-        this.group = group;
-        this.address = address;
-        this.city = city;
-        this.state = state;
-        this.zipCode = zipCode;
-        this.currency = currency;
-        this.language = language;
-        this.country = country;
+public class Task {
+    private String subject;
+    private String hourlyRate;
+    private String startDate;
+    private String dueDate;
+    private String priority;
+    private String repeatEvery;
+    private String relatedTo;
+    private String assignee;
+    private String follower;
+    private String tag;
+    private String description;
+    private boolean isPublic;
+    private boolean isBillable;
+
+    public Task(String subject, String hourlyRate, String startDate, String dueDate, String priority, String repeatEvery,
+                String relatedTo, String assignee, String follower, String tag,
+                String description, boolean isPublic, boolean isBillable) {
+        this.subject = subject;
+        this.hourlyRate = hourlyRate;
+        this.startDate = startDate;
+        this.dueDate = dueDate;
+        this.priority = priority;
+        this.repeatEvery = repeatEvery;
+        this.relatedTo = relatedTo;
+        this.assignee = assignee;
+        this.follower = follower;
+        this.tag = tag;
+        this.description = description;
+        this.isPublic = isPublic;
+        this.isBillable = isBillable;
     }
 
     public static class Builder {
-        private String company;
-        private String vatNumber;
-        private String phone;
-        private String website;
-        private String group;
-        private String address;
-        private String city;
-        private String state;
-        private String zipCode;
-        private String currency;
-        private String language;
-        private String country;
+        private String subject;
+        private String hourlyRate;
+        private String startDate;
+        private String dueDate;
+        private String priority;
+        private String repeatEvery;
+        private String relatedTo;
+        private String assignee;
+        private String follower;
+        private String tag;
+        private String description;
+        private boolean isPublic;
+        private boolean isBillable;
 
-        public Builder company(String company) {
-            this.company = company;
+        public Builder subject(String subject) {
+            this.subject = subject;
             return this;
         }
 
-        public Builder vatNumber(String vatNumber) {
-            this.vatNumber = vatNumber;
+        public Builder hourlyRate(String hourlyRate) {
+            this.hourlyRate = hourlyRate;
             return this;
         }
 
-        public Builder phone(String phone) {
-            this.phone = phone;
+        public Builder startDate(String startDate){
+            this.startDate = startDate;
             return this;
         }
 
-        public Builder website(String website) {
-            this.website = website;
+        public Builder dueDate(String dueDate){
+            this.dueDate = dueDate;
             return this;
         }
 
-        public Builder group(String group) {
-            this.group = group;
+        public Builder priority(String priority) {
+            this.priority = priority;
             return this;
         }
 
-        public Builder address(String address) {
-            this.address = address;
+        public Builder repeatEvery(String repeatEvery) {
+            this.repeatEvery = repeatEvery;
             return this;
         }
 
-        public Builder city(String city) {
-            this.city = city;
+        public Builder relatedTo(String relatedTo) {
+            this.relatedTo = relatedTo;
             return this;
         }
 
-        public Builder state(String state) {
-            this.state = state;
+        public Builder assignee(String assignee) {
+            this.assignee = assignee;
             return this;
         }
 
-        public Builder zipCode(String zipCode) {
-            this.zipCode = zipCode;
+        public Builder follower(String follower) {
+            this.follower = follower;
             return this;
         }
 
-        public Builder currency(String currency) {
-            this.currency = currency;
+        public Builder tag(String tag) {
+            this.tag = tag;
             return this;
         }
 
-        public Builder language(String language) {
-            this.language = language;
+        public Builder description(String description) {
+            this.description = description;
             return this;
         }
 
-        public Builder country(String country) {
-            this.country = country;
+        public Builder isPublic(boolean isPublic) {
+            this.isPublic = isPublic;
             return this;
         }
 
-        public Customer build() {
-            return new Customer(company, vatNumber, phone, website, group,
-                              address, city, state, zipCode, currency, language, country);
+        public Builder isBillable(boolean isBillable) {
+            this.isBillable = isBillable;
+            return this;
+        }
+
+        public Task build() {
+            return new Task(subject, hourlyRate, startDate, dueDate, priority, repeatEvery, relatedTo,
+                          assignee, follower, tag, description, isPublic, isBillable);
         }
     }
 
-    public String getCompany() { return company; }
-    public String getVatNumber() { return vatNumber; }
-    public String getPhone() { return phone; }
-    public String getWebsite() { return website; }
-    public String getGroup() { return group; }
-    public String getAddress() { return address; }
-    public String getCity() { return city; }
-    public String getState() { return state; }
-    public String getZipCode() { return zipCode; }
-    public String getCurrency() { return currency; }
-    public String getLanguage() { return language; }
-    public String getCountry() { return country; }
+    public String getSubject() { return subject; }
+    public String getHourlyRate() { return hourlyRate; }
+    public String getStartDate() { return startDate;}
+    public String getDueDate() { return dueDate;}
+    public String getPriority() { return priority; }
+    public String getRepeatEvery() { return repeatEvery; }
+    public String getRelatedTo() { return relatedTo; }
+    public String getAssignee() { return assignee; }
+    public String getFollower() { return follower; }
+    public String getTag() { return tag; }
+    public String getDescription() { return description; }
+    public boolean isPublic() { return isPublic; }
+    public boolean isBillable() { return isBillable; }
 
     @Override
     public String toString() {
-        return "Customer{" +
-                "company='" + company + '\'' +
-                ", group='" + group + '\'' +
-                ", currency='" + currency + '\'' +
+        return "Task{" +
+                "subject='" + subject + '\'' +
+                ", priority='" + priority + '\'' +
+                ", assignee='" + assignee + '\'' +
+                ", isPublic=" + isPublic +
+                ", isBillable=" + isBillable +
                 '}';
     }
 }
