@@ -1635,3 +1635,187 @@ Session ID: 5a904c36d75c6559634a9fab4a0b8593
 [ERROR] 09-12-2025 14:39:26 [main] LogUtils - Failure reason: Timeout waiting for the element ClickableBy.xpath: //span[normalize-space()='Ticket']
 [INFO] 09-12-2025 14:39:26 [main] LogUtils - Browser driver closed successfully
 [INFO] 09-12-2025 14:39:26 [main] LogUtils - End testing TestNGTest-3474903f-2e9f-418e-90d0-af8953c8547e
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          [INFO] 12-12-2025 09:42:18 [main] LogUtils - === INITIALIZING BROWSER: CHROME for test: testAddNewCustomer ===
+[INFO] 12-12-2025 09:42:21 [main] LogUtils - Browser initialized successfully: chrome
+[INFO] 12-12-2025 09:42:21 [main] LogUtils - === STARTING TEST: testAddNewCustomer ===
+[INFO] 12-12-2025 09:42:21 [main] LogUtils - Navigate to: https://crm.anhtester.com/admin/authentication
+[INFO] 12-12-2025 09:42:21 [main] LogUtils - Opening browser and navigating to URL: https://crm.anhtester.com/admin/authentication
+[INFO] 12-12-2025 09:42:22 [main] LogUtils - Set text admin@example.com on input By.xpath: //input[@name='email']
+[INFO] 12-12-2025 09:42:22 [main] LogUtils - Entered email: admin@example.com
+[INFO] 12-12-2025 09:42:22 [main] LogUtils - Set text 123456 on input By.xpath: //input[@name='password']
+[INFO] 12-12-2025 09:42:22 [main] LogUtils - Entered password: ****
+[INFO] 12-12-2025 09:42:22 [main] LogUtils - Click on element By.xpath: //button[normalize-space()='Login']
+[INFO] 12-12-2025 09:42:22 [main] LogUtils - Clicked on Login button
+[INFO] 12-12-2025 09:42:23 [main] LogUtils - Click on element By.xpath: //span[normalize-space(text())='Customers']
+[INFO] 12-12-2025 09:42:23 [main] LogUtils - Running test case testAddNewCustomer
+[INFO] 12-12-2025 09:42:23 [main] LogUtils - Executing testAddNewCustomer - Testing add new customer
+[INFO] 12-12-2025 09:42:24 [main] LogUtils - Click on element By.xpath: //a[normalize-space()='New Customer']
+[INFO] 12-12-2025 09:42:24 [main] LogUtils - Clicked on Add New Customer button
+[INFO] 12-12-2025 09:42:24 [main] LogUtils - Filling customer data for: ABC Technology Company
+[INFO] 12-12-2025 09:42:24 [main] LogUtils - Set text ABC Technology Company on input By.xpath: //input[@id='company']
+[INFO] 12-12-2025 09:42:24 [main] LogUtils - Entered email: ABC Technology Company
+[INFO] 12-12-2025 09:42:24 [main] LogUtils - Set text 123456789 on input By.xpath: //input[@id='vat']
+[INFO] 12-12-2025 09:42:24 [main] LogUtils - Entered VAT Number: 123456789
+[INFO] 12-12-2025 09:42:24 [main] LogUtils - Set text 0939200600 on input By.xpath: //input[@id='phonenumber']
+[INFO] 12-12-2025 09:42:24 [main] LogUtils - Entered phone: 0939200600
+[INFO] 12-12-2025 09:42:24 [main] LogUtils - Set text https://abctech.com on input By.xpath: //input[@id='website']
+[INFO] 12-12-2025 09:42:24 [main] LogUtils - Entered website: https://abctech.com
+[INFO] 12-12-2025 09:42:24 [main] LogUtils - Click on element By.xpath: //button[@data-id='groups_in[]']
+[INFO] 12-12-2025 09:42:25 [main] LogUtils - Set text VIP on input By.xpath: //button[@data-id='groups_in[]']/following-sibling::div//input[@type='search']
+[INFO] 12-12-2025 09:42:25 [main] LogUtils - Click on element By.xpath: //span[normalize-space()='VIP']
+[INFO] 12-12-2025 09:42:25 [main] LogUtils - Click on element By.xpath: //button[@data-id='groups_in[]']
+[INFO] 12-12-2025 09:42:25 [main] LogUtils - Selected group: VIP
+[INFO] 12-12-2025 09:42:25 [main] LogUtils - Click on element By.xpath: //button[@data-id='default_currency']
+[INFO] 12-12-2025 09:42:25 [main] LogUtils - Set text USD on input By.xpath: //button[@data-id='default_currency']/following-sibling::div//input[@type='search']
+[INFO] 12-12-2025 09:42:26 [main] LogUtils - Click on element By.xpath: //span[contains(text(),'USD')]
+[INFO] 12-12-2025 09:42:26 [main] LogUtils - Selected currency: USD
+[INFO] 12-12-2025 09:42:26 [main] LogUtils - Click on element By.xpath: //button[@data-id='default_language']
+[INFO] 12-12-2025 09:42:26 [main] LogUtils - Click on element By.xpath: //span[normalize-space()='Vietnamese']
+[INFO] 12-12-2025 09:42:26 [main] LogUtils - Selected language: Vietnamese
+[INFO] 12-12-2025 09:42:26 [main] LogUtils - Set text 123 Nguyen Hue Street on input By.xpath: //textarea[@id='address']
+[INFO] 12-12-2025 09:42:26 [main] LogUtils - Entered address: 123 Nguyen Hue Street
+[INFO] 12-12-2025 09:42:26 [main] LogUtils - Set text Ho Chi Minh on input By.xpath: //input[@id='city']
+[INFO] 12-12-2025 09:42:26 [main] LogUtils - Entered city: Ho Chi Minh
+[INFO] 12-12-2025 09:42:27 [main] LogUtils - Set text HCM Province on input By.xpath: //input[@id='state']
+[INFO] 12-12-2025 09:42:27 [main] LogUtils - Entered state: HCM Province
+[INFO] 12-12-2025 09:42:27 [main] LogUtils - Set text 700000 on input By.xpath: //input[@id='zip']
+[INFO] 12-12-2025 09:42:27 [main] LogUtils - Entered zip code: 700000
+[INFO] 12-12-2025 09:42:27 [main] LogUtils - Click on element By.xpath: //button[@data-id='country']
+[INFO] 12-12-2025 09:42:27 [main] LogUtils - Set text Vietnam on input By.xpath: //input[@id='search_input']
+[INFO] 12-12-2025 09:42:27 [main] LogUtils - Click on element By.xpath: //span[normalize-space()='Vietnam']
+[INFO] 12-12-2025 09:42:27 [main] LogUtils - Selected country: Vietnam
+[INFO] 12-12-2025 09:42:28 [main] LogUtils - Click on element By.xpath: //button[contains(@class,'only-save')]
+[INFO] 12-12-2025 09:42:28 [main] LogUtils - Clicked on Save button
+[INFO] 12-12-2025 09:42:31 [main] LogUtils - Filled all customer information successfully: Customer{company='ABC Technology Company', group='VIP', currency='USD'}
+[INFO] 12-12-2025 09:42:31 [main] LogUtils - Get text of element By.xpath: //div[contains(@class,'alert-success')] is ×
+Customer added successfully.
+[INFO] 12-12-2025 09:42:31 [main] LogUtils - Customer added successfully: ×
+Customer added successfully.
+[INFO] 12-12-2025 09:42:31 [main] LogUtils - testAddNewVIPCustomer completed
+[INFO] 12-12-2025 09:42:31 [main] LogUtils - Test case testAddNewCustomer is passed.
+[INFO] 12-12-2025 09:42:31 [main] LogUtils - === TEST PASSED: testAddNewCustomer ===
+[INFO] 12-12-2025 09:42:31 [main] LogUtils - Browser driver closed successfully
+[INFO] 12-12-2025 09:42:31 [main] LogUtils - End testing TestNGTest-0209407e-2217-43c7-abe8-ed402acf2b04
+[INFO] 12-12-2025 09:45:03 [main] LogUtils - === INITIALIZING BROWSER: CHROME for test: testAddNewTask ===
+[INFO] 12-12-2025 09:45:05 [main] LogUtils - Browser initialized successfully: chrome
+[INFO] 12-12-2025 09:45:05 [main] LogUtils - === STARTING TEST: testAddNewTask ===
+[INFO] 12-12-2025 09:45:06 [main] LogUtils - Navigate to: https://crm.anhtester.com/admin/authentication
+[INFO] 12-12-2025 09:45:06 [main] LogUtils - Opening browser and navigating to URL: https://crm.anhtester.com/admin/authentication
+[INFO] 12-12-2025 09:45:06 [main] LogUtils - Set text admin@example.com on input By.xpath: //input[@name='email']
+[INFO] 12-12-2025 09:45:06 [main] LogUtils - Entered email: admin@example.com
+[INFO] 12-12-2025 09:45:06 [main] LogUtils - Set text 123456 on input By.xpath: //input[@name='password']
+[INFO] 12-12-2025 09:45:06 [main] LogUtils - Entered password: ****
+[INFO] 12-12-2025 09:45:06 [main] LogUtils - Click on element By.xpath: //button[normalize-space()='Login']
+[INFO] 12-12-2025 09:45:06 [main] LogUtils - Clicked on Login button
+[INFO] 12-12-2025 09:45:08 [main] LogUtils - Click on element By.xpath: //span[normalize-space(text())='Tasks']
+[INFO] 12-12-2025 09:45:08 [main] LogUtils - Running test case testAddNewTask
+[INFO] 12-12-2025 09:45:08 [main] LogUtils - Executing testAddNewTask - Testing add new task
+[INFO] 12-12-2025 09:45:08 [main] LogUtils - Click on element By.xpath: //a[normalize-space()='New Task']
+[INFO] 12-12-2025 09:45:08 [main] LogUtils - Clicked on Add New Task button
+[INFO] 12-12-2025 09:45:08 [main] LogUtils - Filling task data for: Complete Project Documentation
+[INFO] 12-12-2025 09:45:09 [main] LogUtils - Set text Complete Project Documentation on input By.xpath: //input[@id='name']
+[INFO] 12-12-2025 09:45:09 [main] LogUtils - Entered subject: Complete Project Documentation
+[INFO] 12-12-2025 09:45:09 [main] LogUtils - Click on element with JS: By.xpath: //button[text()='Save']
+[INFO] 12-12-2025 09:45:09 [main] LogUtils - Clicked Save button
+[INFO] 12-12-2025 09:45:12 [main] LogUtils - Filled all task information successfully: Task{subject='Complete Project Documentation', priority='High', assignee='Admin Anh Tester', isPublic=true, isBillable=true}
+[INFO] 12-12-2025 09:45:12 [main] LogUtils - Test case testAddNewTask is passed.
+[INFO] 12-12-2025 09:45:12 [main] LogUtils - === TEST PASSED: testAddNewTask ===
+[INFO] 12-12-2025 09:45:13 [main] LogUtils - Browser driver closed successfully
+[INFO] 12-12-2025 09:45:13 [main] LogUtils - End testing TestNGTest-742ffe4b-d411-4838-b7dd-4ba6b9ea85b8
+[INFO] 12-12-2025 10:35:39 [main] LogUtils - === INITIALIZING BROWSER: CHROME for test: testEditCustomer ===
+[INFO] 12-12-2025 10:35:43 [main] LogUtils - Browser initialized successfully: chrome
+[INFO] 12-12-2025 10:35:44 [main] LogUtils - === STARTING TEST: testEditCustomer ===
+[INFO] 12-12-2025 10:35:44 [main] LogUtils - Navigate to: https://crm.anhtester.com/admin/authentication
+[INFO] 12-12-2025 10:35:45 [main] LogUtils - Opening browser and navigating to URL: https://crm.anhtester.com/admin/authentication
+[INFO] 12-12-2025 10:35:45 [main] LogUtils - Set text admin@example.com on input By.xpath: //input[@name='email']
+[INFO] 12-12-2025 10:35:45 [main] LogUtils - Entered email: admin@example.com
+[INFO] 12-12-2025 10:35:45 [main] LogUtils - Set text 123456 on input By.xpath: //input[@name='password']
+[INFO] 12-12-2025 10:35:45 [main] LogUtils - Entered password: ****
+[INFO] 12-12-2025 10:35:46 [main] LogUtils - Click on element By.xpath: //button[normalize-space()='Login']
+[INFO] 12-12-2025 10:35:46 [main] LogUtils - Clicked on Login button
+[INFO] 12-12-2025 10:35:46 [main] LogUtils - Click on element By.xpath: //span[normalize-space(text())='Customers']
+[INFO] 12-12-2025 10:35:46 [main] LogUtils - Running test case testEditCustomer
+[INFO] 12-12-2025 10:35:46 [main] LogUtils - Executing testEditCustomer - Editing phone number of customer from testAddNewCustomer
+[INFO] 12-12-2025 10:35:46 [main] LogUtils - Editing phone number for customer: ABC Technology Company
+[INFO] 12-12-2025 10:35:47 [main] LogUtils - Set text ABC Technology Company on input By.xpath: //input[@id='search_input']
+[INFO] 12-12-2025 10:35:49 [main] LogUtils - Searched for customer: ABC Technology Company
+[INFO] 12-12-2025 10:35:49 [main] LogUtils - Set text ABC Technology Company on input By.xpath: //input[@id='search_input']
+[INFO] 12-12-2025 10:35:51 [main] LogUtils - Searched for customer: ABC Technology Company
+[ERROR] 12-12-2025 10:36:11 [main] LogUtils - Timeout waiting for the element ClickableBy.xpath: //td[normalize-space()='ABC Technology Company']/parent::tr
+[ERROR] 12-12-2025 10:36:11 [main] LogUtils - Test case testEditCustomer is failed.
+[ERROR] 12-12-2025 10:36:11 [main] LogUtils - java.lang.AssertionError: Timeout waiting for the element ClickableBy.xpath: //td[normalize-space()='ABC Technology Company']/parent::tr
+[ERROR] 12-12-2025 10:36:11 [main] LogUtils - Test case testEditCustomer is failed.
+[ERROR] 12-12-2025 10:36:11 [main] LogUtils - org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=142.0.7444.176)
+Build info: version: '4.38.0', revision: '6b412e825c*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.14'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [3353c0abfc18b9a46ec4c4dae29ebbe7, screenshot {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 142.0.7444.176, chrome: {chromedriverVersion: 142.0.7444.175 (302067f14a4..., userDataDir: C:\Users\ITC-PM~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:65324}, goog:processID: 13180, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:65324/devtoo..., se:cdpVersion: 142.0.7444.176, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 3353c0abfc18b9a46ec4c4dae29ebbe7
+[INFO] 12-12-2025 10:36:11 [main] LogUtils - End testing TestNGTest-1aa2721b-e26f-40f4-abe7-d58d6a13a008
+[INFO] 12-12-2025 10:46:38 [main] LogUtils - === INITIALIZING BROWSER: CHROME for test: testEditCustomer ===
+[INFO] 12-12-2025 10:46:40 [main] LogUtils - Browser initialized successfully: chrome
+[INFO] 12-12-2025 10:46:40 [main] LogUtils - === STARTING TEST: testEditCustomer ===
+[INFO] 12-12-2025 10:46:41 [main] LogUtils - Navigate to: https://crm.anhtester.com/admin/authentication
+[INFO] 12-12-2025 10:46:41 [main] LogUtils - Opening browser and navigating to URL: https://crm.anhtester.com/admin/authentication
+[INFO] 12-12-2025 10:46:41 [main] LogUtils - Set text admin@example.com on input By.xpath: //input[@name='email']
+[INFO] 12-12-2025 10:46:41 [main] LogUtils - Entered email: admin@example.com
+[INFO] 12-12-2025 10:46:42 [main] LogUtils - Set text 123456 on input By.xpath: //input[@name='password']
+[INFO] 12-12-2025 10:46:42 [main] LogUtils - Entered password: ****
+[INFO] 12-12-2025 10:46:43 [main] LogUtils - Click on element By.xpath: //button[normalize-space()='Login']
+[INFO] 12-12-2025 10:46:43 [main] LogUtils - Clicked on Login button
+[INFO] 12-12-2025 10:46:43 [main] LogUtils - Click on element By.xpath: //span[normalize-space(text())='Customers']
+[INFO] 12-12-2025 10:46:43 [main] LogUtils - Running test case testEditCustomer
+[INFO] 12-12-2025 10:46:43 [main] LogUtils - Executing testEditCustomer - Editing phone number of customer from testAddNewCustomer
+[INFO] 12-12-2025 10:46:43 [main] LogUtils - Editing phone number for customer: ABC Technology Company
+[INFO] 12-12-2025 10:46:43 [main] LogUtils - Set text ABC Technology Company on input By.xpath: //input[@id='search_input']
+[INFO] 12-12-2025 10:46:45 [main] LogUtils - Searched for customer: ABC Technology Company
+[INFO] 12-12-2025 10:46:46 [main] LogUtils - Set text ABC Technology Company on input By.xpath: //input[@id='search_input']
+[INFO] 12-12-2025 10:46:48 [main] LogUtils - Searched for customer: ABC Technology Company
+[ERROR] 12-12-2025 10:46:52 [main] LogUtils - Timeout waiting for the element ClickableBy.xpath: //ul[@id='top_search_dropdown']//a[normalize-space(.)='ABC Technology Company']
+[ERROR] 12-12-2025 10:46:52 [main] LogUtils - Test case testEditCustomer is failed.
+[ERROR] 12-12-2025 10:46:52 [main] LogUtils - java.lang.AssertionError: Timeout waiting for the element ClickableBy.xpath: //ul[@id='top_search_dropdown']//a[normalize-space(.)='ABC Technology Company']
+[ERROR] 12-12-2025 10:46:54 [main] LogUtils - Test case testEditCustomer is failed.
+[ERROR] 12-12-2025 10:46:54 [main] LogUtils - org.openqa.selenium.NoSuchSessionException: invalid session id
+Build info: version: '4.38.0', revision: '6b412e825c*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.14'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [0e63c0ff5927d09acc6f20d491404b91, screenshot {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 142.0.7444.176, chrome: {chromedriverVersion: 142.0.7444.175 (302067f14a4..., userDataDir: C:\Users\ITC-PM~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60319}, goog:processID: 23760, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60319/devtoo..., se:cdpVersion: 142.0.7444.176, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 0e63c0ff5927d09acc6f20d491404b91
+[INFO] 12-12-2025 10:46:54 [main] LogUtils - End testing TestNGTest-91a22ea9-16e0-4a48-80cc-93784513b876
+[INFO] 12-12-2025 10:49:50 [main] LogUtils - === INITIALIZING BROWSER: CHROME for test: testEditCustomer ===
+[INFO] 12-12-2025 10:49:53 [main] LogUtils - Browser initialized successfully: chrome
+[INFO] 12-12-2025 10:49:53 [main] LogUtils - === STARTING TEST: testEditCustomer ===
+[INFO] 12-12-2025 10:49:53 [main] LogUtils - Navigate to: https://crm.anhtester.com/admin/authentication
+[INFO] 12-12-2025 10:49:54 [main] LogUtils - Opening browser and navigating to URL: https://crm.anhtester.com/admin/authentication
+[INFO] 12-12-2025 10:49:54 [main] LogUtils - Set text admin@example.com on input By.xpath: //input[@name='email']
+[INFO] 12-12-2025 10:49:54 [main] LogUtils - Entered email: admin@example.com
+[INFO] 12-12-2025 10:49:54 [main] LogUtils - Set text 123456 on input By.xpath: //input[@name='password']
+[INFO] 12-12-2025 10:49:54 [main] LogUtils - Entered password: ****
+[INFO] 12-12-2025 10:49:54 [main] LogUtils - Click on element By.xpath: //button[normalize-space()='Login']
+[INFO] 12-12-2025 10:49:54 [main] LogUtils - Clicked on Login button
+[INFO] 12-12-2025 10:49:56 [main] LogUtils - Click on element By.xpath: //span[normalize-space(text())='Customers']
+[INFO] 12-12-2025 10:49:56 [main] LogUtils - Running test case testEditCustomer
+[INFO] 12-12-2025 10:49:56 [main] LogUtils - Executing testEditCustomer - Editing phone number of customer from testAddNewCustomer
+[INFO] 12-12-2025 10:49:56 [main] LogUtils - Editing phone number for customer: ABC Technology Company
+[INFO] 12-12-2025 10:49:56 [main] LogUtils - Set text ABC Technology Company on input By.xpath: //input[@id='search_input']
+[INFO] 12-12-2025 10:49:58 [main] LogUtils - Searched for customer: ABC Technology Company
+[INFO] 12-12-2025 10:49:58 [main] LogUtils - Click on element By.xpath: //ul[@id='top_search_dropdown']//a[normalize-space(.)='ABC Technology Company']
+[INFO] 12-12-2025 10:50:00 [main] LogUtils - Clicked on customer row to View: ABC Technology Company
+[INFO] 12-12-2025 10:50:03 [main] LogUtils - Clear and Set text 0999888777 on input By.xpath: //input[@id='phonenumber']
+[INFO] 12-12-2025 10:50:03 [main] LogUtils - Updated phone number to: 0999888777
+[INFO] 12-12-2025 10:50:03 [main] LogUtils - Click on element By.xpath: //button[contains(@class,'only-save')]
+[INFO] 12-12-2025 10:50:03 [main] LogUtils - Clicked on Save button
+[INFO] 12-12-2025 10:50:06 [main] LogUtils - ✓ Edited customer phone successfully: ABC Technology Company
+[INFO] 12-12-2025 10:50:06 [main] LogUtils - Get text of element By.xpath: //div[contains(@class,'alert-success')] is ×
+Customer updated successfully.
+[INFO] 12-12-2025 10:50:06 [main] LogUtils - Customer added successfully: ×
+Customer updated successfully.
+[INFO] 12-12-2025 10:50:06 [main] LogUtils - testEditCustomer completed - Updated phone for customer: ABC Technology Company
+[INFO] 12-12-2025 10:50:06 [main] LogUtils - Test case testEditCustomer is passed.
+[INFO] 12-12-2025 10:50:06 [main] LogUtils - === TEST PASSED: testEditCustomer ===
+[INFO] 12-12-2025 10:50:07 [main] LogUtils - Browser driver closed successfully
+[INFO] 12-12-2025 10:50:07 [main] LogUtils - End testing TestNGTest-d1e75069-146e-4971-99d3-8b251bc8d83c

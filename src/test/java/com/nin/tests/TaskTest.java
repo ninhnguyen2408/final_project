@@ -49,5 +49,6 @@ public class TaskTest extends BaseTest {
         Task task = TaskTestData.getAddNewTask1();
         taskPage.clickAddNewTask();
         taskPage.fillDataAddNewTask(task);
+        
     }
 }

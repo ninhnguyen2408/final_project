@@ -221,23 +221,17 @@ public class TaskPage {
     @Step("Fill task data: {task}")
     public void fillDataAddNewTask(Task task) {
         LogUtils.info("Filling task data for: " + task.getSubject());
-        //setPublic(task.isPublic());
         enterSubject(task.getSubject());
-        enterHourlyRate(task.getHourlyRate());
-        selectStartDate(task.getStartDate());
-        selectDueDate(task.getDueDate());
-        selectPriority(task.getPriority());
-        selectRepeatEvery(task.getRepeatEvery());
-        selectRelatedTo(task.getRelatedTo());
-        ActionKeywords.sleep(2);
-        selectAssignee(task.getAssignee());
-        ActionKeywords.sleep(2);
-
-        addFollower(task.getFollower());
-        ActionKeywords.sleep(2);
-
-        addTag(task.getTag());
-        enterTaskDescription(task.getDescription());
+        // enterHourlyRate(task.getHourlyRate());
+        // selectStartDate(task.getStartDate());
+        // selectDueDate(task.getDueDate());
+        // selectPriority(task.getPriority());
+        // selectRepeatEvery(task.getRepeatEvery());
+        // selectRelatedTo(task.getRelatedTo());
+        // selectAssignee(task.getAssignee());
+        // addFollower(task.getFollower());
+        // addTag(task.getTag());
+        // enterTaskDescription(task.getDescription());
         clickSave();
         ActionKeywords.sleep(3);
         LogUtils.info("Filled all task information successfully: " + task.toString());

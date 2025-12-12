@@ -5,8 +5,10 @@ import com.nin.pages.CustomerPage;
 import com.nin.pages.LoginPage;
 import common.BaseTest;
 import io.qameta.allure.*;
+import keyworks.ActionKeywords;
 import listeners.TestListener;
 import models.Customer;
+import org.openqa.selenium.By;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
@@ -50,6 +52,43 @@ public class CustomerTest extends BaseTest {
         customerPage.clickAddNewCustomer();
         customerPage.fillDataAddNewCustomer(customer);
         customerPage.verifyCustomerAddedSuccess();
-        LogUtils.info("testAddNewVIPCustomer completed");
+        LogUtils.info("testAddNewCustomer completed");
+    }
+
+    @Test(priority = 2)
+    @Story("Edit existing customer phone number")
+    @Description("Verify that user can edit phone number of the customer created in testAddNewCustomer")
+    @Severity(SeverityLevel.CRITICAL)
+    @Owner("QA Team")
+    public void testEditCustomer() {
+        LogUtils.info("Executing testEditCustomer - Editing phone number of customer from testAddNewCustomer");
+        
+        Customer originalCustomer = CustomerTestData.getAddNewCustomer1();
+        String companyName = originalCustomer.getCompany();
+        String newPhoneNumber = "0999888777";
+        
+        customerPage.editCustomerPhone(companyName, newPhoneNumber);
+        customerPage.verifyCustomerEditedSuccess();
+        
+        LogUtils.info("testEditCustomer completed - Updated phone for customer: " + companyName);
+    }
+
+    @Test(priority = 3)
+    @Story("Delete customer successfully")
+    @Description("Verify that user can delete an existing customer")
+    @Severity(SeverityLevel.CRITICAL)
+    @Owner("QA Team")
+    public void testDeleteCustomer() {
+        LogUtils.info("Executing testDeleteCustomer - Testing delete customer");
+        
+        String customerToDelete = "Global Import Export Ltd";
+        
+        customerPage.clickDeleteCustomer(customerToDelete);
+        customerPage.confirmDelete();
+        
+        boolean isDeleted = customerPage.verifyCustomerDeleted(customerToDelete);
+        org.testng.Assert.assertTrue(isDeleted, "Customer should be deleted successfully");
+        
+        LogUtils.info("testDeleteCustomer completed");
     }
 }
