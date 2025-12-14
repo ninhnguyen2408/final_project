@@ -65,7 +65,7 @@ public class CustomerTest extends BaseTest {
         
         Customer originalCustomer = CustomerTestData.getAddNewCustomer1();
         String companyName = originalCustomer.getCompany();
-        String newPhoneNumber = "0999888777";
+        String newPhoneNumber = "0999888887";
         
         customerPage.editCustomerPhone(companyName, newPhoneNumber);
         customerPage.verifyCustomerEditedSuccess();
@@ -81,14 +81,9 @@ public class CustomerTest extends BaseTest {
     public void testDeleteCustomer() {
         LogUtils.info("Executing testDeleteCustomer - Testing delete customer");
         
-        String customerToDelete = "Global Import Export Ltd";
-        
-        customerPage.clickDeleteCustomer(customerToDelete);
+        customerPage.clickDeleteCustomer();
         customerPage.confirmDelete();
-        
-        boolean isDeleted = customerPage.verifyCustomerDeleted(customerToDelete);
-        org.testng.Assert.assertTrue(isDeleted, "Customer should be deleted successfully");
-        
+        customerPage.verifyCustomerDeleteSuccess();
         LogUtils.info("testDeleteCustomer completed");
     }
 }

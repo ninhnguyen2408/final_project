@@ -6,15 +6,6 @@ import org.openqa.selenium.By;
 import org.testng.Assert;
 import utils.LogUtils;
 
-/**
- * Dashboard Page - Trang chủ sau khi login
- * Chứa các thống kê, menu chính, thông tin user
- * 
- * Best Practice:
- * - Verify dashboard load thành công
- * - Check các menu hiển thị
- * - Có thể navigate đến các module khác
- */
 public class DashboardPage extends BasePage {
 
     // Locators - Dashboard Elements

@@ -376,13 +376,30 @@ public class ActionKeywords {
         return DriverManager.getDriver().switchTo().alert().getText();
     }
 
+    // Accept alert (click OK)
+    @Step("Accepting alert/confirmation dialog")
+    public static void acceptAlert() {
+        sleep(1);
+        DriverManager.getDriver().switchTo().alert().accept();
+        logConsole("Accepted alert/confirmation dialog");
+    }
+
+    // Dismiss alert (click Cancel)
+    @Step("Dismissing alert/confirmation dialog")
+    public static void dismissAlert() {
+        sleep(1);
+        DriverManager.getDriver().switchTo().alert().dismiss();
+        logConsole("Dismissed alert/confirmation dialog");
+    }
+
 
     // ************* Javascript Executor, Actions class, Robot class ************
 
     //cuộn chuột đến vị trí element (đối tượng By)
     public static void scrollToElement(By by) {
         JavascriptExecutor js = (JavascriptExecutor) DriverManager.getDriver();
-        js.executeScript("arguments[0].scrollIntoView(true);", by);
+        WebElement element = getWebElement(by);
+        js.executeScript("arguments[0].scrollIntoView(true);", element);
     }
 
     // cuộn chuột đến vị trí element (đối tượng WebElement)
@@ -452,14 +469,17 @@ public class ActionKeywords {
         logConsole("Click on element with JS: " + by);
     }
 
-    // nhấn phím ENTER
+    @Step("Pressing ENTER key")
     public static boolean pressENTER() {
         try {
             Robot robot = new Robot();
             robot.keyPress(KeyEvent.VK_ENTER);
+            robot.delay(100);
             robot.keyRelease(KeyEvent.VK_ENTER);
+            logConsole("Pressed ENTER key successfully");
             return true;
         } catch (Exception e) {
+            logConsole("Error pressing ENTER: " + e.getMessage());
             return false;
         }
     }

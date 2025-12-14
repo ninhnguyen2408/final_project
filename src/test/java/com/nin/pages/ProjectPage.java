@@ -6,27 +6,25 @@ import models.Customer;
 import org.openqa.selenium.By;
 import utils.LogUtils;
 
-public class CustomerPage {
-    private By titleCustomerPage = By.xpath("//span[normalize-space()='Customers Summary']");
-    private By btnAddNewCustomer = By.xpath("//a[normalize-space()='New Customer']");
-    private By inputSearchCustomer = By.xpath("//input[@id='search_input']");
+public class ProjectPage {
+    private By btnAddNewProject = By.xpath("//a[normalize-space()='New Project']");
+    private By inputSearchProject = By.xpath("//input[@id='search_input']");
 
     //ul[@id='top_search_dropdown']//a[normalize-space(.)='ABC Technology Company']
 
-    public void clickAddNewCustomer() {
-        ActionKeywords.clickElement(btnAddNewCustomer);
-        LogUtils.info("Clicked on Add New Customer button");
+    public void clickAddNewProject() {
+        ActionKeywords.clickElement(btnAddNewProject);
+        LogUtils.info("Clicked on Add New Project button");
     }
 
     //Action of table
-    private By hoverAction = By.xpath("//td[contains(@class,'sorting_1') and .//a[text()='123 company ABC Tech']]");
     private By linkView = By.xpath("//a[text()='View']");
     private By linkContacts = By.xpath("//a[text()='Contacts']");
     private By linkDelete = By.xpath("//a[text()='Delete ']");
 
 
-    //Tab Customer Details
-    private By inputCompany = By.xpath("//input[@id='company']");
+    //Add Project
+    private By inputProjectName = By.xpath("//input[@id='name']");
     private By inputVATNumber = By.xpath("//input[@id='vat']");
     private By inputPhone = By.xpath("//input[@id='phonenumber']");
     private By inputWebsite = By.xpath("//input[@id='website']");
@@ -216,13 +214,13 @@ public class CustomerPage {
         LogUtils.info("Clicked on customer row to View: " + companyName);
     }
 
-    @Step("Clicking Delete for customer")
-    public void clickDeleteCustomer() {
+    @Step("Clicking Delete for customer: {companyName}")
+    public void clickDeleteCustomer(String companyName) {
         ActionKeywords.mouseHover(hoverAction);
         ActionKeywords.sleep(1);
         ActionKeywords.clickElement(linkDelete);
         ActionKeywords.sleep(1);
-        LogUtils.info("Hovered on row and clicked Delete for customer");
+        LogUtils.info("Hovered on row and clicked Delete for customer: " + companyName);
     }
 
     @Step("Confirming delete action")
