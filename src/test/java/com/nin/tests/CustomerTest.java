@@ -5,10 +5,8 @@ import com.nin.pages.CustomerPage;
 import com.nin.pages.LoginPage;
 import common.BaseTest;
 import io.qameta.allure.*;
-import keyworks.ActionKeywords;
 import listeners.TestListener;
 import models.Customer;
-import org.openqa.selenium.By;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
@@ -65,7 +63,7 @@ public class CustomerTest extends BaseTest {
         
         Customer originalCustomer = CustomerTestData.getAddNewCustomer1();
         String companyName = originalCustomer.getCompany();
-        String newPhoneNumber = "0999888700";
+        String newPhoneNumber = "0999888887";
         
         customerPage.editCustomerPhone(companyName, newPhoneNumber);
         customerPage.verifyCustomerEditedSuccess();
@@ -88,7 +86,9 @@ public class CustomerTest extends BaseTest {
 
         customerPage.verifyCustomerDeleteSuccess();
 
-        
+        customerPage.clickDeleteCustomer(customerToDelete);
+        customerPage.confirmDeleteOk();;
+        customerPage.verifyCustomerDeleteSuccess();
         LogUtils.info("testDeleteCustomer completed");
     }
 }

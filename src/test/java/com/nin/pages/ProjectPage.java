@@ -6,28 +6,32 @@ import models.Customer;
 import org.openqa.selenium.By;
 import utils.LogUtils;
 
-public class CustomerPage {
-    private By titleCustomerPage = By.xpath("//span[normalize-space()='Customers Summary']");
-    private By btnAddNewCustomer = By.xpath("//a[normalize-space()='New Customer']");
-    private By inputSearchCustomer = By.xpath("//input[@id='search_input']");
+public class ProjectPage {
+    private By btnAddNewProject = By.xpath("//a[normalize-space()='New Project']");
+    private By inputSearchProject = By.xpath("//input[@id='search_input']");
+
+    //ul[@id='top_search_dropdown']//a[normalize-space(.)='ABC Technology Company']
+
+    public void clickAddNewProject() {
+        ActionKeywords.clickElement(btnAddNewProject);
+        LogUtils.info("Clicked on Add New Project button");
+    }
 
     //Action of table
-    private By hoverAction = By.xpath("//td[contains(@class,'sorting_1') and .//a[text()='123 company ABC Tech']]");
     private By linkView = By.xpath("//a[text()='View']");
     private By linkContacts = By.xpath("//a[text()='Contacts']");
-    private By linkDelete = By.xpath("//a[contains(@class,'_delete')]");
+    private By linkDelete = By.xpath("//a[text()='Delete ']");
 
-    // Tab Customer Details
-    private By inputCompany = By.xpath("//input[@id='company']");
+
+    //Add Project
+    private By inputProjectName = By.xpath("//input[@id='name']");
     private By inputVATNumber = By.xpath("//input[@id='vat']");
     private By inputPhone = By.xpath("//input[@id='phonenumber']");
     private By inputWebsite = By.xpath("//input[@id='website']");
     private By dropdownGroups = By.xpath("//button[@data-id='groups_in[]']");
-    private By inputSearchGroups = By
-            .xpath("//button[@data-id='groups_in[]']/following-sibling::div//input[@type='search']");
+    private By inputSearchGroups = By.xpath("//button[@data-id='groups_in[]']/following-sibling::div//input[@type='search']");
     private By dropdownCurrency = By.xpath("//button[@data-id='default_currency']");
-    private By inputSearchCurrency = By
-            .xpath("//button[@data-id='default_currency']/following-sibling::div//input[@type='search']");
+    private By inputSearchCurrency = By.xpath("//button[@data-id='default_currency']/following-sibling::div//input[@type='search']");
     private By dropdowDefaultLanguege = By.xpath("//button[@data-id='default_language']");
     private By inputAddress = By.xpath("//textarea[@id='address']");
     private By inputCity = By.xpath("//input[@id='city']");
@@ -40,21 +44,12 @@ public class CustomerPage {
     private By alertMessage = By.xpath("//div[@id='alert_float_1']");
     private By alertSuccess = By.xpath("//div[contains(@class,'alert-success')]");
     private By alertError = By.xpath("//div[contains(@class,'alert-danger')]");
-    private By errorDuplicateCompany = By
-            .xpath("//div[contains(text(),'Customer already exists') or contains(text(),'already exist')]");
+    private By errorDuplicateCompany = By.xpath("//div[contains(text(),'Customer already exists') or contains(text(),'already exist')]");
 
-    // ========== BASIC ACTIONS ==========
-    
-    public void clickAddNewCustomer() {
-        ActionKeywords.clickElement(btnAddNewCustomer);
-        LogUtils.info("Clicked on Add New Customer button");
-    }
-
-    // ========== PRIVATE INPUT METHODS ==========
 
     private void enterCompanyName(String company) {
         ActionKeywords.sendKeys(inputCompany, company);
-        LogUtils.info("Entered company: " + (company.isEmpty() ? "[EMPTY]" : company));
+        LogUtils.info("Entered email: " + (company.isEmpty() ? "[EMPTY]" : company));
     }
 
     private void enterVATNumber(String vatNumber) {
@@ -76,7 +71,7 @@ public class CustomerPage {
         ActionKeywords.clickElement(dropdownGroups);
         ActionKeywords.sendKeys(inputSearchGroups, group);
         ActionKeywords.clickElement(By.xpath("//span[normalize-space()='" + group + "']"));
-        ActionKeywords.clickElement(dropdownGroups);
+        ActionKeywords.clickElement(dropdownGroups); // Close the dropdown
         LogUtils.info("Selected group: " + group);
     }
 
@@ -86,10 +81,11 @@ public class CustomerPage {
         ActionKeywords.clickElement(By.xpath("//span[contains(text(),'" + currency + "')]"));
         LogUtils.info("Selected currency: " + currency);
     }
-
     private void selectLanguage(String language) {
         ActionKeywords.clickElement(dropdowDefaultLanguege);
-        ActionKeywords.clickElement(By.xpath("//span[normalize-space()='" + language + "']"));
+        String xpathLanguage = "//span[normalize-space()='" + language + "']";
+        System.out.println("Selecting language: " + language);
+        ActionKeywords.clickElement(By.xpath(xpathLanguage));
         LogUtils.info("Selected language: " + language);
     }
 
@@ -132,11 +128,10 @@ public class CustomerPage {
         LogUtils.info("Clicked on Save button");
     }
 
-    // ========== FILL CUSTOMER DATA ==========
-
     @Step("Fill customer data: {customer}")
     public void fillDataAddNewCustomer(Customer customer) {
         LogUtils.info("Filling customer data for: " + customer.getCompany());
+        
         enterCompanyName(customer.getCompany());
         enterVATNumber(customer.getVatNumber());
         enterPhone(customer.getPhone());
@@ -150,39 +145,27 @@ public class CustomerPage {
         enterZipCode(customer.getZipCode());
         selectCountry(customer.getCountry());
         clickSave();
-        LogUtils.info("Filled all customer information successfully");
+        LogUtils.info("Filled all customer information successfully: " + customer.toString());
     }
-
-    // ========== VERIFICATION METHODS ==========
 
     public boolean verifyCustomerAddedSuccess() {
         ActionKeywords.waitForElementVisible(alertMessage, 5);
         boolean isSuccess = ActionKeywords.checkElementDisplayed(alertSuccess);
         if (isSuccess) {
             String message = ActionKeywords.getTextElement(alertSuccess);
-            LogUtils.info("Customer added successfully: " + message);
+            LogUtils.info("Customer added successfully: " + message);            
         }
         return isSuccess;
     }
 
     public boolean verifyCustomerEditedSuccess() {
         ActionKeywords.waitForElementVisible(alertMessage, 5);
-        boolean isSuccess = ActionKeywords.checkElementDisplayed(alertSuccess);
-        if (isSuccess) {
+        boolean isEditSuccess = ActionKeywords.checkElementDisplayed(alertSuccess);
+        if (isEditSuccess) {
             String message = ActionKeywords.getTextElement(alertSuccess);
-            LogUtils.info("Customer edited successfully: " + message);
+            LogUtils.info("Customer edit successfully: " + message);            
         }
-        return isSuccess;
-    }
-
-    public boolean verifyCustomerDeleteSuccess() {
-        ActionKeywords.waitForElementVisible(alertMessage, 5);
-        boolean isSuccess = ActionKeywords.checkElementDisplayed(alertSuccess);
-        if (isSuccess) {
-            String message = ActionKeywords.getTextElement(alertSuccess);
-            LogUtils.info("Customer deleted successfully: " + message);
-        }
-        return isSuccess;
+        return isEditSuccess;
     }
 
     public boolean verifyCustomerAddedFailed() {
@@ -195,6 +178,16 @@ public class CustomerPage {
         return isFailed;
     }
 
+    public boolean verifyCustomerDeleteSuccess() {
+        ActionKeywords.waitForElementVisible(alertMessage, 5);
+        boolean isDeleteSuccess = ActionKeywords.checkElementDisplayed(alertSuccess);
+        if (isDeleteSuccess) {
+            String message = ActionKeywords.getTextElement(alertSuccess);
+            LogUtils.info("Customer deleted successfully: " + message);            
+        }
+        return isDeleteSuccess;
+    }
+
     public String getAlertMessage() {
         if (ActionKeywords.checkElementDisplayed(alertMessage)) {
             return ActionKeywords.getTextElement(alertMessage);
@@ -203,7 +196,7 @@ public class CustomerPage {
     }
 
     // ========== SEARCH & ACTION METHODS ==========
-
+    
     @Step("Searching for customer: {companyName}")
     public void searchCustomer(String companyName) {
         ActionKeywords.sendKeys(inputSearchCustomer, companyName);
@@ -215,6 +208,7 @@ public class CustomerPage {
     public void clickViewCustomer(String companyName) {
         searchCustomer(companyName);
         By customerRow = By.xpath("//ul[@id='top_search_dropdown']//a[normalize-space(.)='" + companyName + "']");
+
         ActionKeywords.clickElement(customerRow);
         ActionKeywords.sleep(2);
         LogUtils.info("Clicked on customer row to View: " + companyName);
@@ -222,40 +216,33 @@ public class CustomerPage {
 
     @Step("Clicking Delete for customer: {companyName}")
     public void clickDeleteCustomer(String companyName) {
-        searchCustomer(companyName);
-        By deleteButton = By.xpath("//td[normalize-space()='" + companyName + "']/parent::tr//a[contains(@class,'_delete')]");
-        ActionKeywords.waitForElementClickable(deleteButton, 5);
-        ActionKeywords.clickElement(deleteButton);
+        ActionKeywords.mouseHover(hoverAction);
         ActionKeywords.sleep(1);
-        LogUtils.info("Clicked Delete for customer: " + companyName);
+        ActionKeywords.clickElement(linkDelete);
+        ActionKeywords.sleep(1);
+        LogUtils.info("Hovered on row and clicked Delete for customer: " + companyName);
     }
 
-    @Step("Confirming delete action - Click OK")
-    public void confirmDeleteOk() {
+    @Step("Confirming delete action")
+    public void confirmDelete() {
         ActionKeywords.acceptAlert();
         ActionKeywords.sleep(2);
-        LogUtils.info("Confirmed delete action via browser alert - Clicked OK");
-    }
-
-    @Step("Confirming delete action - Click Cancel")
-    public void confirmDeleteCancel() {
-        ActionKeywords.dismissAlert();
-        ActionKeywords.sleep(2);
-        LogUtils.info("Cancelled delete action via browser alert - Clicked Cancel");
+        LogUtils.info("Confirmed delete action via browser alert");
     }
 
     // ========== EDIT CUSTOMER ==========
-
+    
     @Step("Editing customer phone number: {newPhone}")
     public void editCustomerPhone(String companyName, String newPhone) {
         LogUtils.info("Editing phone number for customer: " + companyName);
         clickViewCustomer(companyName);
         ActionKeywords.clearAndSendKeys(inputPhone, newPhone);
         clickSave();
+        LogUtils.info("217427340274");
         ActionKeywords.sleep(2);
         LogUtils.info("Edited customer phone successfully: " + companyName);
     }
-
+    
     @Step("Editing customer data: {customer}")
     public void editCustomer(Customer customer) {
         LogUtils.info("Editing customer data for: " + customer.getCompany());
@@ -263,7 +250,6 @@ public class CustomerPage {
         ActionKeywords.clearAndSendKeys(inputVATNumber, customer.getVatNumber());
         ActionKeywords.clearAndSendKeys(inputPhone, customer.getPhone());
         ActionKeywords.clearAndSendKeys(inputWebsite, customer.getWebsite());
-        
         if (customer.getGroup() != null && !customer.getGroup().isEmpty()) {
             selectGroup(customer.getGroup());
         }
@@ -273,37 +259,37 @@ public class CustomerPage {
         if (customer.getLanguage() != null && !customer.getLanguage().isEmpty()) {
             selectLanguage(customer.getLanguage());
         }
-        
         ActionKeywords.clearAndSendKeys(inputAddress, customer.getAddress());
         ActionKeywords.clearAndSendKeys(inputCity, customer.getCity());
         ActionKeywords.clearAndSendKeys(inputState, customer.getState());
         ActionKeywords.clearAndSendKeys(inputZipCode, customer.getZipCode());
-
+        
         if (customer.getCountry() != null && !customer.getCountry().isEmpty()) {
             selectCountry(customer.getCountry());
         }
         
         clickSave();
         ActionKeywords.sleep(3);
-        LogUtils.info("Edited customer information successfully");
+        
+        LogUtils.info("Edited customer information successfully: " + customer.toString());
     }
 
-    // ========== VERIFICATION METHODS ==========
-
+    // ========== VERIFY METHODS ==========
+    
     @Step("Verifying customer exists in table: {companyName}")
     public boolean verifyCustomerExists(String companyName) {
         searchCustomer(companyName);
         By customerRow = By.xpath("//td[normalize-space()='" + companyName + "']");
         boolean exists = ActionKeywords.checkElementDisplayed(customerRow);
         if (exists) {
-            LogUtils.info("✓ Customer found: " + companyName);
+            LogUtils.info("Customer found: " + companyName);
         } else {
-            LogUtils.info("✗ Customer not found: " + companyName);
+            LogUtils.info("Customer not found: " + companyName);
         }
         return exists;
     }
 
-    @Step("Verifying customer deleted successfully: {companyName}")
+    @Step("Verifying customer deleted successfully")
     public boolean verifyCustomerDeleted(String companyName) {
         ActionKeywords.sleep(2);
         searchCustomer(companyName);
@@ -311,11 +297,13 @@ public class CustomerPage {
         boolean stillExists = ActionKeywords.checkElementExist(customerRow);
         
         if (!stillExists) {
-            LogUtils.info("✓ Customer deleted successfully: " + companyName);
+            LogUtils.info("Customer deleted successfully: " + companyName);
             return true;
         } else {
             LogUtils.error("✗ Customer still exists after delete: " + companyName);
             return false;
         }
     }
+
+
 }
