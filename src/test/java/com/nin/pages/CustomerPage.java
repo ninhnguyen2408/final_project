@@ -11,28 +11,27 @@ public class CustomerPage {
     private By btnAddNewCustomer = By.xpath("//a[normalize-space()='New Customer']");
     private By inputSearchCustomer = By.xpath("//input[@id='search_input']");
 
-    //ul[@id='top_search_dropdown']//a[normalize-space(.)='ABC Technology Company']
-
     public void clickAddNewCustomer() {
         ActionKeywords.clickElement(btnAddNewCustomer);
         LogUtils.info("Clicked on Add New Customer button");
     }
 
-    //Action of table
+    // Action of table
     private By linkView = By.xpath("//a[text()='View']");
     private By linkContacts = By.xpath("//a[text()='Contacts']");
-    private By linkDelete = By.xpath("//a[text()='Delete ']");
+    private By linkDelete = By.xpath("//a[contains(@class,'_delete')]");
 
-
-    //Tab Customer Details
+    // Tab Customer Details
     private By inputCompany = By.xpath("//input[@id='company']");
     private By inputVATNumber = By.xpath("//input[@id='vat']");
     private By inputPhone = By.xpath("//input[@id='phonenumber']");
     private By inputWebsite = By.xpath("//input[@id='website']");
     private By dropdownGroups = By.xpath("//button[@data-id='groups_in[]']");
-    private By inputSearchGroups = By.xpath("//button[@data-id='groups_in[]']/following-sibling::div//input[@type='search']");
+    private By inputSearchGroups = By
+            .xpath("//button[@data-id='groups_in[]']/following-sibling::div//input[@type='search']");
     private By dropdownCurrency = By.xpath("//button[@data-id='default_currency']");
-    private By inputSearchCurrency = By.xpath("//button[@data-id='default_currency']/following-sibling::div//input[@type='search']");
+    private By inputSearchCurrency = By
+            .xpath("//button[@data-id='default_currency']/following-sibling::div//input[@type='search']");
     private By dropdowDefaultLanguege = By.xpath("//button[@data-id='default_language']");
     private By inputAddress = By.xpath("//textarea[@id='address']");
     private By inputCity = By.xpath("//input[@id='city']");
@@ -44,10 +43,9 @@ public class CustomerPage {
 
     private By alertMessage = By.xpath("//div[@id='alert_float_1']");
     private By alertSuccess = By.xpath("//div[contains(@class,'alert-success')]");
-    private By alertEditSuccess = By.xpath("//div[contains(@class,'alert-success')]");
     private By alertError = By.xpath("//div[contains(@class,'alert-danger')]");
-    private By errorDuplicateCompany = By.xpath("//div[contains(text(),'Customer already exists') or contains(text(),'already exist')]");
-
+    private By errorDuplicateCompany = By
+            .xpath("//div[contains(text(),'Customer already exists') or contains(text(),'already exist')]");
 
     private void enterCompanyName(String company) {
         ActionKeywords.sendKeys(inputCompany, company);
@@ -83,6 +81,7 @@ public class CustomerPage {
         ActionKeywords.clickElement(By.xpath("//span[contains(text(),'" + currency + "')]"));
         LogUtils.info("Selected currency: " + currency);
     }
+
     private void selectLanguage(String language) {
         ActionKeywords.clickElement(dropdowDefaultLanguege);
         String xpathLanguage = "//span[normalize-space()='" + language + "']";
@@ -123,7 +122,7 @@ public class CustomerPage {
         LogUtils.info("Clicked on Save and Create button");
     }
 
-    private void clicksave(){
+    private void clicksave() {
         ActionKeywords.clickElement(btnSave);
         LogUtils.info("Clicked on Save button");
     }
@@ -131,7 +130,7 @@ public class CustomerPage {
     @Step("Fill customer data: {customer}")
     public void fillDataAddNewCustomer(Customer customer) {
         LogUtils.info("Filling customer data for: " + customer.getCompany());
-        
+
         enterCompanyName(customer.getCompany());
         enterVATNumber(customer.getVatNumber());
         enterPhone(customer.getPhone());
@@ -146,41 +145,9 @@ public class CustomerPage {
         selectCountry(customer.getCountry());
         clicksave();
         ActionKeywords.sleep(3);
-        
+
         LogUtils.info("Filled all customer information successfully: " + customer.toString());
     }
-
-    public boolean verifyCustomerAddedSuccess() {
-        ActionKeywords.waitForElementVisible(alertMessage, 5);
-        boolean isSuccess = ActionKeywords.checkElementDisplayed(alertSuccess);
-        if (isSuccess) {
-            String message = ActionKeywords.getTextElement(alertSuccess);
-            LogUtils.info("Customer added successfully: " + message);            
-        }
-        return isSuccess;
-    }
-
-    public boolean verifyCustomerEditedSuccess() {
-        ActionKeywords.waitForElementVisible(alertMessage, 5);
-        boolean isSuccess = ActionKeywords.checkElementDisplayed(alertEditSuccess);
-        if (isSuccess) {
-            String message = ActionKeywords.getTextElement(alertEditSuccess);
-            LogUtils.info("Customer edit successfully: " + message);            
-        }
-        return isSuccess;
-    }
-
-    public boolean verifyCustomerAddedFailed() {
-        ActionKeywords.waitForElementVisible(alertMessage, 5);
-        boolean isFailed = ActionKeywords.checkElementDisplayed(alertError);
-        if (isFailed) {
-            String errorMessage = ActionKeywords.getTextElement(alertError);
-            LogUtils.error("Failed to add customer: " + errorMessage);
-        }
-        return isFailed;
-    }
-
-
 
     public String getAlertMessage() {
         if (ActionKeywords.checkElementDisplayed(alertMessage)) {
@@ -190,7 +157,7 @@ public class CustomerPage {
     }
 
     // ========== SEARCH & ACTION METHODS ==========
-    
+
     @Step("Searching for customer: {companyName}")
     public void searchCustomer(String companyName) {
         ActionKeywords.sendKeys(inputSearchCustomer, companyName);
@@ -210,48 +177,54 @@ public class CustomerPage {
 
     @Step("Clicking Delete for customer: {companyName}")
     public void clickDeleteCustomer(String companyName) {
-        searchCustomer(companyName);
-        By customerRow = By.xpath("//td[normalize-space()='" + companyName + "']/parent::tr");
+        By customerRow = By.xpath("//tr[.//a[normalize-space(.)='" + companyName + "']]");
+        ActionKeywords.waitForElementVisible(customerRow, 10);
+
         ActionKeywords.mouseHover(customerRow);
-        ActionKeywords.sleep(1);
-        By deleteButton = By.xpath("//td[normalize-space()='" + companyName + "']/parent::tr//a[text()='Delete ']");
+        By deleteButton = By.xpath("//td[a[normalize-space(.)='" + companyName
+                + "']]/div[contains(@class,'row-options')]//a[contains(@class,'_delete')]");
+        ActionKeywords.waitForElementClickable(deleteButton, 5);
+
         ActionKeywords.clickElement(deleteButton);
-        ActionKeywords.sleep(1);
+
         LogUtils.info("Hovered on row and clicked Delete for customer: " + companyName);
     }
 
     @Step("Confirming delete action")
-    public void confirmDelete() {
-        ActionKeywords.clickElement(linkDelete);
-        ActionKeywords.sleep(2);
-        LogUtils.info("Confirmed delete action");
+    public void confirmDeleteOk() {
+        ActionKeywords.acceptAlert();
+    }
+
+    @Step("Confirming delete action")
+    public void confirmDeleteCancel() {
+        ActionKeywords.dismissAlert();
     }
 
     // ========== EDIT CUSTOMER ==========
-    
+
     @Step("Editing customer phone number: {newPhone}")
     public void editCustomerPhone(String companyName, String newPhone) {
         LogUtils.info("Editing phone number for customer: " + companyName);
         clickViewCustomer(companyName);
-        
+
         ActionKeywords.clearAndSendKeys(inputPhone, newPhone);
         LogUtils.info("Updated phone number to: " + newPhone);
-        
+
         clicksave();
         ActionKeywords.sleep(3);
-        
-        LogUtils.info("✓ Edited customer phone successfully: " + companyName);
+
+        LogUtils.info("Edited customer phone successfully: " + companyName);
     }
-    
+
     @Step("Editing customer data: {customer}")
     public void editCustomer(Customer customer) {
         LogUtils.info("Editing customer data for: " + customer.getCompany());
-        
+
         ActionKeywords.clearAndSendKeys(inputCompany, customer.getCompany());
         ActionKeywords.clearAndSendKeys(inputVATNumber, customer.getVatNumber());
         ActionKeywords.clearAndSendKeys(inputPhone, customer.getPhone());
         ActionKeywords.clearAndSendKeys(inputWebsite, customer.getWebsite());
-        
+
         if (customer.getGroup() != null && !customer.getGroup().isEmpty()) {
             selectGroup(customer.getGroup());
         }
@@ -261,24 +234,53 @@ public class CustomerPage {
         if (customer.getLanguage() != null && !customer.getLanguage().isEmpty()) {
             selectLanguage(customer.getLanguage());
         }
-        
+
         ActionKeywords.clearAndSendKeys(inputAddress, customer.getAddress());
         ActionKeywords.clearAndSendKeys(inputCity, customer.getCity());
         ActionKeywords.clearAndSendKeys(inputState, customer.getState());
         ActionKeywords.clearAndSendKeys(inputZipCode, customer.getZipCode());
-        
+
         if (customer.getCountry() != null && !customer.getCountry().isEmpty()) {
             selectCountry(customer.getCountry());
         }
-        
+
         clicksave();
         ActionKeywords.sleep(3);
-        
+
         LogUtils.info("✓ Edited customer information successfully: " + customer.toString());
     }
 
-    // ========== VERIFY METHODS ==========
-    
+    // -------------------------------------------------------------------------------------//
+    public boolean verifyCustomerAddedSuccess() {
+        ActionKeywords.waitForElementVisible(alertMessage, 5);
+        boolean isSuccess = ActionKeywords.checkElementDisplayed(alertSuccess);
+        if (isSuccess) {
+            String message = ActionKeywords.getTextElement(alertSuccess);
+            LogUtils.info("Customer added successfully: " + message);
+        }
+        return isSuccess;
+    }
+
+    public boolean verifyCustomerEditedSuccess() {
+        ActionKeywords.waitForElementVisible(alertMessage, 5);
+        boolean isSuccess = ActionKeywords.checkElementDisplayed(alertSuccess);
+        if (isSuccess) {
+            String message = ActionKeywords.getTextElement(alertSuccess);
+            LogUtils.info("Customer edit successfully: " + message);
+        }
+        return isSuccess;
+    }
+
+    public boolean verifyCustomerDeleteSuccess() {
+        ActionKeywords.waitForElementVisible(alertMessage, 5);
+        boolean isSuccess = ActionKeywords.checkElementDisplayed(alertSuccess);
+        if (isSuccess) {
+            String message = ActionKeywords.getTextElement(alertSuccess);
+            LogUtils.info("Customer edit successfully: " + message);
+        }
+        return isSuccess;
+    }
+
     @Step("Verifying customer exists in table: {companyName}")
     public boolean verifyCustomerExists(String companyName) {
         searchCustomer(companyName);
@@ -291,22 +293,5 @@ public class CustomerPage {
         }
         return exists;
     }
-
-    @Step("Verifying customer deleted successfully")
-    public boolean verifyCustomerDeleted(String companyName) {
-        ActionKeywords.sleep(2);
-        searchCustomer(companyName);
-        By customerRow = By.xpath("//td[normalize-space()='" + companyName + "']");
-        boolean stillExists = ActionKeywords.checkElementExist(customerRow);
-        
-        if (!stillExists) {
-            LogUtils.info("✓ Customer deleted successfully: " + companyName);
-            return true;
-        } else {
-            LogUtils.error("✗ Customer still exists after delete: " + companyName);
-            return false;
-        }
-    }
-
 
 }

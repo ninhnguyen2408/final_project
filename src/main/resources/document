@@ -3,11 +3,14 @@ https://crm.anhtester.com/admin/authentication
 Email: admin@example.com
 
 Password: 123456"	"
-- Login Admin Page: check 3 cases:  invaid email, invaid password and login success
+
+- Login Admin Page: check 3 cases:  invaid email, invaid password and login success (done)
 - Manage Customer (add, edit, delete)
 - Add Contacts cho Customer
 - Add Project
 - Add Task
+
+
 - Run full flow from: Login Admin Page > Add Customer > Add Project > Add Task
 - Logs, Reports, Video record, Screenshot case fail (Allure or Extent)
 - Parallel Execution cho toàn bộ project

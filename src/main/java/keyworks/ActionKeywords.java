@@ -246,6 +246,30 @@ public class ActionKeywords {
         }
     }
 
+    //Accepted alert
+    public static void acceptAlert() {
+        try {
+            Alert alert = DriverManager.getDriver().switchTo().alert();
+            LogUtils.info("Alert text: " + alert.getText());
+            alert.accept();
+            LogUtils.info("Accepted alert");
+        } catch (Exception e) {
+            LogUtils.error("No alert present: " + e.getMessage());
+        }
+    }
+
+    //Cancel alert
+    public static void dismissAlert() {
+        try {
+            Alert alert = DriverManager.getDriver().switchTo().alert();
+            LogUtils.info("Alert text: " + alert.getText());
+            alert.dismiss();;
+            LogUtils.info("Cancel alert");
+        } catch (Exception e) {
+            LogUtils.error("No alert present: " + e.getMessage());
+        }
+    }
+
     // Verify Contains
     public static boolean verifyContains(String actual, String expected) {
         waitForPageLoaded();
