@@ -23,11 +23,9 @@ public class CustomerPage {
     private By inputPhone = By.xpath("//input[@id='phonenumber']");
     private By inputWebsite = By.xpath("//input[@id='website']");
     private By dropdownGroups = By.xpath("//button[@data-id='groups_in[]']");
-    private By inputSearchGroups = By
-            .xpath("//button[@data-id='groups_in[]']/following-sibling::div//input[@type='search']");
+    private By inputSearchGroups = By.xpath("//button[@data-id='groups_in[]']/following-sibling::div//input[@type='search']");
     private By dropdownCurrency = By.xpath("//button[@data-id='default_currency']");
-    private By inputSearchCurrency = By
-            .xpath("//button[@data-id='default_currency']/following-sibling::div//input[@type='search']");
+    private By inputSearchCurrency = By.xpath("//button[@data-id='default_currency']/following-sibling::div//input[@type='search']");
     private By dropdowDefaultLanguege = By.xpath("//button[@data-id='default_language']");
     private By inputAddress = By.xpath("//textarea[@id='address']");
     private By inputCity = By.xpath("//input[@id='city']");

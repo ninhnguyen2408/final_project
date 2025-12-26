@@ -3263,3 +3263,188 @@ Customer deleted
 [INFO] 13-12-2025 22:44:46 [main] LogUtils - Browser driver closed successfully
 [INFO] 13-12-2025 22:44:46 [main] LogUtils - End testing TestNGTest-8b6720dc-39d3-4168-96ad-71115897c9f0
 >>>>>>> 4a88314ab9d63f1e4a2237801e5a2f5ffe9be6a4
+[INFO] 25-12-2025 16:44:09 [main] LogUtils - === INITIALIZING BROWSER: CHROME for test: testAddNewProject ===
+[INFO] 25-12-2025 16:44:16 [main] LogUtils - Browser initialized successfully: chrome
+[INFO] 25-12-2025 16:44:17 [main] LogUtils - Navigate to: https://crm.anhtester.com/admin/authentication
+[INFO] 25-12-2025 16:44:17 [main] LogUtils - Opening browser and navigating to URL: https://crm.anhtester.com/admin/authentication
+[INFO] 25-12-2025 16:44:17 [main] LogUtils - Set text admin@example.com on input By.xpath: //input[@name='email']
+[INFO] 25-12-2025 16:44:17 [main] LogUtils - Entered email: admin@example.com
+[INFO] 25-12-2025 16:44:18 [main] LogUtils - Set text 123456 on input By.xpath: //input[@name='password']
+[INFO] 25-12-2025 16:44:18 [main] LogUtils - Entered password: ****
+[INFO] 25-12-2025 16:44:19 [main] LogUtils - Click on element By.xpath: //button[normalize-space()='Login']
+[INFO] 25-12-2025 16:44:19 [main] LogUtils - Clicked on Login button
+[INFO] 25-12-2025 16:44:19 [main] LogUtils - Click on element By.xpath: //span[normalize-space(text())='Projects']
+[INFO] 25-12-2025 16:44:19 [main] LogUtils - Executing testAddNewProject - Testing add new project
+[INFO] 25-12-2025 16:44:20 [main] LogUtils - Click on element By.xpath: //a[normalize-space()='New Project']
+[INFO] 25-12-2025 16:44:20 [main] LogUtils - Clicked on Add New Project button
+[INFO] 25-12-2025 16:44:20 [main] LogUtils - Set text Project Alpha on input By.xpath: //input[@id='name']
+[INFO] 25-12-2025 16:44:20 [main] LogUtils - Entered email: Project Alpha
+[INFO] 25-12-2025 16:44:20 [main] LogUtils - Click on element By.xpath: //button[@data-id='clientid']
+[ERROR] 25-12-2025 16:44:20 [main] LogUtils - Timeout waiting for the element Visible By.xpath: ///input[@placeholder='Type to search...']
+[ERROR] 25-12-2025 16:44:20 [main] LogUtils - === TEST FAILED: testAddNewProject ===
+[ERROR] 25-12-2025 16:44:20 [main] LogUtils - Failure reason: Timeout waiting for the element Visible By.xpath: ///input[@placeholder='Type to search...']
+[INFO] 25-12-2025 16:44:21 [main] LogUtils - Browser driver closed successfully
+[INFO] 25-12-2025 16:46:07 [main] LogUtils - === INITIALIZING BROWSER: CHROME for test: testAddNewProject ===
+[INFO] 25-12-2025 16:46:09 [main] LogUtils - Browser initialized successfully: chrome
+[INFO] 25-12-2025 16:46:10 [main] LogUtils - Navigate to: https://crm.anhtester.com/admin/authentication
+[INFO] 25-12-2025 16:46:10 [main] LogUtils - Opening browser and navigating to URL: https://crm.anhtester.com/admin/authentication
+[INFO] 25-12-2025 16:46:10 [main] LogUtils - Set text admin@example.com on input By.xpath: //input[@name='email']
+[INFO] 25-12-2025 16:46:10 [main] LogUtils - Entered email: admin@example.com
+[INFO] 25-12-2025 16:46:10 [main] LogUtils - Set text 123456 on input By.xpath: //input[@name='password']
+[INFO] 25-12-2025 16:46:10 [main] LogUtils - Entered password: ****
+[INFO] 25-12-2025 16:46:11 [main] LogUtils - Click on element By.xpath: //button[normalize-space()='Login']
+[INFO] 25-12-2025 16:46:11 [main] LogUtils - Clicked on Login button
+[INFO] 25-12-2025 16:46:12 [main] LogUtils - Click on element By.xpath: //span[normalize-space(text())='Projects']
+[INFO] 25-12-2025 16:46:12 [main] LogUtils - Executing testAddNewProject - Testing add new project
+[INFO] 25-12-2025 16:46:13 [main] LogUtils - Click on element By.xpath: //a[normalize-space()='New Project']
+[INFO] 25-12-2025 16:46:13 [main] LogUtils - Clicked on Add New Project button
+[INFO] 25-12-2025 16:46:13 [main] LogUtils - Set text Project Alpha on input By.xpath: //input[@id='name']
+[INFO] 25-12-2025 16:46:13 [main] LogUtils - Entered email: Project Alpha
+[INFO] 25-12-2025 16:46:13 [main] LogUtils - Click on element By.xpath: //button[@data-id='clientid']
+[ERROR] 25-12-2025 16:46:13 [main] LogUtils - Timeout waiting for the element Visible By.xpath: ///input[@placeholder='Type to search...']
+[ERROR] 25-12-2025 16:46:13 [main] LogUtils - === TEST FAILED: testAddNewProject ===
+[ERROR] 25-12-2025 16:46:13 [main] LogUtils - Failure reason: Timeout waiting for the element Visible By.xpath: ///input[@placeholder='Type to search...']
+[INFO] 25-12-2025 16:46:14 [main] LogUtils - Browser driver closed successfully
+[INFO] 25-12-2025 16:59:04 [main] LogUtils - === INITIALIZING BROWSER: CHROME for test: testAddNewProject ===
+[INFO] 25-12-2025 16:59:08 [main] LogUtils - Browser initialized successfully: chrome
+[INFO] 25-12-2025 16:59:09 [main] LogUtils - Navigate to: https://crm.anhtester.com/admin/authentication
+[INFO] 25-12-2025 16:59:09 [main] LogUtils - Opening browser and navigating to URL: https://crm.anhtester.com/admin/authentication
+[INFO] 25-12-2025 16:59:09 [main] LogUtils - Set text admin@example.com on input By.xpath: //input[@name='email']
+[INFO] 25-12-2025 16:59:09 [main] LogUtils - Entered email: admin@example.com
+[INFO] 25-12-2025 16:59:09 [main] LogUtils - Set text 123456 on input By.xpath: //input[@name='password']
+[INFO] 25-12-2025 16:59:09 [main] LogUtils - Entered password: ****
+[INFO] 25-12-2025 16:59:10 [main] LogUtils - Click on element By.xpath: //button[normalize-space()='Login']
+[INFO] 25-12-2025 16:59:10 [main] LogUtils - Clicked on Login button
+[INFO] 25-12-2025 16:59:11 [main] LogUtils - Click on element By.xpath: //span[normalize-space(text())='Projects']
+[INFO] 25-12-2025 16:59:11 [main] LogUtils - Executing testAddNewProject - Testing add new project
+[INFO] 25-12-2025 16:59:12 [main] LogUtils - Click on element By.xpath: //a[normalize-space()='New Project']
+[INFO] 25-12-2025 16:59:12 [main] LogUtils - Clicked on Add New Project button
+[INFO] 25-12-2025 16:59:12 [main] LogUtils - Set text Project Alpha on input By.xpath: //input[@id='name']
+[INFO] 25-12-2025 16:59:12 [main] LogUtils - Entered email: Project Alpha
+[INFO] 25-12-2025 16:59:13 [main] LogUtils - Click on element By.xpath: //button[@data-id='clientid']
+[ERROR] 25-12-2025 16:59:13 [main] LogUtils - Timeout waiting for the element Visible By.xpath: ///input[@placeholder='Type to search...']
+[ERROR] 25-12-2025 16:59:13 [main] LogUtils - === TEST FAILED: testAddNewProject ===
+[ERROR] 25-12-2025 16:59:13 [main] LogUtils - Failure reason: Timeout waiting for the element Visible By.xpath: ///input[@placeholder='Type to search...']
+[INFO] 25-12-2025 16:59:13 [main] LogUtils - Browser driver closed successfully
+[INFO] 25-12-2025 17:00:55 [main] LogUtils - === INITIALIZING BROWSER: CHROME for test: testAddNewProject ===
+[INFO] 25-12-2025 17:00:57 [main] LogUtils - Browser initialized successfully: chrome
+[INFO] 25-12-2025 17:00:57 [main] LogUtils - Navigate to: https://crm.anhtester.com/admin/authentication
+[INFO] 25-12-2025 17:00:57 [main] LogUtils - Opening browser and navigating to URL: https://crm.anhtester.com/admin/authentication
+[INFO] 25-12-2025 17:00:58 [main] LogUtils - Set text admin@example.com on input By.xpath: //input[@name='email']
+[INFO] 25-12-2025 17:00:58 [main] LogUtils - Entered email: admin@example.com
+[INFO] 25-12-2025 17:00:58 [main] LogUtils - Set text 123456 on input By.xpath: //input[@name='password']
+[INFO] 25-12-2025 17:00:58 [main] LogUtils - Entered password: ****
+[INFO] 25-12-2025 17:00:58 [main] LogUtils - Click on element By.xpath: //button[normalize-space()='Login']
+[INFO] 25-12-2025 17:00:58 [main] LogUtils - Clicked on Login button
+[INFO] 25-12-2025 17:00:59 [main] LogUtils - Click on element By.xpath: //span[normalize-space(text())='Projects']
+[INFO] 25-12-2025 17:00:59 [main] LogUtils - Executing testAddNewProject - Testing add new project
+[INFO] 25-12-2025 17:01:00 [main] LogUtils - Click on element By.xpath: //a[normalize-space()='New Project']
+[INFO] 25-12-2025 17:01:00 [main] LogUtils - Clicked on Add New Project button
+[INFO] 25-12-2025 17:01:00 [main] LogUtils - Set text Project Alpha on input By.xpath: //input[@id='name']
+[INFO] 25-12-2025 17:01:00 [main] LogUtils - Entered email: Project Alpha
+[INFO] 25-12-2025 17:01:00 [main] LogUtils - Click on element By.xpath: //button[@data-id='clientid']
+[ERROR] 25-12-2025 17:01:00 [main] LogUtils - Timeout waiting for the element Visible By.xpath: ///input[@placeholder='Type to search...']
+[ERROR] 25-12-2025 17:01:00 [main] LogUtils - === TEST FAILED: testAddNewProject ===
+[ERROR] 25-12-2025 17:01:00 [main] LogUtils - Failure reason: Timeout waiting for the element Visible By.xpath: ///input[@placeholder='Type to search...']
+[INFO] 25-12-2025 17:01:01 [main] LogUtils - Browser driver closed successfully
+[INFO] 25-12-2025 17:11:49 [main] LogUtils - === INITIALIZING BROWSER: CHROME for test: testAddNewProject ===
+[INFO] 25-12-2025 17:11:51 [main] LogUtils - Browser initialized successfully: chrome
+[INFO] 25-12-2025 17:11:52 [main] LogUtils - Navigate to: https://crm.anhtester.com/admin/authentication
+[INFO] 25-12-2025 17:11:52 [main] LogUtils - Opening browser and navigating to URL: https://crm.anhtester.com/admin/authentication
+[INFO] 25-12-2025 17:11:52 [main] LogUtils - Set text admin@example.com on input By.xpath: //input[@name='email']
+[INFO] 25-12-2025 17:11:52 [main] LogUtils - Entered email: admin@example.com
+[INFO] 25-12-2025 17:11:52 [main] LogUtils - Set text 123456 on input By.xpath: //input[@name='password']
+[INFO] 25-12-2025 17:11:52 [main] LogUtils - Entered password: ****
+[INFO] 25-12-2025 17:11:52 [main] LogUtils - Click on element By.xpath: //button[normalize-space()='Login']
+[INFO] 25-12-2025 17:11:52 [main] LogUtils - Clicked on Login button
+[INFO] 25-12-2025 17:11:54 [main] LogUtils - Click on element By.xpath: //span[normalize-space(text())='Projects']
+[INFO] 25-12-2025 17:11:54 [main] LogUtils - Executing testAddNewProject - Testing add new project
+[INFO] 25-12-2025 17:11:54 [main] LogUtils - Click on element By.xpath: //a[normalize-space()='New Project']
+[INFO] 25-12-2025 17:11:54 [main] LogUtils - Clicked on Add New Project button
+[INFO] 25-12-2025 17:11:55 [main] LogUtils - Set text Project Alpha on input By.xpath: //input[@id='name']
+[INFO] 25-12-2025 17:11:55 [main] LogUtils - Entered email: Project Alpha
+[INFO] 25-12-2025 17:11:55 [main] LogUtils - Click on element By.xpath: //button[@data-id='clientid']
+[ERROR] 25-12-2025 17:11:55 [main] LogUtils - Timeout waiting for the element Visible By.xpath: ///input[@placeholder='Type to search...']
+[ERROR] 25-12-2025 17:11:55 [main] LogUtils - === TEST FAILED: testAddNewProject ===
+[ERROR] 25-12-2025 17:11:55 [main] LogUtils - Failure reason: Timeout waiting for the element Visible By.xpath: ///input[@placeholder='Type to search...']
+[INFO] 25-12-2025 17:11:55 [main] LogUtils - Browser driver closed successfully
+[INFO] 25-12-2025 17:12:46 [main] LogUtils - === INITIALIZING BROWSER: CHROME for test: testAddNewProject ===
+[INFO] 25-12-2025 17:12:47 [main] LogUtils - Browser initialized successfully: chrome
+[INFO] 25-12-2025 17:12:48 [main] LogUtils - Navigate to: https://crm.anhtester.com/admin/authentication
+[INFO] 25-12-2025 17:12:48 [main] LogUtils - Opening browser and navigating to URL: https://crm.anhtester.com/admin/authentication
+[INFO] 25-12-2025 17:12:48 [main] LogUtils - Set text admin@example.com on input By.xpath: //input[@name='email']
+[INFO] 25-12-2025 17:12:48 [main] LogUtils - Entered email: admin@example.com
+[INFO] 25-12-2025 17:12:48 [main] LogUtils - Set text 123456 on input By.xpath: //input[@name='password']
+[INFO] 25-12-2025 17:12:48 [main] LogUtils - Entered password: ****
+[INFO] 25-12-2025 17:12:49 [main] LogUtils - Click on element By.xpath: //button[normalize-space()='Login']
+[INFO] 25-12-2025 17:12:49 [main] LogUtils - Clicked on Login button
+[INFO] 25-12-2025 17:12:50 [main] LogUtils - Click on element By.xpath: //span[normalize-space(text())='Projects']
+[INFO] 25-12-2025 17:12:50 [main] LogUtils - Executing testAddNewProject - Testing add new project
+[INFO] 25-12-2025 17:12:51 [main] LogUtils - Click on element By.xpath: //a[normalize-space()='New Project']
+[INFO] 25-12-2025 17:12:51 [main] LogUtils - Clicked on Add New Project button
+[INFO] 25-12-2025 17:12:51 [main] LogUtils - Set text Project Alpha on input By.xpath: //input[@id='name']
+[INFO] 25-12-2025 17:12:51 [main] LogUtils - Entered email: Project Alpha
+[INFO] 25-12-2025 17:12:51 [main] LogUtils - Click on element By.xpath: //button[@data-id='clientid']
+[INFO] 25-12-2025 17:12:52 [main] LogUtils - Set text Test on input By.xpath: //input[@placeholder='Type to search...']
+[ERROR] 25-12-2025 17:13:12 [main] LogUtils - Timeout waiting for the element ClickableBy.xpath: //span[normalize-space()='Test']
+[ERROR] 25-12-2025 17:13:12 [main] LogUtils - === TEST FAILED: testAddNewProject ===
+[ERROR] 25-12-2025 17:13:12 [main] LogUtils - Failure reason: Timeout waiting for the element ClickableBy.xpath: //span[normalize-space()='Test']
+[INFO] 25-12-2025 17:13:12 [main] LogUtils - Browser driver closed successfully
+[INFO] 25-12-2025 17:14:42 [main] LogUtils - === INITIALIZING BROWSER: CHROME for test: testAddNewProject ===
+[INFO] 25-12-2025 17:14:44 [main] LogUtils - Browser initialized successfully: chrome
+[INFO] 25-12-2025 17:14:45 [main] LogUtils - Navigate to: https://crm.anhtester.com/admin/authentication
+[INFO] 25-12-2025 17:14:45 [main] LogUtils - Opening browser and navigating to URL: https://crm.anhtester.com/admin/authentication
+[INFO] 25-12-2025 17:14:45 [main] LogUtils - Set text admin@example.com on input By.xpath: //input[@name='email']
+[INFO] 25-12-2025 17:14:45 [main] LogUtils - Entered email: admin@example.com
+[INFO] 25-12-2025 17:14:45 [main] LogUtils - Set text 123456 on input By.xpath: //input[@name='password']
+[INFO] 25-12-2025 17:14:45 [main] LogUtils - Entered password: ****
+[INFO] 25-12-2025 17:14:46 [main] LogUtils - Click on element By.xpath: //button[normalize-space()='Login']
+[INFO] 25-12-2025 17:14:46 [main] LogUtils - Clicked on Login button
+[INFO] 25-12-2025 17:14:47 [main] LogUtils - Click on element By.xpath: //span[normalize-space(text())='Projects']
+[INFO] 25-12-2025 17:14:47 [main] LogUtils - Executing testAddNewProject - Testing add new project
+[INFO] 25-12-2025 17:14:48 [main] LogUtils - Click on element By.xpath: //a[normalize-space()='New Project']
+[INFO] 25-12-2025 17:14:48 [main] LogUtils - Clicked on Add New Project button
+[INFO] 25-12-2025 17:14:48 [main] LogUtils - Set text Project Alpha on input By.xpath: //input[@id='name']
+[INFO] 25-12-2025 17:14:48 [main] LogUtils - Entered email: Project Alpha
+[INFO] 25-12-2025 17:14:48 [main] LogUtils - Click on element By.xpath: //button[@data-id='clientid']
+[INFO] 25-12-2025 17:14:48 [main] LogUtils - Set text ABC Technology Company on input By.xpath: //input[@placeholder='Type to search...']
+[INFO] 25-12-2025 17:14:49 [main] LogUtils - Click on element By.xpath: //a[@role='option']//span[@class='text' and text()='ABC Technology Company']
+[INFO] 25-12-2025 17:14:49 [main] LogUtils - Selected customer: ABC Technology Company
+[ERROR] 25-12-2025 17:14:49 [main] LogUtils - === TEST FAILED: testAddNewProject ===
+[ERROR] 25-12-2025 17:14:49 [main] LogUtils - Failure reason: no such element: Unable to locate element: {"method":"xpath","selector":"//button[contains(@class,'only-save')]"}
+  (Session info: chrome=142.0.7444.176)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#nosuchelementexception
+Build info: version: '4.38.0', revision: '6b412e825c*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.14'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [a6f3a924217a6ff65f861e2d8d946158, findElement {value=//button[contains(@class,'only-save')], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 142.0.7444.176, chrome: {chromedriverVersion: 142.0.7444.175 (302067f14a4..., userDataDir: C:\Users\ITC-PM~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:56867}, goog:processID: 23344, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:56867/devtoo..., se:cdpVersion: 142.0.7444.176, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: a6f3a924217a6ff65f861e2d8d946158
+[INFO] 25-12-2025 17:14:49 [main] LogUtils - Browser driver closed successfully
+[INFO] 25-12-2025 17:23:23 [main] LogUtils - === INITIALIZING BROWSER: CHROME for test: testAddNewProject ===
+[INFO] 25-12-2025 17:23:25 [main] LogUtils - Browser initialized successfully: chrome
+[INFO] 25-12-2025 17:23:26 [main] LogUtils - Navigate to: https://crm.anhtester.com/admin/authentication
+[INFO] 25-12-2025 17:23:26 [main] LogUtils - Opening browser and navigating to URL: https://crm.anhtester.com/admin/authentication
+[INFO] 25-12-2025 17:23:26 [main] LogUtils - Set text admin@example.com on input By.xpath: //input[@name='email']
+[INFO] 25-12-2025 17:23:26 [main] LogUtils - Entered email: admin@example.com
+[INFO] 25-12-2025 17:23:26 [main] LogUtils - Set text 123456 on input By.xpath: //input[@name='password']
+[INFO] 25-12-2025 17:23:26 [main] LogUtils - Entered password: ****
+[INFO] 25-12-2025 17:23:27 [main] LogUtils - Click on element By.xpath: //button[normalize-space()='Login']
+[INFO] 25-12-2025 17:23:27 [main] LogUtils - Clicked on Login button
+[INFO] 25-12-2025 17:23:29 [main] LogUtils - Click on element By.xpath: //span[normalize-space(text())='Projects']
+[INFO] 25-12-2025 17:23:29 [main] LogUtils - Executing testAddNewProject - Testing add new project
+[INFO] 25-12-2025 17:23:29 [main] LogUtils - Click on element By.xpath: //a[normalize-space()='New Project']
+[INFO] 25-12-2025 17:23:29 [main] LogUtils - Clicked on Add New Project button
+[INFO] 25-12-2025 17:23:30 [main] LogUtils - Set text Project Alpha on input By.xpath: //input[@id='name']
+[INFO] 25-12-2025 17:23:30 [main] LogUtils - Entered email: Project Alpha
+[INFO] 25-12-2025 17:23:30 [main] LogUtils - Click on element By.xpath: //button[@data-id='clientid']
+[INFO] 25-12-2025 17:23:30 [main] LogUtils - Set text ABC Technology Company on input By.xpath: //input[@placeholder='Type to search...']
+[INFO] 25-12-2025 17:23:31 [main] LogUtils - Click on element By.xpath: //a[@role='option']//span[@class='text' and text()='ABC Technology Company']
+[INFO] 25-12-2025 17:23:31 [main] LogUtils - Selected customer: ABC Technology Company
+[INFO] 25-12-2025 17:23:32 [main] LogUtils - Click on element By.xpath: //button[normalize-space()='Save']
+[INFO] 25-12-2025 17:23:32 [main] LogUtils - Clicked on Save button
+[INFO] 25-12-2025 17:23:33 [main] LogUtils - Get text of element By.xpath: //div[contains(@class,'alert-success')] is Project added successfully.
+[INFO] 25-12-2025 17:23:33 [main] LogUtils - Customer added successfully: Project added successfully.
+[INFO] 25-12-2025 17:23:33 [main] LogUtils - testAddNewProject completed
+[INFO] 25-12-2025 17:23:33 [main] LogUtils - === TEST PASSED: testAddNewProject ===
+[INFO] 25-12-2025 17:23:33 [main] LogUtils - Browser driver closed successfully
